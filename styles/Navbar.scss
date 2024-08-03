@@ -1,10 +1,20 @@
 .nav-container {
+	padding-top: 0;
 	display: flex;
-	gap: 10px;
+	justify-content: space-around;
+	gap: 30px;
+	align-items: center;
+	padding: 10px 20px;
 	font-size: 1rem;
+	height: 7vh;
 	color: white;
+	background-color: #0b0e21;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border: rgb(105, 105, 105) solid 1px;
 }
 
-Link:hover {
+.nav-hover:hover {
 	color: grey;
+	cursor: pointer; /* Change cursor to pointer on hover */
 }
