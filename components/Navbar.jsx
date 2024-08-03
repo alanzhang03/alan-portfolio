@@ -5,9 +5,6 @@ import "../styles/Navbar.scss";
 const Navbar = () => {
 	return (
 		<nav className="nav-container">
-			<Link className="nav-hover" href="/">
-				Home
-			</Link>
 			<Link className="nav-hover" href="/About">
 				About
 			</Link>
