@@ -5,16 +5,16 @@ import "../styles/Navbar.scss";
 const Navbar = () => {
 	return (
 		<nav className="nav-container">
-			<Link className="nav-hover" href="/About">
+			<Link className="nav-hover" href="#about">
 				About
 			</Link>
-			<Link className="nav-hover" href="/Skills">
+			<Link className="nav-hover" href="#skills">
 				Skills
 			</Link>
-			<Link className="nav-hover" href="/Projects">
+			<Link className="nav-hover" href="#projects">
 				Projects
 			</Link>
-			<Link className="nav-hover" href="/Contact">
+			<Link className="nav-hover" href="#contact">
 				Contact
 			</Link>
 		</nav>

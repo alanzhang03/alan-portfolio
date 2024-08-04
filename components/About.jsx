@@ -3,10 +3,8 @@ import "../styles/About.scss";
 
 const About = () => {
 	return (
-		<main className="main">
+		<main id="about" className="main">
 			<h1 className="testing">Testing About css</h1>
-
-
 		</main>
 	);
 };
