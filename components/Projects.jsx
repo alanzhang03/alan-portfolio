@@ -2,9 +2,9 @@ import React from 'react'
 
 const Projects = () => {
   return (
-		<main id="projects" className="main">
+		<section id="projects" className="main">
 			<h1 className="testing">Testing About css</h1>
-		</main>
+		</section>
 	);
 }
 
