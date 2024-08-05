@@ -4,7 +4,7 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import "../styles/HomePage.scss";
-import StarField from "./ui/StarField";
+import Link from "next/link";
 
 const HomePage = () => {
 	useGSAP(() => {
@@ -18,7 +18,7 @@ const HomePage = () => {
 	}, []);
 
 	return (
-		<section className="main">
+		<section id="homePage" className="main">
 			<p className="mini-header">DYNAMIC WEB EXPERIENCE WITH NEXT.JS</p>
 			<h1 className="port-intro">
 				Crafting Concepts into Effortless
@@ -27,6 +27,11 @@ const HomePage = () => {
 			<p className="small-intro">
 				I'm Alan Zhang, an aspiring Full-Stack Developer!
 			</p>
+			<nav className="learn-more-container">
+				<Link className="learn-more" href="#about">
+					Learn More
+				</Link>
+			</nav>
 		</section>
 	);
 };

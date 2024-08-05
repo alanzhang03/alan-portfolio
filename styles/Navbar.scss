@@ -12,6 +12,8 @@
 	border-radius: 20px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	border: rgb(105, 105, 105) solid 1px;
+	z-index: 1;
+	overflow: hidden;
 }
 
 .nav-hover:hover {
