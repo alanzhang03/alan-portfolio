@@ -1,7 +1,31 @@
 .main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	min-height: 100vh;
+	padding-top: 15vh;
+	text-align: center;
+}
+
+.mini-header {
+	color: #d5cbe5;
+	font-size: 0.8rem;
 }
 
 .port-intro {
 	color: white;
+	opacity: 0;
+	font-size: 4rem;
+	max-width: 60%;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+.small-intro {
+	color: white;
+	font-size: 1.3rem;
+}
+
+.purple-text {
+	color: #927bea;
 }

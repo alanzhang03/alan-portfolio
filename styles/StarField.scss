@@ -1,0 +1,40 @@
+.star-field {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+
+}
+
+.star {
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	background-color: white;
+	border-radius: 50%;
+	animation: moveStar linear infinite;
+}
+
+@keyframes moveStar {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(100vw);
+	}
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #cd54eb;
+	border-radius: 5px;
+}
