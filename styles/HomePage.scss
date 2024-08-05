@@ -44,8 +44,24 @@
 	border: #927bea solid 1px;
 	z-index: 1;
 	overflow: hidden;
+	transition: transform 0.4s;
 }
 
 .learn-more {
+	display: flex;
+	align-items: center;
 	color: white;
+	text-decoration: none;
+	transition: transform 0.4s;
+	font-weight: bold;
+}
+
+.location-arrow {
+	margin-left: 0.5rem;
+	font-size: 0.9rem;
+}
+
+.learn-more:hover {
+	color: #cd54eb;
+	transform: scale(1.1);
 }

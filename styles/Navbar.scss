@@ -14,9 +14,10 @@
 	border: rgb(105, 105, 105) solid 1px;
 	z-index: 1;
 	overflow: hidden;
+	font-weight: bolder;
 }
 
 .nav-hover:hover {
-	color: grey;
-	cursor: pointer; /* Change cursor to pointer on hover */
+	color: #cd54eb;
+	cursor: pointer;
 }

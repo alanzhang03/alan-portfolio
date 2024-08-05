@@ -1,5 +1,5 @@
 "use client";
-
+import { FaLocationArrow } from "react-icons/fa6";
 import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -29,7 +29,7 @@ const HomePage = () => {
 			</p>
 			<nav className="learn-more-container">
 				<Link className="learn-more" href="#about">
-					Learn More
+					Learn More <FaLocationArrow className="location-arrow" />
 				</Link>
 			</nav>
 		</section>
