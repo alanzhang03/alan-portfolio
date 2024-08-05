@@ -49,6 +49,7 @@
 	z-index: 1;
 	overflow: hidden;
 	transition: transform 0.4s;
+	opacity: 0;
 }
 
 .learn-more {
@@ -68,4 +69,20 @@
 .learn-more:hover {
 	color: #cd54eb;
 	transform: scale(1.1);
+}
+
+.arrow-down {
+	animation: bobbing 1s ease-in-out infinite;
+	color: white;
+	font-size: 3rem;
+	margin-top: 18vh;
+}
+@keyframes bobbing {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-15px);
+	}
 }

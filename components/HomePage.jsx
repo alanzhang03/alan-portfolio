@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import "../styles/HomePage.scss";
 import Link from "next/link";
-import SplitType from "split-type";
+import { FaArrowDownLong } from "react-icons/fa6";
 
 const HomePage = () => {
 	useGSAP(() => {
@@ -15,8 +15,12 @@ const HomePage = () => {
 		});
 		gsap.to("#small-intro-gsap", {
 			opacity: 1,
-			delay: 0.5,
+			delay: 1,
 			duration: 1.5,
+		});
+		gsap.to("#learn-more-container-gsap", {
+			delay: 2,
+			opacity: 1,
 		});
 	}, []);
 
@@ -30,11 +34,12 @@ const HomePage = () => {
 			<p id="small-intro-gsap" className="small-intro">
 				I'm Alan Zhang, an aspiring Full-Stack Developer!
 			</p>
-			<nav className="learn-more-container">
+			<nav id="learn-more-container-gsap" className="learn-more-container">
 				<Link className="learn-more" href="#about">
 					Learn More <FaLocationArrow className="location-arrow" />
 				</Link>
 			</nav>
+			<FaArrowDownLong className="arrow-down" />
 		</section>
 	);
 };
