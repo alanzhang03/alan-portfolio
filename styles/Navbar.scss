@@ -1,5 +1,7 @@
+.nav-padding {
+}
+
 .nav-container {
-	padding-top: 3vh;
 	display: flex;
 	justify-content: space-around;
 	gap: 30px;
@@ -8,16 +10,53 @@
 	font-size: 0.9rem;
 	height: 7vh;
 	color: white;
-	background-color: #0b0e21;
 	border-radius: 20px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	border: rgb(105, 105, 105) solid 1px;
 	z-index: 1;
 	overflow: hidden;
 	font-weight: bolder;
+	transition: transform 0.3s ease-in-out;
+	position: fixed;
+	margin-top: 2.6vh;
+	top: 0;
 }
 
-.nav-hover:hover {
-	color: #cd54eb;
-	cursor: pointer;
+.nav-hover {
+	position: relative;
+	padding: 0.25rem;
+}
+
+.nav-hover a {
+	color: inherit;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.nav-hover::after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #cd54eb;
+	transition: transform 0.4s;
+	transform: scaleX(0);
+	transform-origin: bottom left;
+}
+
+.nav-hover:hover::after,
+.nav-hover:focus-within::after {
+	transform: scaleX(1);
+}
+
+.visible {
+	transform: translateY(0);
+}
+
+.hidden {
+	transform: translateY(-100%);
 }
