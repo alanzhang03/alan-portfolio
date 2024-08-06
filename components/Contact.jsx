@@ -3,8 +3,8 @@ import "../styles/Contact.scss";
 
 const Contact = () => {
 	return (
-		<section id="contact" className="main">
-			<h1 className="testing">Testing Contact css</h1>
+		<section id="contact" className="main-contact">
+			<h1 className="contact-heading">Contact Me</h1>
 		</section>
 	);
 };

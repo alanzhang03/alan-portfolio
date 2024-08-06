@@ -25,7 +25,7 @@ const HomePage = () => {
 	}, []);
 
 	return (
-		<section id="homePage" className="main">
+		<section id="homePage" className="main-homepage">
 			<p className="mini-header">DYNAMIC WEB EXPERIENCE WITH NEXT.JS</p>
 			<h1 id="port-intro-gsap" className="port-intro">
 				Crafting Concepts into Effortless

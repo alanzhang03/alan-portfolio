@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import "../styles/Projects.scss";
 
 const Projects = () => {
-  return (
-		<section id="projects" className="main">
-			<h1 className="testing">Testing About css</h1>
+	return (
+		<section id="projects" className="main-projects">
+			<h1 className="projects-heading">Projects Header</h1>
 		</section>
 	);
-}
+};
 
-export default Projects
+export default Projects;

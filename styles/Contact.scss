@@ -1,8 +1,11 @@
-.main {
+.main-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
 	min-height: 100vh;
 }
 
-.testing {
-	color: white;
-
+.contact-heading {
+	font-size: 5rem;
 }

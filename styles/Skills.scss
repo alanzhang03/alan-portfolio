@@ -1,8 +1,42 @@
-.main {
+.main-skills {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
 	min-height: 100vh;
 }
 
-.testing {
+.skills-heading {
+	font-size: 5rem;
 	color: white;
+}
 
+.grid-setup-skills {
+	display: grid;
+	padding-top: 10vh;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	max-width: 90%;
+	margin: 0 auto;
+	:hover {
+		transform: scale(1.05);
+		background-color: black;
+	}
+}
+
+.skillItem {
+	padding: 2rem;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	background-color: #101010;
+	transition: transform 0.3s;
+	height: 25vh;
+	z-index: 1;
+	h2 {
+		color: #cd54eb;
+		margin-bottom: 0.5rem;
+	}
+	p {
+		color: #bbb;
+	}
 }
