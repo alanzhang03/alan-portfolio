@@ -35,43 +35,58 @@ const technologies = [
 
 const Skills = () => {
   useGSAP(() => {
-    gsap.to("#gsap-test", {
-      x: 100,
-      duration: 3,
+    gsap.to("#gsap-item-1", {
+      scrollTrigger: ".item-1",
+      duration: 1,
+      delay: 0.5,
+      opacity: 1,
+    });
+    gsap.to("#gsap-item-2", {
+      scrollTrigger: ".item-2",
+      duration: 1,
+      delay: 0.75,
+      opacity: 1,
+    });
+    gsap.to("#gsap-item-3", {
+      scrollTrigger: ".item-3",
+      duration: 1,
+      delay: 0.85,
+      opacity: 1,
+    });
+    gsap.to("#gsap-item-4", {
+      scrollTrigger: ".item-4",
+      duration: 1,
       delay: 1,
-      scrollTrigger: "#gsap-test",
+      opacity: 1,
     });
   }, []);
 
   return (
     <section id="skills" className="main-skills">
-      <h1 id="gsap-test" className="testing-gsap">
-        Testing Gsap Trigger
-      </h1>
       <h1 className="skills-heading">Services and Skills</h1>
-      <div className="grid-setup-skills">
-        <div className="skillItem item-1">
+      <div id="gsap-grid-setup" className="grid-setup-skills">
+        <div id="gsap-item-1" className="skillItem item-1">
           <h2>Custom Software Development</h2>
           <p>
             Tailored solutions including SaaS, CRM, and CMS for optimized
             business processes.
           </p>
         </div>
-        <div className="skillItem item-2">
+        <div id="gsap-item-2" className="skillItem item-2">
           <h2>User-Friendly Dashboards</h2>
           <p>
             Create intuitive and informative dashboards to empower users with
             actionable insights.
           </p>
         </div>
-        <div className="skillItem item-3">
+        <div id="gsap-item-3" className="skillItem item-3">
           <h2>Responsive Websites</h2>
           <p>
             Design and develop websites that seamlessly adapt to various devices
             for a great user experience.
           </p>
         </div>
-        <div className="skillItem item-4">
+        <div id="gsap-item-4" className="skillItem item-4">
           <h2>Business Process Streamlining</h2>
           <p>
             Efficiently streamline and automate key business processes for
