@@ -30,23 +30,23 @@ const Navbar = () => {
 	}, [lastScrollY]);
 
 	return (
-			<nav className={`nav-container ${show ? "" : "hidden"}`}>
-				<Link className="nav-hover" href="/">
-					Home
-				</Link>
-				<Link className="nav-hover" href="#about">
-					About
-				</Link>
-				<Link className="nav-hover" href="#skills">
-					Skills
-				</Link>
-				<Link className="nav-hover" href="#projects">
-					Projects
-				</Link>
-				<Link className="nav-hover" href="#contact">
-					Contact
-				</Link>
-			</nav>
+		<nav className={`nav-container ${show ? "" : "hidden"}`}>
+			<Link className="nav-hover" href="#homePage">
+				Home
+			</Link>
+			<Link className="nav-hover" href="#about">
+				About
+			</Link>
+			<Link className="nav-hover" href="#skills">
+				Skills
+			</Link>
+			<Link className="nav-hover" href="#projects">
+				Projects
+			</Link>
+			<Link className="nav-hover" href="#contact">
+				Contact
+			</Link>
+		</nav>
 	);
 };
 
