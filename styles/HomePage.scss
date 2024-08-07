@@ -73,8 +73,8 @@
 .arrow-down {
 	animation: bobbing 1s ease-in-out infinite;
 	color: white;
-	font-size: 3rem;
-	margin-top: 18vh;
+	font-size: 4rem;
+	margin-top: 8vh;
 }
 @keyframes bobbing {
 	0%,
@@ -85,4 +85,3 @@
 		transform: translateY(-15px);
 	}
 }
-
