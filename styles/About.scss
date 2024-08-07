@@ -4,12 +4,53 @@
 	align-items: center;
 	color: white;
 	min-height: 100vh;
+	z-index: 1;
 }
 
 .about-me-header {
 	font-size: 5rem;
 	color: white;
 	margin-top: 5vh;
+}
+
+.about-me-description {
+	padding-top: 5vh;
+	font-size: 2.5rem;
+	padding-left: 4vw;
+	padding-right: 3vw;
+	font-weight: bold;
+	line-height: 1.4;
+
+	span {
+		color: #927bea;
+		position: relative;
+		&:hover {
+			cursor: pointer;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			height: 2px;
+			left: 0;
+			right: 0;
+			bottom: -2px;
+			background: #cd54eb;
+			transition: transform 0.4s;
+			transform: scaleX(0);
+			transform-origin: bottom left;
+		}
+		&:hover::after,
+		&:focus-within::after {
+			transform: scaleX(1);
+		}
+	}
+}
+
+.projects-nav-about-section {
+	z-index: 2;
+	:hover {
+		cursor: pointer;
+	}
 }
 
 .about-me-page-grid-container {

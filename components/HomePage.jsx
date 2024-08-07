@@ -15,16 +15,16 @@ const HomePage = () => {
 		});
 		gsap.to("#small-intro-gsap", {
 			opacity: 1,
-			delay: 1,
+			delay: 0.75,
 			duration: 1.5,
 		});
 		gsap.to("#learn-more-container-gsap", {
-			delay: 2,
+			delay: 1.5,
 			opacity: 1,
 		});
 		gsap.from("#gsap-arrow-down", {
 			opacity: 0,
-			delay: 3,
+			delay: 1.5,
 			duration: 2,
 		});
 	}, []);
