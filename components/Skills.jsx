@@ -23,6 +23,8 @@ const skills = [
 
 const technologies = [
 	{ name: "React", icon: "/Assets/react.svg" },
+	{ name: "GSAP", icon: "/Assets/gsap.svg" },
+	{ name: "Next JS", icon: "/Assets/nextjs.svg" },
 	{ name: "Webpack", icon: "/Assets/webpack.svg" },
 	{ name: "Node", icon: "/Assets/nodejs.svg" },
 	{ name: "Vite", icon: "/Assets/vitejs.svg" },
@@ -66,7 +68,7 @@ const Skills = () => {
 			opacity: 1,
 			scale: 1,
 			stagger: {
-				each: 0.2,
+				each: 0.25,
 				grid: "auto",
 				from: "end",
 			},
@@ -78,7 +80,7 @@ const Skills = () => {
 			opacity: 1,
 			scale: 1,
 			stagger: {
-				each: 0.2,
+				each: 0.25,
 				grid: "auto",
 				from: "end",
 			},

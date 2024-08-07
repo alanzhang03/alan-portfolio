@@ -22,6 +22,11 @@ const HomePage = () => {
 			delay: 2,
 			opacity: 1,
 		});
+		gsap.from("#gsap-arrow-down", {
+			opacity: 0,
+			delay: 3,
+			duration: 2,
+		});
 	}, []);
 
 	return (
@@ -39,7 +44,7 @@ const HomePage = () => {
 					Learn More <FaLocationArrow className="location-arrow" />
 				</Link>
 			</nav>
-			<FaArrowDownLong className="arrow-down" />
+			<FaArrowDownLong id="gsap-arrow-down" className="arrow-down" />
 		</section>
 	);
 };
