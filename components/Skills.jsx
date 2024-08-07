@@ -11,6 +11,8 @@ gsap.registerPlugin(ScrollTrigger);
 const skills = [
 	{ name: "JavaScript", icon: "/Assets/js.svg" },
 	{ name: "Html", icon: "/Assets/html.svg" },
+	{ name: "Sass", icon: "/Assets/sass.svg" },
+	{ name: "Tailwind", icon: "/Assets/tailwind.svg" },
 	{ name: "Css", icon: "/Assets/css.svg" },
 	{ name: "Python", icon: "/Assets/python.svg" },
 	{ name: "C#", icon: "/Assets/csharp.svg" },
@@ -25,14 +27,13 @@ const technologies = [
 	{ name: "React", icon: "/Assets/react.svg" },
 	{ name: "GSAP", icon: "/Assets/gsap.svg" },
 	{ name: "Next JS", icon: "/Assets/nextjs.svg" },
+	{ name: "Three JS", icon: "/Assets/threejs.svg" },
 	{ name: "Webpack", icon: "/Assets/webpack.svg" },
 	{ name: "Node", icon: "/Assets/nodejs.svg" },
 	{ name: "Vite", icon: "/Assets/vitejs.svg" },
 	{ name: "Vue", icon: "/Assets/vue.svg" },
-	{ name: "Django", icon: "/Assets/django.svg" },
 	{ name: "Github", icon: "/Assets/github.svg" },
 	{ name: "git", icon: "/Assets/git.svg" },
-	{ name: "Microsoft Office", icon: "/Assets/office.svg" },
 ];
 
 const Skills = () => {
