@@ -39,7 +39,8 @@ const HomePage = () => {
 				<span className="purple-text"> User Interactions</span>
 			</h1>
 			<p id="small-intro-gsap" className="small-intro">
-				Hi! I'm Alan Zhang, an aspiring Full-Stack Developer!
+				Hi! I'm <span className="purple-text"> Alan Zhang</span>, an aspiring
+				<span className="purple-text"> Full-Stack Developer</span>
 			</p>
 			<nav id="learn-more-container-gsap" className="learn-more-container">
 				<Link className="learn-more" href="#about">
