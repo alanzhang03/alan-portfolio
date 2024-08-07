@@ -5,7 +5,6 @@
 	color: white;
 	min-height: 100vh;
 
-
 	.skills-heading {
 		font-size: 5rem;
 		color: white;
@@ -21,7 +20,7 @@
 
 		.skillItem {
 			padding: 2rem;
-			border: 2px solid #fff;
+			border: 2px solid #927bea;
 			border-radius: 10px;
 			background-color: #101010;
 			transition: transform 0.3s;
@@ -78,11 +77,11 @@
 				border-radius: 15px;
 				transition: transform 0.4s;
 				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-				border: 2px solid #cd54eb;
-				opacity: 0.8;
+				border: 2px solid #927bea;
+				opacity: 0;
+				scale: 0.1;
 
 				&:hover {
-					transform: scale(1.05);
 					opacity: 1;
 					box-shadow: 0 8px 16px #cd54eb;
 					border-color: #cd54eb;
