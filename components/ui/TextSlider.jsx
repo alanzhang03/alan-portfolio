@@ -9,46 +9,36 @@ const TextSlider = () => {
 	const firstText = useRef(null);
 	const secondText = useRef(null);
 	const slider = useRef(null);
-	let xPercent = 0;
-	let direction = -1;
 
 	useEffect(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
-		gsap.to(slider.current, {
+		const tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: document.documentElement,
-
 				scrub: 0.5,
-
 				start: 0,
-
 				end: window.innerHeight,
-
-				onUpdate: (e) => (direction = e.direction * -1),
+				onUpdate: (e) => {
+					const progress = e.progress * 100;
+					const offset = -500 + progress * 5;
+					gsap.set(slider.current, { x: `${offset}px` });
+				},
 			},
-
-			x: "-500px",
 		});
 
-		requestAnimationFrame(animate);
+		gsap.set([firstText.current, secondText.current], { opacity: 1 });
+
+		gsap.to([firstText.current, secondText.current], {
+			xPercent: -100,
+			repeat: -1,
+			duration: 10,
+			ease: "none",
+			modifiers: {
+				xPercent: gsap.utils.unitize((x) => parseFloat(x) % 100), // Ensure smooth looping
+			},
+		});
 	}, []);
-
-	const animate = () => {
-		if (xPercent < -100) {
-			xPercent = 0;
-		} else if (xPercent > 0) {
-			xPercent = -100;
-		}
-
-		gsap.set(firstText.current, { xPercent: xPercent });
-
-		gsap.set(secondText.current, { xPercent: xPercent });
-
-		requestAnimationFrame(animate);
-
-		xPercent += 0.04 * direction;
-	};
 
 	return (
 		<main className="text-slider">
