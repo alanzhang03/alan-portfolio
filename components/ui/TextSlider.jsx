@@ -47,15 +47,19 @@ const TextSlider = () => {
 
 		requestAnimationFrame(animate);
 
-		xPercent += 0.04 * direction;
+		xPercent += 0.03 * direction;
 	};
 
 	return (
 		<main className="text-slider">
 			<div className="slider-container">
 				<div ref={slider} className="slider">
-					<p ref={firstText}>Building Digital Experiences - </p>
-					<p ref={secondText}>Building Digital Experiences - </p>
+					<p className="text-slider-text" ref={firstText}>
+						Crafting Visions Into Realities -
+					</p>
+					<p className="text-slider-text" ref={secondText}>
+						Crafting Visions Into Realities -
+					</p>
 				</div>
 			</div>
 		</main>
