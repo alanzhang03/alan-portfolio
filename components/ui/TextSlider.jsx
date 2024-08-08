@@ -15,22 +15,19 @@ const TextSlider = () => {
 	useEffect(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
-		gsap.set([firstText.current, secondText.current], { opacity: 0 });
-
-		gsap.to([firstText.current, secondText.current], {
-			opacity: 1,
-			delay: 2.25,
-			duration: 2,
-		});
-
 		gsap.to(slider.current, {
 			scrollTrigger: {
 				trigger: document.documentElement,
+
 				scrub: 0.5,
+
 				start: 0,
+
 				end: window.innerHeight,
+
 				onUpdate: (e) => (direction = e.direction * -1),
 			},
+
 			x: "-500px",
 		});
 
@@ -43,10 +40,14 @@ const TextSlider = () => {
 		} else if (xPercent > 0) {
 			xPercent = -100;
 		}
+
 		gsap.set(firstText.current, { xPercent: xPercent });
+
 		gsap.set(secondText.current, { xPercent: xPercent });
+
 		requestAnimationFrame(animate);
-		xPercent += 0.03 * direction;
+
+		xPercent += 0.04 * direction;
 	};
 
 	return (
