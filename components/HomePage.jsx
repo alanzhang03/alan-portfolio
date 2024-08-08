@@ -8,6 +8,7 @@ import "../styles/HomePage.scss";
 import Link from "next/link";
 import { FaArrowDownLong } from "react-icons/fa6";
 import TextSlider from "./ui/TextSlider";
+import TextLoop from "./ui/TextLoop";
 
 const HomePage = () => {
 	useGSAP(() => {
@@ -47,7 +48,7 @@ const HomePage = () => {
 					Learn More <FaLocationArrow className="location-arrow" />
 				</Link>
 			</nav>
-			<TextSlider />
+			<TextLoop />
 			<FaArrowDownLong id="gsap-arrow-down" className="arrow-down" />
 		</section>
 	);

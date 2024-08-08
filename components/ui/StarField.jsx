@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import "../../styles/StarField.scss";
+import "./styles/StarField.scss";
 
 const StarField = ({ numberOfStars = 200 }) => {
 	const [stars, setStars] = useState([]);

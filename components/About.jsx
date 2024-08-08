@@ -1,20 +1,8 @@
-"use client";
 import React from "react";
 import "../styles/About.scss";
 import Link from "next/link";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
 const About = () => {
-
-
-	useGSAP(() => {
-		gsap.to("#gsap-about-me-description", {
-			
-			
-		});
-	}, []);
-
 	return (
 		<section id="about" className="main-about">
 			<h1 className="about-me-header">Who Am I?</h1>

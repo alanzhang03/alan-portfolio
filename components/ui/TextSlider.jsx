@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useEffect } from "react";
-import "../../styles/TextSlider.scss";
+import "./styles/TextSlider.scss";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -19,7 +19,7 @@ const TextSlider = () => {
 
 		gsap.to([firstText.current, secondText.current], {
 			opacity: 1,
-			delay: 2.5,
+			delay: 2.25,
 			duration: 2,
 		});
 
@@ -46,7 +46,7 @@ const TextSlider = () => {
 		gsap.set(firstText.current, { xPercent: xPercent });
 		gsap.set(secondText.current, { xPercent: xPercent });
 		requestAnimationFrame(animate);
-		xPercent += 0.02 * direction;
+		xPercent += 0.03 * direction;
 	};
 
 	return (
