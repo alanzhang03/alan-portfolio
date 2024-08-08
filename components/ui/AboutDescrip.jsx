@@ -68,7 +68,7 @@ const AboutDescrip = () => {
 			</p>
 			<div className="about-section-2">
 				<div className="section-2-divider">
-					<span className="number">1</span>+ Years Of Experience
+					<span className="number">3</span>+ Years Of Experience
 				</div>
 				<div className="section-2-divider">
 					<span className="number">100</span>% Client Satisfaction
