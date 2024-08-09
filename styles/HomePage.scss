@@ -15,11 +15,13 @@
 
 .port-intro {
 	color: white;
-	opacity: 0;
 	font-size: 4rem;
 	max-width: 70%;
 	padding-top: 3vh;
 	padding-bottom: 3vh;
+	span {
+		opacity: 0;
+	}
 }
 
 .small-intro {

@@ -7,27 +7,30 @@ import { useGSAP } from "@gsap/react";
 import "../styles/HomePage.scss";
 import Link from "next/link";
 import { FaArrowDownLong } from "react-icons/fa6";
-
 import TextLoop from "./ui/TextLoop";
 
 const HomePage = () => {
 	useGSAP(() => {
-		gsap.to("#port-intro-gsap", {
-			opacity: 1,
+		gsap.to("#port-intro-gsap span", {
 			duration: 2,
+			opacity: 1,
+			stagger: {
+				each: 0.3,
+				from: "start",
+			},
 		});
 		gsap.to("#small-intro-gsap", {
 			opacity: 1,
-			delay: 0.75,
+			delay: 2,
 			duration: 1.5,
 		});
 		gsap.to("#learn-more-container-gsap", {
-			delay: 1.5,
+			delay: 3,
 			opacity: 1,
 		});
 		gsap.from("#gsap-arrow-down", {
 			opacity: 0,
-			delay: 1.5,
+			delay: 4,
 			duration: 2,
 		});
 	}, []);
@@ -36,7 +39,10 @@ const HomePage = () => {
 		<section id="homePage" className="main-homepage">
 			<p className="mini-header">DYNAMIC WEB EXPERIENCE WITH NEXT.JS</p>
 			<h1 id="port-intro-gsap" className="port-intro">
-				Crafting Concepts into Effortless
+				<span>Crafting </span>
+				<span>Concepts </span>
+				<span>into </span>
+				<span>Effortless </span>
 				<span className="purple-text"> User Interactions</span>
 			</h1>
 			<p id="small-intro-gsap" className="small-intro">

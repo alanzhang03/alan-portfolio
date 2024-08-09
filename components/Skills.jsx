@@ -53,13 +53,13 @@ const Skills = () => {
 		gsap.to("#gsap-item-3", {
 			scrollTrigger: ".item-3",
 			duration: 1,
-			delay: 1.45,
+			delay: 1.25,
 			opacity: 1,
 		});
 		gsap.to("#gsap-item-4", {
 			scrollTrigger: ".item-4",
 			duration: 1,
-			delay: 1.85,
+			delay: 1.75,
 			opacity: 1,
 		});
 
