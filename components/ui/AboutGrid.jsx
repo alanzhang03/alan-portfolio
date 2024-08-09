@@ -31,7 +31,11 @@ const AboutGrid = () => {
 								alt="Picture of the author"
 							/>
 						</div>
-						<div className="grid-row-1-col-2-2">3rd Grid</div>
+						<div className="grid-row-1-col-2-2">
+							<p className="grid-text-3">
+								Constantly improving my <span> Tech Stack.</span>
+							</p>
+						</div>
 					</div>
 				</div>
 
@@ -57,7 +61,12 @@ const AboutGrid = () => {
 						</div>
 					</div>
 
-					<div className="grid-row-2-col-2">6th Grid</div>
+					<div className="grid-row-2-col-2">
+						<div className="grid-text-6-container">
+							<p style={{ color: "#d5cbe5" }}>The Latest Insight</p>
+							<p className="grid-text-6">Currently:</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
