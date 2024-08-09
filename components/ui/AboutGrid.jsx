@@ -67,7 +67,9 @@ const AboutGrid = () => {
 					<div className="grid-row-2-col-2">
 						<div className="grid-text-6-container">
 							<p style={{ color: "#d5cbe5" }}>The Latest Insight</p>
-							<p className="grid-text-6">Currently:</p>
+							<p className="grid-text-6">
+								Currently building a tracker using Nextjs
+							</p>
 						</div>
 					</div>
 				</div>

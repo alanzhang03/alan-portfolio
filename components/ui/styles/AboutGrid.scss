@@ -148,6 +148,9 @@
 		border: #a893f5 solid 2px;
 		transition: transform 0.3s;
 		background-color: #020419;
+		background-image: url(../../../public/Assets/Grid6PicRemoveBg.png);
+		background-repeat: no-repeat;
+		background-position: bottom 5vh right -6vw;
 	}
 }
 .main-pic {
@@ -206,8 +209,8 @@
 
 .grid-text-6 {
 	font-size: 2rem;
-
-	max-width: 70%;
+	font-weight: bolder;
+	max-width: 50%;
 	span {
 		font-size: 2.5rem;
 		font-weight: bolder;
