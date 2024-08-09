@@ -291,11 +291,21 @@
 	}
 
 	.grid-row-2-col-2 {
-		background-position: bottom 5vh right -8vw !important;
+		display: flex;
+		align-items: center;
+		flex-direction: column !important;
+		background-position: bottom 0vh right 0vw !important;
+		.grid-text-6-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-left: 0;
+			padding-top: 2vh;
+		}
 	}
 
 	.grid-text-6 {
-		max-width: 45%;
+		max-width: auto;
 	}
 }
 
