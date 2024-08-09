@@ -4,6 +4,9 @@ import "./styles/AboutGrid.scss";
 import { IoCopyOutline } from "react-icons/io5";
 import Image from "next/image";
 import MainPic from "../../public/Assets/MainPic.png";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
 
 const AboutGrid = () => {
 	const email = "alan.s.zhang@gmail.com";
