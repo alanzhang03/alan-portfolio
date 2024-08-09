@@ -97,7 +97,7 @@
 		flex-direction: column;
 		gap: 3vh;
 		.grid-row-2-col-1-1 {
-			height: 30vh;
+			height: 20vh;
 			width: 30vw;
 			border-radius: 25px;
 			border: #a893f5 solid 2px;
@@ -109,7 +109,7 @@
 			justify-content: center;
 			text-align: center;
 			flex-direction: column;
-			height: 30vh;
+			height: 40vh;
 			width: 30vw;
 			border-radius: 25px;
 			border: #a893f5 solid 2px;
@@ -136,7 +136,6 @@
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding-top: 4vh;
 	margin-left: 2vw;
 	margin-right: 2vw;
 }
