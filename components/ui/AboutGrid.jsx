@@ -2,6 +2,8 @@
 import React from "react";
 import "./styles/AboutGrid.scss";
 import { IoCopyOutline } from "react-icons/io5";
+import Image from "next/image";
+import MainPic from "../../public/Assets/MainPic.png";
 
 const AboutGrid = () => {
 	const email = "alan.s.zhang@gmail.com";
@@ -21,7 +23,14 @@ const AboutGrid = () => {
 						</p>
 					</div>
 					<div className="grid-row-1-col-2">
-						<div className="grid-row-1-col-2-1">2nd Grid</div>
+						<div className="grid-row-1-col-2-1">
+							<p className="grid-text-2">Flexible, Responsible, Available.</p>
+							<Image
+								className="main-pic"
+								src={MainPic}
+								alt="Picture of the author"
+							/>
+						</div>
 						<div className="grid-row-1-col-2-2">3rd Grid</div>
 					</div>
 				</div>
