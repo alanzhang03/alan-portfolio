@@ -32,9 +32,12 @@ const AboutGrid = () => {
 							/>
 						</div>
 						<div className="grid-row-1-col-2-2">
-							<p className="grid-text-3">
-								Constantly improving my <span> Tech Stack.</span>
-							</p>
+							<div className="grid-text-3-container">
+								<p style={{ color: "#d5cbe5" }}>Constantly improving my </p>
+								<p className="grid-text-3">
+									<span> Tech Stack.</span>
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
