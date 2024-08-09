@@ -9,6 +9,7 @@ const TextSlider = () => {
 	const firstText = useRef(null);
 	const secondText = useRef(null);
 	const slider = useRef(null);
+	const sliderContainer = useRef(null); // New ref for the container
 	let xPercent = 0;
 	let direction = -1;
 
@@ -17,13 +18,13 @@ const TextSlider = () => {
 
 		gsap.to(slider.current, {
 			scrollTrigger: {
-				trigger: document.documentElement,
+				trigger: sliderContainer.current, // Updated trigger to the container
 
 				scrub: 0.5,
 
-				start: 0,
+				start: "top bottom", // Start when the top of the container hits the bottom of the viewport
 
-				end: window.innerHeight,
+				end: "bottom top", // End when the bottom of the container hits the top of the viewport
 
 				onUpdate: (e) => (direction = e.direction * -1),
 			},
@@ -47,12 +48,14 @@ const TextSlider = () => {
 
 		requestAnimationFrame(animate);
 
-		xPercent += 0.03 * direction;
+		xPercent += 0.05 * direction;
 	};
 
 	return (
 		<main className="text-slider">
-			<div className="slider-container">
+			<div ref={sliderContainer} className="slider-container">
+				{" "}
+				{/* Added ref to the container */}
 				<div ref={slider} className="slider">
 					<p className="text-slider-text" ref={firstText}>
 						Crafting Visions Into Realities -
