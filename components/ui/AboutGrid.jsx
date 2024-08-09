@@ -28,7 +28,11 @@ const AboutGrid = () => {
 
 				<div className="grid-row-2">
 					<div className="grid-row-2-col-1">
-						<div className="grid-row-2-col-1-1">4th grid</div>
+						<div className="grid-row-2-col-1-1">
+							<p className="grid-text-4">
+								Tech Enthusiast with a passion for development.
+							</p>
+						</div>
 						<div className="grid-row-2-col-1-2">
 							<p className="grid-text-5">
 								Contact me if you are interested in starting a project!

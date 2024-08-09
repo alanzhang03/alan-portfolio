@@ -102,6 +102,11 @@
 			border-radius: 25px;
 			border: #a893f5 solid 2px;
 			transition: transform 0.3s;
+			background-image: url(../../../public/Assets/htmlVectorNoBg.png);
+			background-size: 30%;
+			background-repeat: no-repeat;
+			background-position: bottom -8vh right 2vw;
+			background-color: #101010;
 		}
 		.grid-row-2-col-1-2 {
 			display: flex;
@@ -113,10 +118,10 @@
 			width: 30vw;
 			border-radius: 25px;
 			border: #a893f5 solid 2px;
-			transition: transform 0.3s;
+			transition: transform 0.5s;
 			background: linear-gradient(135deg, #6e00ff, #330099, #ff00ff);
 			background-size: 300% 300%;
-			animation: gradientAnimation 20s ease infinite;
+			animation: gradientAnimation 10s ease infinite;
 		}
 	}
 
@@ -127,6 +132,16 @@
 		border: #a893f5 solid 2px;
 		transition: transform 0.3s;
 	}
+}
+
+.grid-text-4 {
+	display: flex;
+	margin-left: 2vw;
+	margin-top: 4vh;
+	justify-content: center;
+	color: white;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 .grid-text-5 {
@@ -160,7 +175,7 @@
 }
 
 .grid-5-button {
-	background-color: rgba(2, 4, 25, 255);
+	background-color: #101010;
 	color: white;
 	height: 5vh;
 	width: 12vw;
