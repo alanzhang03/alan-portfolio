@@ -265,10 +265,23 @@
 }
 
 @media (min-width: 1800px) {
+	.about-me-description,
+	.purple-text-description {
+		font-size: 1vw;
+	}
 }
 
 @media (max-width: 1799px) and (min-width: 900px) {
+	.grid-text-2,
+	.grid-text-4,
+	.grid-text-5 {
+		font-size: 1rem;
+	}
 }
 
 @media (max-width: 899px) {
+	.about-me-description,
+	.purple-text-description {
+		font-size: 2vw;
+	}
 }
