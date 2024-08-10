@@ -1,0 +1,123 @@
+.react-calendar-heatmap {
+	fill: #ffffff !important;
+}
+.react-calendar-heatmap {
+	fill: #d0b5fc !important;
+}
+.react-calendar-heatmap {
+	fill: #a371f7 !important;
+}
+.react-calendar-heatmap {
+	fill: #6e40c9 !important;
+}
+.react-calendar-heatmap {
+	fill: #482070 !important;
+}
+
+.react-calendar-heatmap text {
+	fill: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.heatmap-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	color: white;
+}
+
+.heatmap-title {
+	font-size: 3.5rem;
+	color: #cd54eb;
+}
+
+.click-to-github {
+	font-size: 1.2rem;
+	color: #cd54eb;
+}
+.click-to-github:hover {
+	transform: scale(1.05);
+	color: #a371f7;
+	transition-duration: 0.5s;
+	cursor: pointer;
+}
+
+.react-calendar-heatmap .react-calendar-heatmap-tooltip {
+	color: white;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 4px;
+	padding: 4px 8px;
+}
+
+.heatmap-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.react-calendar-heatmap {
+	transform: scale(0.65);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.react-calendar-heatmap
+	.react-calendar-heatmap-week
+	.react-calendar-heatmap-day {
+	width: 10px;
+	height: 10px;
+	margin: 2px;
+}
+
+.heatmap-info {
+	display: flex;
+	justify-content: space-between;
+	width: 64vw;
+	margin-top: 20px;
+	font-size: 1.2rem;
+}
+
+.total-contributions {
+	margin-left: 20px;
+}
+
+.contribution-legend {
+	display: flex;
+	align-items: center;
+	padding-top: 0;
+}
+
+.color-empty {
+	fill: #ffffff !important;
+}
+
+.color-github-1 {
+	fill: #d4bff9 !important;
+	background-color: #d0b5fc !important;
+}
+
+.color-github-2 {
+	fill: #a371f7 !important;
+	background-color: #a371f7 !important;
+}
+
+.color-github-3 {
+	fill: #6e40c9 !important;
+	background-color: #6e40c9 !important;
+}
+
+.color-github-4 {
+	fill: #482070 !important;
+	background-color: #482070 !important;
+}
+.legend-color {
+	width: 20px;
+	height: 20px;
+	margin: 0 4px;
+	border-radius: 3px;
+	display: inline-block;
+	background-color: white;
+}

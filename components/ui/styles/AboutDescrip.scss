@@ -15,6 +15,7 @@
 		position: relative;
 		&:hover {
 			cursor: pointer;
+			color: #cd54eb;
 		}
 		&::after {
 			content: "";
