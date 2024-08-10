@@ -29,13 +29,14 @@
 }
 
 .heatmap-title {
-	font-size: 3.5rem;
+	font-size: 2rem;
 	color: #cd54eb;
 }
 
 .click-to-github {
 	font-size: 1.2rem;
 	color: #cd54eb;
+	transition: 0.5s;
 }
 .click-to-github:hover {
 	transform: scale(1.05);
@@ -58,7 +59,7 @@
 }
 
 .react-calendar-heatmap {
-	transform: scale(0.65);
+	transform: scale(1);
 	display: flex;
 	justify-content: center;
 	align-items: center;
