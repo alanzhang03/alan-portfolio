@@ -9,8 +9,34 @@
 	gap: 5vw;
 }
 
-.test-grid {
+.project-grid {
 	height: 50vh;
 	width: 35vw;
-	border: white solid 10px;
+	border: white solid 3px;
+	border-radius: 10px;
+}
+
+.projects-images {
+	height: 40vh;
+	width: 30vw;
+	border-radius: 10px;
+}
+
+.project-title {
+}
+
+.project-description {
+}
+
+.project-tech-link-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.tech-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.project-nav {
 }
