@@ -1,0 +1,17 @@
+.projects-card-display {
+	color: white;
+}
+
+.projects-display-container {
+	max-width: 90%;
+	display: grid;
+
+	grid-template-columns: repeat(2, auto);
+	gap: 5vw;
+}
+
+.test-grid {
+	height: 50vh;
+	width: 35vw;
+	border: white solid 10px;
+}
