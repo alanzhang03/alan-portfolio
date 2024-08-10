@@ -66,7 +66,9 @@ const ContributionsHeatmap = () => {
 
 	return (
 		<div className="heatmap-container">
-			<h2 className="heatmap-title">Days I've Coded</h2>
+			<h2 className="heatmap-title">
+				Days I've <span style={{ color: "#a371f7" }}>Coded</span>
+			</h2>
 
 			<div className="heatmap-wrapper">
 				<CalendarHeatmap

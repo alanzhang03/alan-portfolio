@@ -90,7 +90,10 @@ const Skills = () => {
 
 	return (
 		<section id="skills" className="main-skills">
-			<h1 className="skills-heading">Services and Skills</h1>
+			<h1 className="skills-heading">
+				<span style={{ color: "#a371f7" }}>Services </span>and
+				<span style={{ color: "#a371f7" }}> Skills</span>
+			</h1>
 			<div id="gsap-grid-setup" className="grid-setup-skills">
 				<div id="gsap-item-1" className="skillItem item-1">
 					<h2>Custom Software Development</h2>
@@ -122,7 +125,9 @@ const Skills = () => {
 				</div>
 			</div>
 			<div className="Skills">
-				<h1>Programming Languages</h1>
+				<h1>
+					Programming <span style={{ color: "#a371f7" }}>Languages</span>
+				</h1>
 				<div className="skills-grid">
 					{skills.map((skill) => (
 						<div id="gsap-skill-item" className="skill-item" key={skill.name}>
