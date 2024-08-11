@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import "./styles/ProjectsCardDisplay.scss";
 import Image from "next/image";
@@ -78,11 +80,31 @@ const ProjectsCardDisplay = () => {
 					<p className="project-description">{project.Description}</p>
 					<div className="project-tech-link-container">
 						<div className="tech-container">
-							<Image className="image" src={project.tech1} alt="Tech logo 1" />
-							<Image className="image" src={project.tech2} alt="Tech logo 2" />
-							<Image className="image" src={project.tech3} alt="Tech logo 3" />
-							<Image className="image" src={project.tech4} alt="Tech logo 4" />
-							<Image className="image" src={project.tech5} alt="Tech logo 5" />
+							<Image
+								className="image-icon"
+								src={project.tech1}
+								alt="Tech logo 1"
+							/>
+							<Image
+								className="image-icon"
+								src={project.tech2}
+								alt="Tech logo 2"
+							/>
+							<Image
+								className="image-icon"
+								src={project.tech3}
+								alt="Tech logo 3"
+							/>
+							<Image
+								className="image-icon"
+								src={project.tech4}
+								alt="Tech logo 4"
+							/>
+							<Image
+								className="image-icon"
+								src={project.tech5}
+								alt="Tech logo 5"
+							/>
 						</div>
 						<p className="project-nav">
 							Check Live Site <FaLocationArrow className="location-arrow" />
@@ -95,8 +117,6 @@ const ProjectsCardDisplay = () => {
 
 	return (
 		<section className="projects-card-display">
-			<div>ProjectsCardDisplay</div>
-
 			<div className="projects-display-container">{projectDivs}</div>
 		</section>
 	);
