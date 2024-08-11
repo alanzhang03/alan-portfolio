@@ -4,7 +4,11 @@ import Image from "next/image";
 import TicTacToeImg from "../../public/Assets/TicTacToe.png";
 import { FaLocationArrow } from "react-icons/fa6";
 import ReactLogo from "../../public/Assets/reactLogo.svg";
-import jsLogo from "../../public/Assets/jsLogo.svg";
+import JsLogo from "../../public/Assets/JsLogo.svg";
+import ThreeLogo from "../../public/Assets/threeLogo.svg";
+import GsapLogo from "../../public/Assets/gsapLogo.svg";
+import NextLogo from "../../public/Assets/nextLogo.svg";
+import SassLogo from "../../public/Assets/sassLogo.svg";
 
 const ProjectsCardDisplay = () => {
 	const projects = [
@@ -16,10 +20,10 @@ const ProjectsCardDisplay = () => {
 			GitHubLink: "https://github.com/alanzhang03/tictactoe",
 			Image: TicTacToeImg,
 			tech1: ReactLogo,
-			tech2: jsLogo,
-			tech3: "",
-			tech4: "",
-			tech5: "",
+			tech2: JsLogo,
+			tech3: GsapLogo,
+			tech4: NextLogo,
+			tech5: SassLogo,
 		},
 		{
 			Title: "Apple website clone",
@@ -27,11 +31,11 @@ const ProjectsCardDisplay = () => {
 			Link: "https://apple-website-clone-46re.onrender.com/",
 			GitHubLink: "https://github.com/alanzhang03/apple_website",
 			Image: "",
-			tech1: "",
-			tech2: "",
-			tech3: "",
-			tech4: "",
-			tech5: "",
+			tech1: ReactLogo,
+			tech2: ThreeLogo,
+			tech3: JsLogo,
+			tech4: GsapLogo,
+			tech5: NextLogo,
 		},
 		{
 			Title: "CV Builder",
@@ -74,11 +78,11 @@ const ProjectsCardDisplay = () => {
 					<p className="project-description">{project.Description}</p>
 					<div className="project-tech-link-container">
 						<div className="tech-container">
-							<Image src={project.tech1} alt="Tech logo 1" />
-							<Image src={project.tech2} alt="Tech logo 2" />
-							<Image src={project.tech3} alt="Tech logo 3" />
-							<Image src={project.tech4} alt="Tech logo 4" />
-							<Image src={project.tech5} alt="Tech logo 5" />
+							<Image className="image" src={project.tech1} alt="Tech logo 1" />
+							<Image className="image" src={project.tech2} alt="Tech logo 2" />
+							<Image className="image" src={project.tech3} alt="Tech logo 3" />
+							<Image className="image" src={project.tech4} alt="Tech logo 4" />
+							<Image className="image" src={project.tech5} alt="Tech logo 5" />
 						</div>
 						<p className="project-nav">
 							Check Live Site <FaLocationArrow className="location-arrow" />
