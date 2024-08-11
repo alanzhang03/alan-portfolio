@@ -10,7 +10,7 @@
 }
 
 .project-grid {
-	height: 50vh;
+	height: 60vh;
 	width: 35vw;
 	border: white solid 3px;
 	border-radius: 10px;
@@ -23,9 +23,12 @@
 }
 
 .project-title {
+	font-size: 2rem;
 }
 
 .project-description {
+	color: #bbb;
+	font-weight: bold;
 }
 
 .project-tech-link-container {
@@ -36,7 +39,14 @@
 .tech-container {
 	display: flex;
 	flex-direction: row;
+
 }
 
 .project-nav {
+	color: #a893f5;
+}
+
+.location-arrow {
+	margin-left: 0.5rem;
+	font-size: 0.9rem;
 }

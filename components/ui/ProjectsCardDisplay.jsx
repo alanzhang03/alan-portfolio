@@ -2,6 +2,9 @@ import React from "react";
 import "./styles/ProjectsCardDisplay.scss";
 import Image from "next/image";
 import TicTacToeImg from "../../public/Assets/TicTacToe.png";
+import { FaLocationArrow } from "react-icons/fa6";
+import ReactLogo from "../../public/Assets/reactLogo.svg";
+import jsLogo from "../../public/Assets/jsLogo.svg";
 
 const ProjectsCardDisplay = () => {
 	const projects = [
@@ -12,8 +15,8 @@ const ProjectsCardDisplay = () => {
 			Link: "https://alantictactoe.onrender.com/",
 			GitHubLink: "https://github.com/alanzhang03/tictactoe",
 			Image: TicTacToeImg,
-			tech1: "",
-			tech2: "",
+			tech1: ReactLogo,
+			tech2: jsLogo,
 			tech3: "",
 			tech4: "",
 			tech5: "",
@@ -21,7 +24,7 @@ const ProjectsCardDisplay = () => {
 		{
 			Title: "Apple website clone",
 			Description: "Apple Iphone webpage clone",
-			projectLink: "https://apple-website-clone-46re.onrender.com/",
+			Link: "https://apple-website-clone-46re.onrender.com/",
 			GitHubLink: "https://github.com/alanzhang03/apple_website",
 			Image: "",
 			tech1: "",
@@ -60,29 +63,27 @@ const ProjectsCardDisplay = () => {
 		return (
 			<div key={index}>
 				<div className="project-grid">
-					<Image
-						className="projects-images"
-						src={project.Image}
-						alt="Picture of projects"
-					></Image>
+					{project.Image && (
+						<Image
+							className="projects-images"
+							src={project.Image}
+							alt={`${project.Title} image`}
+						/>
+					)}
 					<h1 className="project-title">{project.Title}</h1>
 					<p className="project-description">{project.Description}</p>
 					<div className="project-tech-link-container">
 						<div className="tech-container">
-							{project.tech1}
-							{project.tech2}
-							{project.tech3}
-							{project.tech4}
-							{project.tech5}
-
+							<Image src={project.tech1} alt="Tech logo 1" />
+							<Image src={project.tech2} alt="Tech logo 2" />
+							<Image src={project.tech3} alt="Tech logo 3" />
+							<Image src={project.tech4} alt="Tech logo 4" />
+							<Image src={project.tech5} alt="Tech logo 5" />
 						</div>
-						<p className="project-nav">Check Live Site</p>
+						<p className="project-nav">
+							Check Live Site <FaLocationArrow className="location-arrow" />
+						</p>
 					</div>
-
-					{/*
-					{project.Link}
-                    {project.GitHubLink}
-					*/}
 				</div>
 			</div>
 		);
