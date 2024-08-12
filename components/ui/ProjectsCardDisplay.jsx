@@ -99,55 +99,63 @@ const ProjectsCardDisplay = () => {
 	const projectDivs = projects.map((project, index) => {
 		return (
 			<PinContainer key={index} title={project.Title} href={project.Link}>
-				<div className="project-grid">
-					<div className="project-image-container">
-						<Image
-							className="projects-images"
-							src={project.Image}
-							alt={`${project.Title} image`}
-						/>
-					</div>
-					<div className="project-text-container">
-						<h1 className="project-title">{project.Title}</h1>
-						<p className="project-description">{project.Description}</p>
-					</div>
-					<div className="project-tech-link-container">
-						<div className="tech-container">
+				<a href={project.Link} target="_blank" rel="noopener noreferrer">
+					<div className="project-grid">
+						<div className="project-image-container">
 							<Image
-								className="image-icon"
-								src={project.tech1}
-								alt="Tech logo 1"
+								className="projects-images"
+								src={project.Image}
+								alt={`${project.Title} image`}
 							/>
-							<Image
-								className="image-icon"
-								src={project.tech2}
-								alt="Tech logo 2"
-							/>
-							<Image
-								className="image-icon"
-								src={project.tech3}
-								alt="Tech logo 3"
-							/>
-							<Image
-								className="image-icon"
-								src={project.tech4}
-								alt="Tech logo 4"
-							/>
-							{project.tech5 && (
-								<Image
-									className="image-icon"
-									src={project.tech5}
-									alt="Tech logo 5"
-								/>
-							)}
 						</div>
-						<p className="project-nav">
-							<a target="_blank" href={project.Link}>
+						<div className="project-text-container">
+							<h1 className="project-title">{project.Title}</h1>
+							<p className="project-description">{project.Description}</p>
+						</div>
+						<div className="project-tech-link-container">
+							<div className="tech-container">
+								{project.tech1 && (
+									<Image
+										className="image-icon"
+										src={project.tech1}
+										alt="Tech logo 1"
+									/>
+								)}
+								{project.tech2 && (
+									<Image
+										className="image-icon"
+										src={project.tech2}
+										alt="Tech logo 2"
+									/>
+								)}
+								{project.tech3 && (
+									<Image
+										className="image-icon"
+										src={project.tech3}
+										alt="Tech logo 3"
+									/>
+								)}
+								{project.tech4 && (
+									<Image
+										className="image-icon"
+										src={project.tech4}
+										alt="Tech logo 4"
+									/>
+								)}
+								{project.tech5 && (
+									<Image
+										className="image-icon"
+										src={project.tech5}
+										alt="Tech logo 5"
+									/>
+								)}
+							</div>
+							<p className="project-nav">
 								Check Live Site <FaLocationArrow className="location-arrow" />
-							</a>
-						</p>
+							</p>
+						</div>
 					</div>
-				</div>
+				</a>
 			</PinContainer>
 		);
 	});
