@@ -1,0 +1,149 @@
+.relative {
+	position: relative;
+}
+
+.z-50 {
+	z-index: 50;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.pin-content {
+	position: relative;
+	padding: 1rem;
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	border-radius: 1.5rem;
+	transition: transform 0.4s ease;
+	overflow: hidden;
+
+	.group-pin:hover & {
+		border-color: rgba(255, 255, 255, 0.2);
+		transform: scale(0.95);
+	}
+}
+
+.pin-perspective-container {
+	position: relative;
+	pointer-events: auto;
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	z-index: 60;
+	transition: opacity 0.3s ease;
+
+	.group-pin:hover & {
+		opacity: 1;
+	}
+}
+
+.pin-perspective-content {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin-top: -1.75rem;
+}
+
+.pin-link {
+	position: relative;
+	display: flex;
+	align-items: center;
+	z-index: 10;
+	border-radius: 9999px;
+	background-color: #1c1c1c;
+	padding: 0.125rem 1rem;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	text-decoration: none;
+	color: white;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+	&:hover {
+		background-color: #333;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+	}
+}
+
+.pin-title {
+	color: white;
+	font-size: 0.75rem;
+	font-weight: bold;
+	z-index: 20;
+	padding: 0.125rem 0;
+}
+
+.pin-highlight {
+	position: absolute;
+	bottom: 0;
+	left: 1.125rem;
+	height: 1px;
+	width: calc(100% - 2.25rem);
+	background: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0),
+		rgba(46, 204, 113, 0.9),
+		rgba(0, 0, 0, 0)
+	);
+	transition: opacity 0.3s ease;
+	opacity: 0;
+}
+
+.pin-circle {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 11.25rem;
+	width: 11.25rem;
+	border-radius: 50%;
+	background-color: rgba(0, 182, 255, 0.08);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+	transform: translate(-50%, -50%);
+	transition: transform 0.3s ease;
+}
+
+.pin-line {
+	position: absolute;
+	right: 50%;
+	bottom: 50%;
+	background: linear-gradient(to bottom, transparent, #00bfff);
+	transform: translateY(14px);
+	width: 1px;
+	height: 20rem;
+	transition: height 0.3s ease;
+
+	&.pin-line-blur {
+		filter: blur(2px);
+	}
+
+	.group-pin:hover & {
+		height: 40rem;
+	}
+}
+
+.pin-dot {
+	position: absolute;
+	right: 50%;
+	bottom: 50%;
+	transform: translateY(14px);
+	background-color: #00bfff;
+	border-radius: 50%;
+	z-index: 40;
+	transition: transform 0.3s ease;
+
+	&.pin-dot-blur {
+		filter: blur(3px);
+		width: 4px;
+		height: 4px;
+	}
+
+	& {
+		width: 2px;
+		height: 2px;
+	}
+}

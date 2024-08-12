@@ -4,14 +4,20 @@ import React from "react";
 import "./styles/ProjectsCardDisplay.scss";
 import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
+import PinContainer from "./PinContainer";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
-//Project Pictures
+gsap.registerPlugin(ScrollTrigger);
+
+// Project Pictures
 import TicTacToeImg from "../../public/Assets/TicTacToe.png";
 import PreviousPort from "../../public/Assets/previousPort.png";
 import CvApp from "../../public/Assets/CvApp.png";
 import AppleClone from "../../public/Assets/AppleClone.png";
 
-//Tech Stack Logos
+// Tech Stack Logos
 import ReactLogo from "../../public/Assets/reactLogo.svg";
 import JsLogo from "../../public/Assets/JsLogo.svg";
 import ThreeLogo from "../../public/Assets/threeLogo.svg";
@@ -24,6 +30,19 @@ import HtmlLogo from "../../public/Assets/HtmlLogo.svg";
 import TailLogo from "../../public/Assets/tailLogo.svg";
 
 const ProjectsCardDisplay = () => {
+	useGSAP(() => {
+		gsap.to(".project-grid", {
+			scrollTrigger: ".project-grid",
+			duration: 2,
+			delay: 0.5,
+			opacity: 1,
+			stagger: {
+				each: 0.25,
+				from: "start",
+			},
+		});
+	}, []);
+
 	const projects = [
 		{
 			Title: "Previous Web Portfolio",
@@ -79,7 +98,7 @@ const ProjectsCardDisplay = () => {
 
 	const projectDivs = projects.map((project, index) => {
 		return (
-			<div key={index}>
+			<PinContainer key={index} title={project.Title} href={project.Link}>
 				<div className="project-grid">
 					<div className="project-image-container">
 						<Image
@@ -89,7 +108,6 @@ const ProjectsCardDisplay = () => {
 						/>
 					</div>
 					<div className="project-text-container">
-						{" "}
 						<h1 className="project-title">{project.Title}</h1>
 						<p className="project-description">{project.Description}</p>
 					</div>
@@ -115,11 +133,13 @@ const ProjectsCardDisplay = () => {
 								src={project.tech4}
 								alt="Tech logo 4"
 							/>
-							<Image
-								className="image-icon"
-								src={project.tech5}
-								alt="Tech logo 5"
-							/>
+							{project.tech5 && (
+								<Image
+									className="image-icon"
+									src={project.tech5}
+									alt="Tech logo 5"
+								/>
+							)}
 						</div>
 						<p className="project-nav">
 							<a target="_blank" href={project.Link}>
@@ -128,7 +148,7 @@ const ProjectsCardDisplay = () => {
 						</p>
 					</div>
 				</div>
-			</div>
+			</PinContainer>
 		);
 	});
 
