@@ -20,6 +20,8 @@ const StarField = ({ numberOfStars = 200 }) => {
 		setStars(newStars);
 	}, [numberOfStars]);
 
+	
+
 	return <div className="star-field">{stars}</div>;
 };
 

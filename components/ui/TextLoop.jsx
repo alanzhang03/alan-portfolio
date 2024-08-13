@@ -109,13 +109,15 @@ const TextLoop = () => {
 	return (
 		<div className="container" ref={containerRef}>
 			<ul className="v-slides">
-				<li className="v-slide">{splitTextToLetters("Websites")}</li>
-				<li className="v-slide">{splitTextToLetters("Plugins")}</li>
-				<li className="v-slide">{splitTextToLetters("Web Apps")}</li>
-				<li className="v-slide">{splitTextToLetters("Portals")}</li>
-				<li className="v-slide">{splitTextToLetters("Communities")}</li>
+				<li className="v-slide">{splitTextToLetters("Web Development")}</li>
+				<li className="v-slide">{splitTextToLetters("Custom Plugins")}</li>
+				<li className="v-slide">
+					{splitTextToLetters("Full-Stack Applications")}
+				</li>
+				<li className="v-slide">{splitTextToLetters("User Portals")}</li>
+				<li className="v-slide">{splitTextToLetters("Community Platforms")}</li>
 				<li className="v-slide">{splitTextToLetters("Digital Marketing")}</li>
-				<li className="v-slide">{splitTextToLetters("Websites")}</li>
+				<li className="v-slide">{splitTextToLetters("Web Development")}</li>
 			</ul>
 		</div>
 	);
