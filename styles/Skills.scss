@@ -41,13 +41,11 @@
 				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 				border: 2px solid #927bea;
 				opacity: 0;
-				scale: 0.1;
+				transition: 0.3s;
 
 				&:hover {
-					opacity: 1;
-					box-shadow: 0 8px 16px #cd54eb;
+					box-shadow: 0 13px 16px #cd54eb;
 					border-color: #cd54eb;
-					border-width: 3px;
 				}
 
 				img {
