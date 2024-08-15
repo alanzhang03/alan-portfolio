@@ -14,11 +14,11 @@ const AboutGrid = () => {
 	useGSAP(() => {
 		gsap.to(".gsap-individual-grids", {
 			scrollTrigger: ".gsap-individual-grids",
-			delay: 0,
+			delay: 3,
 			duration: 2,
 			opacity: 1,
 			stagger: {
-				each: 0.2,
+				each: 0.25,
 				from: "start",
 			},
 		});
@@ -33,7 +33,6 @@ const AboutGrid = () => {
 
 	return (
 		<section>
-
 			<div className="grid-container">
 				<div className="grid-row-1">
 					<div className="gsap-individual-grids" id="grid-row-1-col-1">
