@@ -8,6 +8,10 @@ import "../styles/HomePage.scss";
 import Link from "next/link";
 import { FaArrowDownLong } from "react-icons/fa6";
 import TextLoop from "./ui/TextLoop";
+import Image from "next/image";
+
+//Icons
+import LinkedIn from "../public/Assets/LinkedInHomepage.svg";
 
 const HomePage = () => {
 	useGSAP(() => {
@@ -35,20 +39,53 @@ const HomePage = () => {
 		});
 	}, []);
 
+	const socialLinks = [
+		{
+			Title: "GitHub",
+			Icon: "",
+			Link: "",
+		},
+		{
+			Title: "LinkedIn",
+			Icon: LinkedIn,
+			Link: "",
+		},
+		{
+			Title: "Email",
+			Icon: "",
+			Link: "",
+		},
+		{
+			Title: "Twitter",
+			Icon: "",
+			Link: "",
+		},
+		{
+			Title: "Instagram",
+			Icon: "",
+			Link: "",
+		},
+	];
+
+	const mapSocialLinks = socialLinks.map((socials) => {
+		return (
+			<div className="social-box">
+				<Image className="home-page-icon" src={socials.Icon}></Image>
+				<p className="socials-text">{socials.Title}</p>
+			</div>
+		);
+	});
+
 	return (
 		<section id="homePage" className="main-homepage">
 			<p className="mini-header">DYNAMIC WEB EXPERIENCE WITH NEXT.JS</p>
-			<h1 id="port-intro-gsap" className="port-intro">
-				<span>Crafting </span>
-				<span>Concepts </span>
-				<span>into </span>
-				<span>Effortless </span>
-				<span className="purple-text"> User Interactions</span>
+			<h1 className="home-page-header">Welcome to my Portfolio</h1>
+			<h1 className="home-page-header">
+				I'm <span className="home-page-name">Alan Zhang</span>
 			</h1>
-			<p id="small-intro-gsap" className="small-intro">
-				Hi! I'm <span className="purple-text"> Alan</span>, an aspiring
-				<span className="purple-text"> Full-Stack Developer</span>
-			</p>
+
+			<div className="socials-container">{mapSocialLinks}</div>
+
 			<nav id="learn-more-container-gsap" className="learn-more-container">
 				<Link className="learn-more" href="#about">
 					Learn More <FaLocationArrow className="location-arrow" />
