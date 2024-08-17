@@ -39,7 +39,7 @@ const technologies = [
 const Skills = () => {
 	useGSAP(() => {
 		gsap.to("#gsap-skill-item", {
-			scrollTrigger: "#skill-item",
+			scrollTrigger: ".skill-item",
 			delay: 0.5,
 			opacity: 1,
 			scale: 1,
@@ -51,7 +51,7 @@ const Skills = () => {
 		});
 
 		gsap.to("#gsap-technology-item", {
-			scrollTrigger: "#technology-item",
+			scrollTrigger: ".technology-item",
 			delay: 0.5,
 			opacity: 1,
 			scale: 1,
@@ -72,7 +72,6 @@ const Skills = () => {
 				<div className="skills-grid">
 					{skills.map((skill) => (
 						<div id="gsap-skill-item" className="skill-item" key={skill.name}>
-						
 							<img src={skill.icon} alt={skill.name} />
 							<p className="skill-name">{skill.name}</p>
 						</div>

@@ -7,14 +7,13 @@ import "./styles/AboutDescrip.scss";
 import Link from "next/link";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutDescrip = () => {
 	useGSAP(() => {
 		gsap.to("#gsap-about-me-description span", {
 			scrollTrigger: ".about-me-description",
-			duration: 2,
+			duration: 1.75,
 			delay: 0.5,
 			opacity: 1,
 			stagger: {
@@ -78,7 +77,6 @@ const AboutDescrip = () => {
 					<span className="number">15</span>+ Completed Projects
 				</div>
 			</div>
-		
 		</>
 	);
 };
