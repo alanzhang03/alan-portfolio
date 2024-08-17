@@ -12,6 +12,11 @@ import Image from "next/image";
 
 //Icons
 import LinkedIn from "../public/Assets/LinkedInHomepage.svg";
+import { FaGithub } from "react-icons/fa6";
+import { CiLinkedin } from "react-icons/ci";
+import { MdOutlineEmail } from "react-icons/md";
+import { CiTwitter } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa6";
 
 const HomePage = () => {
 	useGSAP(() => {
@@ -42,27 +47,27 @@ const HomePage = () => {
 	const socialLinks = [
 		{
 			Title: "GitHub",
-			Icon: "",
+			Icon: <FaGithub />,
 			Link: "",
 		},
 		{
 			Title: "LinkedIn",
-			Icon: LinkedIn,
+			Icon: <CiLinkedin />,
 			Link: "",
 		},
 		{
 			Title: "Email",
-			Icon: "",
+			Icon: <MdOutlineEmail />,
 			Link: "",
 		},
 		{
 			Title: "Twitter",
-			Icon: "",
+			Icon: <CiTwitter />,
 			Link: "",
 		},
 		{
 			Title: "Instagram",
-			Icon: "",
+			Icon: <FaInstagram />,
 			Link: "",
 		},
 	];
@@ -70,7 +75,7 @@ const HomePage = () => {
 	const mapSocialLinks = socialLinks.map((socials) => {
 		return (
 			<div className="social-box">
-				<Image className="home-page-icon" src={socials.Icon}></Image>
+				<div className="home-page-icon">{socials.Icon}</div>
 				<p className="socials-text">{socials.Title}</p>
 			</div>
 		);
@@ -86,11 +91,6 @@ const HomePage = () => {
 
 			<div className="socials-container">{mapSocialLinks}</div>
 
-			<nav id="learn-more-container-gsap" className="learn-more-container">
-				<Link className="learn-more" href="#about">
-					Learn More <FaLocationArrow className="location-arrow" />
-				</Link>
-			</nav>
 			<TextLoop />
 			<FaArrowDownLong id="gsap-arrow-down" className="arrow-down" />
 		</section>

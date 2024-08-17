@@ -25,13 +25,16 @@
 	justify-content: center;
 	border: #a893f5 2px solid;
 	border-radius: 5px;
-	height: 3rem;
+	height: 4rem;
 	width: auto;
 }
 
 .home-page-icon {
-	margin-left: 1vw;
-	margin-right: 0.5vw;
+	display: flex;
+	margin-left: 0.5vw;
+	margin-right: 0.3vw;
+	color: white;
+	font-size: 2.5rem;
 }
 
 .socials-text {
@@ -59,10 +62,6 @@
 	color: #a893f5;
 	font-size: 8rem;
 	font-weight: 500;
-}
-
-.home-page-icon {
-	color: #a893f5;
 }
 
 .learn-more-container {
