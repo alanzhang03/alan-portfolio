@@ -13,11 +13,11 @@ const AboutDescrip = () => {
 	useGSAP(() => {
 		gsap.to("#gsap-about-me-description span", {
 			scrollTrigger: ".about-me-description",
-			duration: 1.75,
+			duration: 1.5,
 			delay: 0.5,
 			opacity: 1,
 			stagger: {
-				each: 0.175,
+				each: 0.165,
 				from: "start",
 			},
 		});
@@ -25,7 +25,7 @@ const AboutDescrip = () => {
 		gsap.to(".section-2-divider span", {
 			scrollTrigger: ".section-2-divider",
 			duration: 2,
-			delay: 2.6,
+			delay: 2.5,
 			opacity: 1,
 			stagger: {
 				each: 0.175,
@@ -71,10 +71,10 @@ const AboutDescrip = () => {
 					<span className="number">3</span>+ Years Of Experience
 				</div>
 				<div className="section-2-divider">
-					<span className="number">100</span>% Client Satisfaction
+					<span className="number">15</span>+ Completed Projects
 				</div>
 				<div className="section-2-divider">
-					<span className="number">15</span>+ Completed Projects
+					<span className="number">2,000</span>+ Hours of Coding
 				</div>
 			</div>
 		</>
