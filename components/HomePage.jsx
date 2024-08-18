@@ -19,6 +19,27 @@ import { FaInstagram } from "react-icons/fa6";
 
 const HomePage = () => {
 	useGSAP(() => {
+		gsap.from(".home-page-header", {
+			delay: 0.5,
+			duration: 0.75,
+			y: -200,
+			opacity: 0,
+		});
+		gsap.from(".home-page-header-2", {
+			delay: 1.5,
+			duration: 0.5,
+			x: 100,
+			opacity: 0,
+		});
+
+		gsap.from(".home-page-header-2 span", {
+			delay: 1.5,
+			opacity: 0,
+			stagger: {
+				each: 0.35,
+			},
+		});
+
 		gsap.to(".social-box", {
 			delay: 3,
 			opacity: 1,
@@ -79,8 +100,11 @@ const HomePage = () => {
 		<section id="homePage" className="main-homepage">
 			<p className="mini-header">DYNAMIC WEB EXPERIENCE WITH NEXT.JS</p>
 			<h1 className="home-page-header">Welcome to my Portfolio</h1>
-			<h1 className="home-page-header">
-				I'm <span className="home-page-name">Alan Zhang</span>
+			<h1 className="home-page-header-2">
+				I'm{" "}
+				<span className="home-page-name">
+					<span>Alan </span> <span>Zhang</span>
+				</span>
 			</h1>
 
 			<div className="socials-container">{mapSocialLinks}</div>
