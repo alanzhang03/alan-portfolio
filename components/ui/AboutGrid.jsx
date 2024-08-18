@@ -14,7 +14,7 @@ const AboutGrid = () => {
 	useGSAP(() => {
 		gsap.to(".gsap-individual-grids", {
 			scrollTrigger: ".gsap-individual-grids",
-			delay: 3,
+			delay: 1,
 			duration: 2,
 			opacity: 1,
 			stagger: {

@@ -59,26 +59,31 @@ const HomePage = () => {
 
 	const socialLinks = [
 		{
+			Index: "1",
 			Title: "GitHub",
 			Icon: <FaGithub />,
 			Link: "https://github.com/alanzhang03",
 		},
 		{
+			Index: "2",
 			Title: "LinkedIn",
 			Icon: <CiLinkedin />,
 			Link: "https://www.linkedin.com/in/alan-zhang-a254b8233/",
 		},
 		{
+			Index: "3",
 			Title: "Email",
 			Icon: <MdOutlineEmail />,
 			Link: "mailto:alan.s.zhang04@gmail.com",
 		},
 		{
+			Index: "4",
 			Title: "Twitter",
 			Icon: <CiTwitter />,
 			Link: "https://twitter.com/cloudeelol",
 		},
 		{
+			Index: "5",
 			Title: "Instagram",
 			Icon: <FaInstagram />,
 			Link: "https://www.instagram.com/_alanzhang_3/",
@@ -87,7 +92,12 @@ const HomePage = () => {
 
 	const mapSocialLinks = socialLinks.map((socials) => {
 		return (
-			<a target="_blank" href={socials.Link} rel="noreferrer">
+			<a
+				key={socials.Index}
+				target="_blank"
+				href={socials.Link}
+				rel="noreferrer"
+			>
 				<div className="social-box">
 					<div className="home-page-icon">{socials.Icon}</div>
 					<p className="socials-text">{socials.Title}</p>
