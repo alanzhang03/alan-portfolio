@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./page.module.css";
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
@@ -8,6 +10,8 @@ import Footer from "@/components/Footer";
 import HomePage from "@/components/HomePage";
 import StarField from "@/components/ui/StarField";
 
+import "./testPage.scss";
+
 export default function Home() {
 	return (
 		<main className={styles.main}>
@@ -17,6 +21,7 @@ export default function Home() {
 			<About />
 			<Skills />
 			<Projects />
+
 			<Contact />
 			<Footer />
 		</main>
