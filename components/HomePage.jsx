@@ -8,11 +8,10 @@ import "../styles/HomePage.scss";
 import Link from "next/link";
 import { FaArrowDownLong } from "react-icons/fa6";
 import TextLoop from "./ui/TextLoop";
-import Image from "next/image";
 
 //Icons
 import LinkedIn from "../public/Assets/LinkedInHomepage.svg";
-import { FaGithub } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { MdOutlineEmail } from "react-icons/md";
 import { CiTwitter } from "react-icons/ci";
@@ -20,26 +19,19 @@ import { FaInstagram } from "react-icons/fa6";
 
 const HomePage = () => {
 	useGSAP(() => {
-		gsap.to("#port-intro-gsap span", {
-			duration: 2,
+		gsap.to(".social-box", {
+			delay: 3,
 			opacity: 1,
+			duration: 1,
 			stagger: {
-				each: 0.3,
+				each: 0.2,
 				from: "start",
 			},
 		});
-		gsap.to("#small-intro-gsap", {
-			opacity: 1,
-			delay: 2,
-			duration: 1.5,
-		});
-		gsap.to("#learn-more-container-gsap", {
-			delay: 3,
-			opacity: 1,
-		});
+
 		gsap.from("#gsap-arrow-down", {
 			opacity: 0,
-			delay: 4,
+			delay: 5,
 			duration: 2,
 		});
 	}, []);
@@ -48,36 +40,38 @@ const HomePage = () => {
 		{
 			Title: "GitHub",
 			Icon: <FaGithub />,
-			Link: "",
+			Link: "https://github.com/alanzhang03",
 		},
 		{
 			Title: "LinkedIn",
 			Icon: <CiLinkedin />,
-			Link: "",
+			Link: "https://www.linkedin.com/in/alan-zhang-a254b8233/",
 		},
 		{
 			Title: "Email",
 			Icon: <MdOutlineEmail />,
-			Link: "",
+			Link: "mailto:alan.s.zhang04@gmail.com",
 		},
 		{
 			Title: "Twitter",
 			Icon: <CiTwitter />,
-			Link: "",
+			Link: "https://twitter.com/cloudeelol",
 		},
 		{
 			Title: "Instagram",
 			Icon: <FaInstagram />,
-			Link: "",
+			Link: "https://www.instagram.com/_alanzhang_3/",
 		},
 	];
 
 	const mapSocialLinks = socialLinks.map((socials) => {
 		return (
-			<div className="social-box">
-				<div className="home-page-icon">{socials.Icon}</div>
-				<p className="socials-text">{socials.Title}</p>
-			</div>
+			<a target="_blank" href={socials.Link} rel="noreferrer">
+				<div className="social-box">
+					<div className="home-page-icon">{socials.Icon}</div>
+					<p className="socials-text">{socials.Title}</p>
+				</div>
+			</a>
 		);
 	});
 

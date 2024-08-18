@@ -29,7 +29,7 @@ const TextLoop = () => {
 			const vsOpts = {
 				slides: document.querySelectorAll(".v-slide"),
 				list: document.querySelector(".v-slides"),
-				duration: 0.3,
+				duration: 0.55,
 				lineHeight: height,
 			};
 
