@@ -67,7 +67,7 @@ const ContributionsHeatmap = () => {
 	return (
 		<div className="heatmap-container">
 			<h2 className="heatmap-title">
-				Days I've <span style={{ color: "#a371f7" }}>Coded</span>
+				Days I&apos;ve <span style={{ color: "#a371f7" }}>Coded</span>
 			</h2>
 
 			<div className="heatmap-wrapper">
@@ -83,13 +83,11 @@ const ContributionsHeatmap = () => {
 						}
 						return `color-github-${Math.min(value.count, 4)}`;
 					}}
-					tooltipDataAttrs={(value) => {
-						return {
-							"data-tip": value.date
-								? `${value.date}: ${value.count} contributions`
-								: "No contributions",
-						};
-					}}
+					tooltipDataAttrs={(value) => ({
+						"data-tip": value.date
+							? `${value.date}: ${value.count} contributions`
+							: "No contributions",
+					})}
 				/>
 				<ReactTooltip />
 			</div>
