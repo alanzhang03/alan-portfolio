@@ -12,7 +12,7 @@ export async function POST(request) {
 		console.log("Received form data:", { email, name, subject, message });
 
 		await resend.emails.send({
-			from: "onboarding@resend.dev",
+			from: `${name} <${email}>`,
 			to: "alan.s.zhang@gmail.com",
 			subject: subject || "No Subject Provided",
 			react: Welcome({ name, message }),
