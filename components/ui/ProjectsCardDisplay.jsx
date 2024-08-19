@@ -19,7 +19,7 @@ import AppleClone from "../../public/Assets/AppleClone.png";
 
 // Tech Stack Logos
 import ReactLogo from "../../public/Assets/reactLogo.svg";
-import JsLogo from "../../public/Assets/JsLogo.svg";
+import JsLogo from "../../public/Assets/jsLogo.svg";
 import ThreeLogo from "../../public/Assets/threeLogo.svg";
 import GsapLogo from "../../public/Assets/gsapLogo.svg";
 import NextLogo from "../../public/Assets/nextLogo.svg";
