@@ -5,6 +5,7 @@ import "../styles/Skills.scss";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,7 +73,12 @@ const Skills = () => {
 				<div className="skills-grid">
 					{skills.map((skill) => (
 						<div id="gsap-skill-item" className="skill-item" key={skill.name}>
-							<img src={skill.icon} alt={skill.name} />
+							<Image
+								src={skill.icon}
+								width={100}
+								height={100}
+								alt={skill.name}
+							/>
 							<p className="skill-name">{skill.name}</p>
 						</div>
 					))}
@@ -85,7 +91,7 @@ const Skills = () => {
 							className="technology-item"
 							key={tech.name}
 						>
-							<img src={tech.icon} alt={tech.name} />
+							<Image src={tech.icon} width={100} height={100} alt={tech.name} />
 							<p className="tech-name">{tech.name}</p>
 						</div>
 					))}
