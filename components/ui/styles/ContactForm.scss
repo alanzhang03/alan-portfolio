@@ -1,0 +1,35 @@
+.contact-form-container {
+	span {
+		padding-top: 2vh;
+		padding-bottom: 1vh;
+		color: #ffffff;
+	}
+
+	display: flex;
+	flex-direction: column;
+	input,
+	textarea {
+		height: 5vh;
+		background-color: rgba(2, 4, 25, 255);
+		color: #ffffff;
+		border-radius: 10px;
+		border: 2px #a893f5 solid;
+		padding: 0.5rem;
+		width: 25vw;
+		&:focus {
+			background-color: rgba(2, 4, 25, 255);
+			outline: none;
+			border-color: #ffffff;
+		}
+
+		&::placeholder {
+			color: #a893f5;
+			opacity: 0.7;
+		}
+	}
+
+	textarea {
+		height: 20vh;
+		resize: vertical;
+	}
+}
