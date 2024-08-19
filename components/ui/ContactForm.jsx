@@ -20,6 +20,14 @@ const ContactForm = ({ onInputChange }) => {
 				onChange={onInputChange}
 				required
 			/>
+			<span>Subject</span>
+			<input
+				type="text"
+				name="subject"
+				placeholder="Subject"
+				onChange={onInputChange}
+				required
+			/>
 
 			<span>Message</span>
 			<textarea

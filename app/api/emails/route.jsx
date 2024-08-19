@@ -4,13 +4,18 @@ import { NextResponse } from "next/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST() {
+export async function POST(request) {
+	console.log("API route triggered");
+
 	try {
+		const { email, name, subject, message } = await request.json();
+		console.log("Received form data:", { email, name, subject, message });
+
 		await resend.emails.send({
 			from: "onboarding@resend.dev",
 			to: "alan.s.zhang@gmail.com",
-			subject: "Welcome!",
-			react: Welcome(),
+			subject: subject || "No Subject Provided",
+			react: Welcome({ name, message }),
 		});
 
 		return NextResponse.json(
