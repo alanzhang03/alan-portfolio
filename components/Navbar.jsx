@@ -27,7 +27,7 @@ const Navbar = () => {
 				window.removeEventListener("scroll", controlNavbar);
 			};
 		}
-	}, [lastScrollY]);
+	}, [controlNavbar]);
 
 	return (
 		<nav className={`nav-container ${show ? "" : "hidden"}`}>
