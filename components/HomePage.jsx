@@ -111,7 +111,7 @@ const HomePage = () => {
 			<p className="mini-header">DYNAMIC WEB EXPERIENCE WITH NEXT.JS</p>
 			<h1 className="home-page-header">Welcome to my Portfolio</h1>
 			<h1 className="home-page-header-2">
-				I'm{" "}
+				I&apos;m{" "}
 				<span className="home-page-name">
 					<span>Alan </span> <span>Zhang</span>
 				</span>
