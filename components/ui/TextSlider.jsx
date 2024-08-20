@@ -40,7 +40,7 @@ const TextSlider = () => {
 		gsap.set(firstText.current, { xPercent: xPercent.current });
 		gsap.set(secondText.current, { xPercent: xPercent.current });
 
-		xPercent.current += 0.01 * direction.current;
+		xPercent.current += 0.05 * direction.current;
 
 		requestAnimationFrame(animate);
 	};
