@@ -11,15 +11,27 @@ export async function POST(request) {
 		const { email, name, subject, message } = await request.json();
 		console.log("Received form data:", { email, name, subject, message });
 
-		await resend.emails.send({
+	
+		if (!email || !name) {
+			throw new Error("Email and name are required fields.");
+		}
+
+		
+		if (!resend) {
+			throw new Error("Resend instance not initialized correctly.");
+		}
+
+		const emailResponse = await resend.emails.send({
 			from: `${name} <${email}>`,
 			to: "alan.s.zhang@gmail.com",
 			subject: subject || "No Subject Provided",
 			react: Welcome({ name, message }),
 		});
 
+		console.log("Email response from Resend:", emailResponse);
+
 		return NextResponse.json(
-			{ message: "Email sent successfully" },
+			{ message: "Email sent successfully", response: emailResponse },
 			{ status: 200 }
 		);
 	} catch (error) {

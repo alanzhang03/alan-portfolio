@@ -10,8 +10,8 @@ const TextSlider = () => {
 	const secondText = useRef(null);
 	const slider = useRef(null);
 	const sliderContainer = useRef(null);
-	const xPercent = useRef(0); 
-	const direction = useRef(-1); 
+	const xPercent = useRef(0);
+	const direction = useRef(-1);
 
 	useEffect(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -40,7 +40,7 @@ const TextSlider = () => {
 		gsap.set(firstText.current, { xPercent: xPercent.current });
 		gsap.set(secondText.current, { xPercent: xPercent.current });
 
-		xPercent.current += 0.05 * direction.current;
+		xPercent.current += 0.03 * direction.current;
 
 		requestAnimationFrame(animate);
 	};

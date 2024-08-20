@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/About.scss";
 import AboutDescrip from "./ui/AboutDescrip";
 import AboutGrid from "./ui/AboutGrid";
-import TextSlider from "./ui/TextSlider";
 import ContributionsHeatmap from "./ui/ContributionsHeatmap";
 
 const About = () => {
@@ -14,7 +13,7 @@ const About = () => {
 				</h1>
 				<AboutDescrip />
 				<ContributionsHeatmap />
-				<TextSlider />
+
 				<AboutGrid />
 			</section>
 		</>

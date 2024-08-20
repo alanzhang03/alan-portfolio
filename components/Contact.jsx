@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import "../styles/Contact.scss";
 import ContactForm from "./ui/ContactForm";
-
+import TextSlider from "./ui/TextSlider";
+import Footer from "./Footer";
 const Contact = () => {
 	const [formData, setFormData] = useState({
 		email: "",
@@ -56,7 +57,7 @@ const Contact = () => {
 			alert("An error occurred while sending the email.");
 		}
 	};
-	
+
 	const validateEmail = (email) => {
 		const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 		return re.test(String(email).toLowerCase());
@@ -69,6 +70,8 @@ const Contact = () => {
 			<button className="submit-contact-form-button" onClick={handleSubmit}>
 				Submit
 			</button>
+			<TextSlider />
+			<Footer />
 		</section>
 	);
 };
