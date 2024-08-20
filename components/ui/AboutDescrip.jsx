@@ -33,6 +33,12 @@ const AboutDescrip = () => {
         from: "start",
       },
     });
+    gsap.to(".download-cv-button", {
+      scrollTrigger: ".download-cv-button",
+      duration: 1.5,
+      delay: 3.5,
+      opacity: 1,
+    });
   }, []);
 
   return (
@@ -68,13 +74,6 @@ const AboutDescrip = () => {
         <span>of this portfolio!</span>
       </p>
 
-      <div className="download-cv-container">
-        <a href="/AlanZhangResume.pdf" download>
-          <button className="download-cv-button">
-            Resume <MdOutlineFileDownload className="download-icon" />
-          </button>
-        </a>
-      </div>
       <div className="about-section-2">
         <div className="section-2-divider">
           <span className="number">3</span>+ Years Of Experience
@@ -88,6 +87,13 @@ const AboutDescrip = () => {
         <div className="section-2-divider">
           <span className="number">800</span>+ Code <br></br>Commits
         </div>
+      </div>
+      <div className="download-cv-container">
+        <a href="/AlanZhangResume.pdf" download>
+          <button className="download-cv-button">
+            Resume <MdOutlineFileDownload className="download-icon" />
+          </button>
+        </a>
       </div>
     </>
   );
