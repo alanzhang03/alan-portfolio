@@ -10,7 +10,6 @@
 		position: relative;
 		margin: 0px;
 		color: #a893f5;
-		font-size: 8.9rem;
 		font-weight: light;
 		padding-right: 50px;
 	}
@@ -20,4 +19,22 @@
 	position: absolute;
 	left: 100%;
 	top: 0;
+}
+
+@media (min-width: 2200px) {
+	.text-slider-text {
+		font-size: 9.5rem;
+	}
+}
+
+@media (max-width: 2199px) and (min-width: 1800px) {
+	.text-slider-text {
+		font-size: 8.9rem;
+	}
+}
+
+@media (max-width: 1799px) and (min-width: 900px) {
+}
+
+@media (max-width: 899px) {
 }
