@@ -1,39 +1,42 @@
 .text-slider {
-	overflow: hidden;
-	padding-bottom: 2vh;
+  overflow: hidden;
+  padding-bottom: 2vh;
 }
 
 .slider {
-	position: relative;
-	white-space: nowrap;
-	.text-slider-text {
-		position: relative;
-		margin: 0px;
-		color: #a893f5;
-		font-weight: light;
-		padding-right: 50px;
-	}
+  position: relative;
+  white-space: nowrap;
+  .text-slider-text {
+    position: relative;
+    margin: 0px;
+    color: #a893f5;
+    font-weight: light;
+    padding-right: 50px;
+  }
 }
 
 .slider .text-slider-text:nth-of-type(2) {
-	position: absolute;
-	left: 100%;
-	top: 0;
+  position: absolute;
+  left: 100%;
+  top: 0;
 }
 
 @media (min-width: 2200px) {
-	.text-slider-text {
-		font-size: 9.5rem;
-	}
+  .text-slider-text {
+    font-size: 9.5rem;
+  }
 }
 
 @media (max-width: 2199px) and (min-width: 1800px) {
-	.text-slider-text {
-		font-size: 9rem;
-	}
+  .text-slider-text {
+    font-size: 9rem;
+  }
 }
 
 @media (max-width: 1799px) and (min-width: 900px) {
+  .text-slider-text {
+    font-size: 6rem;
+  }
 }
 
 @media (max-width: 899px) {
