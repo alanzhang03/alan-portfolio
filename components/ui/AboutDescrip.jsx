@@ -6,6 +6,7 @@ import React from "react";
 import "./styles/AboutDescrip.scss";
 import Link from "next/link";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,6 +67,14 @@ const AboutDescrip = () => {
 				</span>
 				<span>of this portfolio!</span>
 			</p>
+
+			<div className="download-cv-container">
+				<a href="/Assets/Alan_Zhang_Resume.pdf" download>
+					<button className="download-cv-button">
+						Resume <MdOutlineFileDownload className="download-icon" />
+					</button>
+				</a>
+			</div>
 			<div className="about-section-2">
 				<div className="section-2-divider">
 					<span className="number">3</span>+ Years Of Experience
@@ -74,7 +83,10 @@ const AboutDescrip = () => {
 					<span className="number">15</span>+ Completed Projects
 				</div>
 				<div className="section-2-divider">
-					<span className="number">2,000</span>+ Hours of Coding
+					<span className="number">20</span> + Technologies learned
+				</div>
+				<div className="section-2-divider">
+					<span className="number">800</span>+ Code <br></br>Commits
 				</div>
 			</div>
 		</>

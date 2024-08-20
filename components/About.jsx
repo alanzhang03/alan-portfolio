@@ -13,7 +13,6 @@ const About = () => {
 				</h1>
 				<AboutDescrip />
 				<ContributionsHeatmap />
-
 				<AboutGrid />
 			</section>
 		</>

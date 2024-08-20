@@ -84,22 +84,7 @@
 	font-weight: 500;
 }
 
-.learn-more-container {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	font-size: 0.9rem;
-	padding-left: 4rem;
-	padding-right: 4rem;
-	height: 5vh;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	border: #927bea solid 1px;
-	z-index: 1;
-	overflow: hidden;
-	transition: transform 0.4s;
-	opacity: 0;
-}
+
 
 .arrow-down {
 	animation: bobbing 1s ease-in-out infinite;

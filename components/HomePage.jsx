@@ -17,6 +17,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { CiTwitter } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa6";
 
+
 const HomePage = () => {
 	useGSAP(() => {
 		gsap.from(".home-page-header", {

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import "../styles/Contact.scss";
 import ContactForm from "./ui/ContactForm";
 import TextSlider from "./ui/TextSlider";
-import Footer from "./Footer";
+
 const Contact = () => {
 	const [formData, setFormData] = useState({
 		email: "",
@@ -71,7 +71,6 @@ const Contact = () => {
 				Submit
 			</button>
 			<TextSlider />
-			<Footer />
 		</section>
 	);
 };
