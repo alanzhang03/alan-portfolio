@@ -10,7 +10,7 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import TextLoop from "./ui/TextLoop";
 
 //Icons
-import LinkedIn from "../public/Assets/LinkedInHomepage.svg";
+
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { MdOutlineEmail } from "react-icons/md";
