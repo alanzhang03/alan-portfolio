@@ -4,8 +4,30 @@ import React, { useState } from "react";
 import "../styles/Contact.scss";
 import ContactForm from "./ui/ContactForm";
 import TextSlider from "./ui/TextSlider";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+	useGSAP(() => {
+		gsap.from(".submit-contact-form-button", {
+			scrollTrigger: ".submit-contact-form-button",
+			opacity: 0,
+			delay: 2.5,
+		});
+
+		gsap.to(".submit-contact-form-button", {
+			scrollTrigger: ".submit-contact-form-button",
+			opacity: 1,
+			delay: 2.5,
+		});
+
+
+	}, []);
+
 	const [formData, setFormData] = useState({
 		email: "",
 		name: "",
@@ -70,7 +92,7 @@ const Contact = () => {
 			<button className="submit-contact-form-button" onClick={handleSubmit}>
 				Submit
 			</button>
-			<TextSlider />
+			<TextSlider className="textslider-gsap" />
 		</section>
 	);
 };
