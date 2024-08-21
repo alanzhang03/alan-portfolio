@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import "../styles/Contact.scss";
 import ContactForm from "./ui/ContactForm";
-import TextSlider from "./ui/TextSlider";
+
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -24,8 +24,6 @@ const Contact = () => {
 			opacity: 1,
 			delay: 2.5,
 		});
-
-
 	}, []);
 
 	const [formData, setFormData] = useState({
@@ -92,7 +90,6 @@ const Contact = () => {
 			<button className="submit-contact-form-button" onClick={handleSubmit}>
 				Submit
 			</button>
-			<TextSlider className="textslider-gsap" />
 		</section>
 	);
 };
