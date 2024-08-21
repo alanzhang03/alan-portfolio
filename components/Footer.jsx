@@ -11,7 +11,9 @@ const Footer = () => {
 		<footer className="footer-container">
 			<div className="footer-content-container">
 				<div className="copyright-section">
-					<p>&copy; 2024 azhang03. All Rights Reserved.</p>
+					<p>
+						&copy; 2024 <span>azhang03</span>. 
+					</p>
 				</div>
 				<div className="social-icons-container">
 					<a

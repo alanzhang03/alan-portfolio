@@ -22,8 +22,13 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	color: #a893f5;
+	color: white;
+	font-weight: 600;
+	font-size: 1.25rem;
 	margin-left: 1.5vw;
+	span {
+		color: #a893f5;
+	}
 }
 
 //social icons
