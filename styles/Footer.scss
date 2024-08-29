@@ -1,81 +1,81 @@
 .footer-container {
-	display: flex;
-	align-items: center;
-	background-color: rgba(2, 4, 25, 255);
-	border: white 5px solid;
-	border-bottom: none;
-	border-left: none;
-	border-right: none;
-	width: 100%;
-	z-index: 2;
+  display: flex;
+  align-items: center;
+  background-color: rgba(2, 4, 25, 255);
+  border: #a893f5 5px solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  z-index: 2;
 }
 
 .footer-content-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .copyright-section {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	color: white;
-	font-weight: 600;
-	font-size: 1.25rem;
-	margin-left: 1.5vw;
-	span {
-		color: #a893f5;
-	}
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-left: 1.5vw;
+  span {
+    color: #a893f5;
+  }
 }
 
 //social icons
 
 .social-icons-container {
-	padding-top: 1vh;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
-	color: #a893f5;
-	gap: 1.5vw;
-	margin-right: 1.5vw;
+  padding-top: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  color: #a893f5;
+  gap: 1.5vw;
+  margin-right: 1.5vw;
 }
 
 .linkedin-icon {
-	width: 65px;
-	height: 65px;
-	transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
-	border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  border-radius: 50%;
 }
 
 .github-icon {
-	width: 50px;
-	height: 50px;
-	transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
-	border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  border-radius: 50%;
 }
 
 .twitter-icon {
-	width: 52px;
-	height: 52px;
-	transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
-	border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  border-radius: 50%;
 }
 
 .facebook-icon {
-	width: 45px;
-	height: 45px;
-	transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
-	border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  border-radius: 50%;
 }
 
 .insta-icon {
-	width: 45px;
-	height: 45px;
-	transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  width: 45px;
+  height: 45px;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .linkedin-icon:hover,
@@ -88,6 +88,6 @@
 .twitter-icon:focus,
 .facebook-icon:focus,
 .insta-icon:focus {
-	color: #ffffff;
-	transform: scale(1.1);
+  color: #ffffff;
+  transform: scale(1.1);
 }
