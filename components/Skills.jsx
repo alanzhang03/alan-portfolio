@@ -69,16 +69,56 @@ const skills = [
 ];
 
 const technologies = [
-  { name: "React", icon: "/Assets/react.svg" },
-  { name: "GSAP", icon: "/Assets/gsap.svg" },
-  { name: "Next JS", icon: "/Assets/nextjs.svg" },
-  { name: "Three JS", icon: "/Assets/threejs.svg" },
-  { name: "Webpack", icon: "/Assets/webpack.svg" },
-  { name: "Node", icon: "/Assets/nodejs.svg" },
-  { name: "Vite", icon: "/Assets/vitejs.svg" },
-  { name: "Vue", icon: "/Assets/vue.svg" },
-  { name: "Github", icon: "/Assets/github.svg" },
-  { name: "git", icon: "/Assets/git.svg" },
+  {
+    name: "React",
+    icon: "/Assets/react.svg",
+    link: "https://www.javascript.com/",
+  },
+  {
+    name: "GSAP",
+    icon: "/Assets/gsap.svg",
+    link: "https://www.javascript.com/",
+  },
+  {
+    name: "Next JS",
+    icon: "/Assets/nextjs.svg",
+    link: "https://www.javascript.com/",
+  },
+  {
+    name: "Three JS",
+    icon: "/Assets/threejs.svg",
+    link: "https://www.javascript.com/",
+  },
+  {
+    name: "Webpack",
+    icon: "/Assets/webpack.svg",
+    link: "https://www.javascript.com/",
+  },
+  {
+    name: "Node",
+    icon: "/Assets/nodejs.svg",
+    link: "https://www.javascript.com/",
+  },
+  {
+    name: "Vite",
+    icon: "/Assets/vitejs.svg",
+    link: "https://www.javascript.com/",
+  },
+  {
+    name: "Vue",
+    icon: "/Assets/vue.svg",
+    link: "https://www.javascript.com/",
+  },
+  {
+    name: "Github",
+    icon: "/Assets/github.svg",
+    link: "https://www.javascript.com/",
+  },
+  {
+    name: "git",
+    icon: "/Assets/git.svg",
+    link: "https://www.javascript.com/",
+  },
 ];
 
 const Skills = () => {
