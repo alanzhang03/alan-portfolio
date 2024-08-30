@@ -177,8 +177,15 @@ const Skills = () => {
               className="technology-item"
               key={tech.name}
             >
-              <Image src={tech.icon} width={100} height={100} alt={tech.name} />
-              <p className="tech-name">{tech.name}</p>
+              <a target="_blank" href={tech.link}>
+                <Image
+                  src={tech.icon}
+                  width={100}
+                  height={100}
+                  alt={tech.name}
+                />
+                <p className="tech-name">{tech.name}</p>
+              </a>
             </div>
           ))}
         </div>
