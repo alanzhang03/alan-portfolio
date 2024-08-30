@@ -18,53 +18,53 @@ const skills = [
 	{
 		name: "Html",
 		icon: "/Assets/html.svg",
-		link: "https://www.javascript.com/",
+		link: "https://www.w3schools.com/html/html_intro.asp",
 	},
 	{
 		name: "Sass",
 		icon: "/Assets/sass.svg",
-		link: "https://www.javascript.com/",
+		link: "https://sass-lang.com/",
 	},
 	{
 		name: "Tailwind",
 		icon: "/Assets/tailwind.svg",
-		link: "https://www.javascript.com/",
+		link: "https://tailwindcss.com/",
 	},
 	{
 		name: "Css",
 		icon: "/Assets/css.svg",
-		link: "https://www.javascript.com/",
+		link: "https://www.w3schools.com/css/",
 	},
 	{
 		name: "Python",
 		icon: "/Assets/python.svg",
-		link: "https://www.javascript.com/",
+		link: "https://www.python.org/",
 	},
 	{
 		name: "C#",
 		icon: "/Assets/csharp.svg",
-		link: "https://www.javascript.com/",
+		link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
 	},
 	{ name: "C", icon: "/Assets/c.svg" },
 	{
 		name: "Ocaml",
 		icon: "/Assets/ocaml.svg",
-		link: "https://www.javascript.com/",
+		link: "https://ocaml.org/",
 	},
 	{
 		name: "Java",
 		icon: "/Assets/java.svg",
-		link: "https://www.javascript.com/",
+		link: "https://www.java.com/en/",
 	},
 	{
 		name: "R",
 		icon: "/Assets/r.svg",
-		link: "https://www.javascript.com/",
+		link: "https://www.r-project.org/",
 	},
 	{
 		name: "Matlab",
 		icon: "/Assets/matlab.svg",
-		link: "https://www.javascript.com/",
+		link: "https://www.mathworks.com/?s_tid=gn_logo",
 	},
 ];
 
@@ -72,52 +72,52 @@ const technologies = [
 	{
 		name: "React",
 		icon: "/Assets/react.svg",
-		link: "https://www.javascript.com/",
+		link: "https://react.dev/",
 	},
 	{
 		name: "GSAP",
 		icon: "/Assets/gsap.svg",
-		link: "https://www.javascript.com/",
+		link: "https://gsap.com/",
 	},
 	{
 		name: "Next JS",
 		icon: "/Assets/nextjs.svg",
-		link: "https://www.javascript.com/",
+		link: "https://nextjs.org/",
 	},
 	{
 		name: "Three JS",
 		icon: "/Assets/threejs.svg",
-		link: "https://www.javascript.com/",
+		link: "https://threejs.org/",
 	},
 	{
 		name: "Webpack",
 		icon: "/Assets/webpack.svg",
-		link: "https://www.javascript.com/",
+		link: "https://webpack.js.org/",
 	},
 	{
 		name: "Node",
 		icon: "/Assets/nodejs.svg",
-		link: "https://www.javascript.com/",
+		link: "https://nodejs.org/en",
 	},
 	{
 		name: "Vite",
 		icon: "/Assets/vitejs.svg",
-		link: "https://www.javascript.com/",
+		link: "https://vitejs.dev/",
 	},
 	{
 		name: "Vue",
 		icon: "/Assets/vue.svg",
-		link: "https://www.javascript.com/",
+		link: "https://vuejs.org/",
 	},
 	{
 		name: "Github",
 		icon: "/Assets/github.svg",
-		link: "https://www.javascript.com/",
+		link: "https://github.com/",
 	},
 	{
 		name: "git",
 		icon: "/Assets/git.svg",
-		link: "https://www.javascript.com/",
+		link: "https://git-scm.com/",
 	},
 ];
 
