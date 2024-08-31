@@ -29,7 +29,7 @@ I’m Alan Zhang, a computer science major at the University of Maryland.
 
 - **[CV Builder](#)**: A powerful CV builder designed specifically for software developers.
   - **Tech Stack**: React, Node.js, JavaScript, CSS, HTML
-  - [Check Live Site](#)
+  - [Check Live Site](https://resume-cv-app.onrender.com/)
 
 
 ## 📫 Contact Me
