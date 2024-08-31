@@ -1,6 +1,6 @@
 # Alan Zhang - Personal Portfolio
 
-Welcome to my personal portfolio! Here, you can explore my projects, skills, and experiences in software development.
+Welcome to my personal portfolio!
 
 ### 🌐 [Visit My Portfolio](https://azhang03.vercel.app/)
 
