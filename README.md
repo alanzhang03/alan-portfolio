@@ -4,8 +4,6 @@ Welcome to my personal portfolio! Here, you can explore my projects, skills, and
 
 ### 🌐 [Visit My Portfolio](https://azhang03.vercel.app/)
 
-## 🚀 About Me
-I’m Alan Zhang, a computer science major at the University of Maryland.
 
 ## 🛠️ Technologies & Tools
 - **Front-End**: Next.js, React, Sass, GSAP
