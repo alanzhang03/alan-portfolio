@@ -1,6 +1,6 @@
 # Alan Zhang - Personal Portfolio
 
-Welcome to my personal portfolio!
+Welcome to my Personal Portfolio!
 
 ### 🌐 [Visit My Portfolio](https://azhang03.vercel.app/)
 
