@@ -21,11 +21,11 @@ I’m Alan Zhang, a computer science major at the University of Maryland.
 
 - **[Tic-Tac-Toe](#)**: Tic Tac Toe game played against either an AI (using the minimax algorithm) or another player (human).
   - **Tech Stack**: React, JavaScript, HTML, CSS
-  - [Check Live Site](#)
+  - [Check Live Site](https://alantictactoe.onrender.com/)
 
 - **[Apple Website Clone](#)**: Apple iPhone webpage clone.
   - **Tech Stack**: Next.js, GSAP, JavaScript, Tailwind CSS, Three.js
-  - [Check Live Site](#)
+  - [Check Live Site](https://azhang03.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAppleClone.04aa1cef.png&w=3840&q=75)
 
 - **[CV Builder](#)**: A powerful CV builder designed specifically for software developers.
   - **Tech Stack**: React, Node.js, JavaScript, CSS, HTML
