@@ -44,9 +44,7 @@ const AboutDescrip = () => {
 	return (
 		<>
 			<p id="gsap-about-me-description" className="about-me-description">
-				<span>Aspiring</span>
-				<span className="purple-text"> Full-Stack developer </span>
-				<span>and current undergrad student majoring in</span>
+				<span>Current undergrad student majoring in</span>
 				<span className="purple-text">
 					{" "}
 					<a target="_blank" href="https://www.cs.umd.edu/">
