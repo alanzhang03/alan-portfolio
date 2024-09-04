@@ -112,10 +112,11 @@ const TextLoop = () => {
 				<li className="v-slide">
 					{splitTextToLetters("Interactive Web Apps")}
 				</li>
-				<li className="v-slide">{splitTextToLetters("User Portals")}</li>
 				<li className="v-slide">
 					{splitTextToLetters("Full-Stack Applications")}
 				</li>
+
+				<li className="v-slide">{splitTextToLetters("User Portals")}</li>
 				<li className="v-slide">{splitTextToLetters("Community Platforms")}</li>
 				<li className="v-slide">{splitTextToLetters("Digital Marketing")}</li>
 				<li className="v-slide">{splitTextToLetters("Custom Plugins")}</li>
