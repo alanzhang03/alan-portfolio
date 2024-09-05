@@ -60,9 +60,9 @@ const HomePage = () => {
   const socialLinks = [
     {
       Index: "1",
-      Title: "GitHub",
-      Icon: <FaGithub />,
-      Link: "https://github.com/alanzhang03",
+      Title: "Twitter",
+      Icon: <CiTwitter />,
+      Link: "https://twitter.com/cloudeelol",
     },
     {
       Index: "2",
@@ -72,15 +72,15 @@ const HomePage = () => {
     },
     {
       Index: "3",
-      Title: "Email",
-      Icon: <MdOutlineEmail />,
-      Link: "mailto:alan.s.zhang04@gmail.com",
+      Title: "GitHub",
+      Icon: <FaGithub />,
+      Link: "https://github.com/alanzhang03",
     },
     {
       Index: "4",
-      Title: "Twitter",
-      Icon: <CiTwitter />,
-      Link: "https://twitter.com/cloudeelol",
+      Title: "Email",
+      Icon: <MdOutlineEmail />,
+      Link: "mailto:alan.s.zhang04@gmail.com",
     },
     {
       Index: "5",
