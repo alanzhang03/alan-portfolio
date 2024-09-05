@@ -18,7 +18,7 @@ const AboutDescrip = () => {
 			delay: 0.5,
 			opacity: 1,
 			stagger: {
-				each: 0.165,
+				each: 0.13,
 				from: "start",
 			},
 		});
