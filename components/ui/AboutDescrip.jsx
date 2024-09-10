@@ -18,7 +18,7 @@ const AboutDescrip = () => {
 			delay: 0.5,
 			opacity: 1,
 			stagger: {
-				each: 0.165,
+				each: 0.13,
 				from: "start",
 			},
 		});
@@ -26,7 +26,7 @@ const AboutDescrip = () => {
 		gsap.to(".section-2-divider span", {
 			scrollTrigger: ".section-2-divider",
 			duration: 2,
-			delay: 2.5,
+			delay: 2,
 			opacity: 1,
 			stagger: {
 				each: 0.175,
@@ -36,7 +36,7 @@ const AboutDescrip = () => {
 		gsap.to(".download-cv-button", {
 			scrollTrigger: ".download-cv-button",
 			duration: 1.5,
-			delay: 3.5,
+			delay: 2.75,
 			opacity: 1,
 		});
 	}, []);
