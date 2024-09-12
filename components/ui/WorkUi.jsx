@@ -12,6 +12,7 @@ const WorkUi = () => {
     },
   ];
 
+  const workDiv = workExperience.map((company, index) =>)
   return (
     <div className="work-ui-container">
       {workExperience.map((company) => {
