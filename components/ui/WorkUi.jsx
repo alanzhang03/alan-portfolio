@@ -1,6 +1,7 @@
 import React from "react";
 import "../ui/styles/WorkUi.scss";
 import Image from "next/image";
+import MindHome from "../../public/Assets/mindHome.png";
 
 import TempleLogo from "../../public/Assets/temple.svg";
 
@@ -8,7 +9,7 @@ const WorkUi = () => {
 	const workExperience = [
 		{
 			companyName: "Mindhome",
-			companyLogo: TempleLogo,
+			companyLogo: MindHome,
 			companyPosition: "Software Engineering Intern",
 			startDate: "April 2024",
 			endDate: "August 2024",
