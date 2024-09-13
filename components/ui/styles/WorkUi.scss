@@ -1,3 +1,50 @@
-.work-ui-container{
-    
+.experience-display {
+	z-index: 1;
+}
+
+.work-ui-box {
+	height: auto;
+	width: 90vw;
+	border: black 3px solid;
+	border-radius: 10px;
+	background-color: #020419;
+	z-index: 5;
+	opacity: 1;
+}
+
+.work-ui-container {
+	color: white;
+}
+
+.work-company-name {
+	padding-top: 10vh;
+	font-size: 3rem;
+}
+
+.company-position {
+	color: #bbb;
+	font-size: 1.25rem;
+}
+.company-start-end-date-container {
+	display: flex;
+	flex-direction: row;
+	color: #bbb;
+	font-size: 1.25rem;
+}
+
+.now-color {
+	color: #927bea;
+}
+
+.job-description {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75vh;
+	padding-top: 1.5vh;
+	font-size: 1.25rem;
+	color: #bbb;
+}
+
+.job-description-gap {
+	padding-top: 2vh;
 }
