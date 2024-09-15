@@ -44,6 +44,10 @@ const Navbar = () => {
 				<IoPersonOutline className="link-icon" />
 				About
 			</Link>
+			<Link className="nav-hover" href="#about">
+				<IoPersonOutline className="link-icon" />
+				Career
+			</Link>
 			<Link className="nav-hover" href="#skills">
 				<GoGear className="link-icon" />
 				Skills

@@ -8,29 +8,29 @@ import TempleLogo from "../../public/Assets/temple.svg";
 const WorkUi = () => {
 	const workExperience = [
 		{
-			companyName: "Mindhome",
-			companyLogo: MindHome,
-			companyPosition: "Software Engineering Intern",
-			startDate: "April 2024",
-			endDate: "August 2024",
-			jobDescription: [
-				"Worked on updates and enhancements to the company website, leveraging React for web application portions and React Native for mobile optimizations.",
-				"Contributed personal insights and recommendations for leveraging React to enhance aesthetics and functionality of our web application.",
-				"Collaborated closely with a team of interns to develop and refine React application projects, enhancing project outcomes through effective teamwork.",
-				"Gained foundational skills in robotics programming by engaging with Linux and Python, gaining practical experience in developing and testing automated solutions.",
-			],
-		},
-		{
 			companyName: "Temple University",
 			companyLogo: TempleLogo,
 			companyPosition: "Research Assistant Intern",
 			startDate: "August 2024",
 			endDate: "Now",
 			jobDescription: [
-				"Worked on updates and enhancements to the company website, leveraging React for web application portions and React Native for mobile optimizations.",
-				"Contributed personal insights and recommendations for leveraging React to enhance aesthetics and functionality of our web application.",
-				"Collaborated closely with a team of interns to develop and refine React application projects, enhancing project outcomes through effective teamwork.",
-				"Gained foundational skills in robotics programming by engaging with Linux and Python, gaining practical experience in developing and testing automated solutions.",
+				"● Worked on updates and enhancements to the company website, leveraging React for web application portions and React Native for mobile optimizations.",
+				"● Contributed personal insights and recommendations for leveraging React to enhance aesthetics and functionality of our web application.",
+				"● Collaborated closely with a team of interns to develop and refine React application projects, enhancing project outcomes through effective teamwork.",
+				"● Gained foundational skills in robotics programming by engaging with Linux and Python, gaining practical experience in developing and testing automated solutions.",
+			],
+		},
+		{
+			companyName: "Mindhome",
+			companyLogo: MindHome,
+			companyPosition: "Software Engineering Intern",
+			startDate: "April 2024",
+			endDate: "August 2024",
+			jobDescription: [
+				"● Worked on updates and enhancements to the company website, leveraging React for web application portions and React Native for mobile optimizations.",
+				"● Contributed personal insights and recommendations for leveraging React to enhance aesthetics and functionality of our web application.",
+				"● Collaborated closely with a team of interns to develop and refine React application projects, enhancing project outcomes through effective teamwork.",
+				"● Gained foundational skills in robotics programming by engaging with Linux and Python, gaining practical experience in developing and testing automated solutions.",
 			],
 		},
 	];
