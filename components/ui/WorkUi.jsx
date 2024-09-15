@@ -1,11 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../ui/styles/WorkUi.scss";
 import Image from "next/image";
 import MindHome from "../../public/Assets/mindHome.png";
-
 import TempleLogo from "../../public/Assets/temple.svg";
 
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const WorkUi = () => {
+	useEffect(() => {
+		const workContainers = document.querySelectorAll(".work-ui-container");
+
+		workContainers.forEach((container) => {
+			const workInfo = container.querySelector(".work-info");
+
+			gsap.fromTo(
+				workInfo,
+				{ opacity: 0.3 }, // Start opacity
+				{
+					opacity: 1, // End opacity when scrolling into view
+					scrollTrigger: {
+						trigger: container,
+						start: "top 75%",
+						end: "top 25%",
+						toggleActions: "play reverse play reverse",
+					},
+					duration: 0.3,
+					ease: "power2.inOut",
+				}
+			);
+		});
+	}, []);
+
 	const workExperience = [
 		{
 			companyName: "Temple University",
@@ -35,39 +63,37 @@ const WorkUi = () => {
 		},
 	];
 
-	const workDiv = workExperience.map((company, index) => {
-		return (
-			<div className="work-ui-container" key={index}>
-				<div className="company-logo-container">
-					<div className="vertical-line"></div>
-					<Image
-						className="company-logo"
-						src={company.companyLogo}
-						alt="company logo"
-					/>
+	const workDiv = workExperience.map((company, index) => (
+		<div className="work-ui-container" key={index}>
+			<div className="company-logo-container">
+				<div className="vertical-line"></div>
+				<Image
+					className="company-logo"
+					src={company.companyLogo}
+					alt="company logo"
+				/>
+			</div>
+			<div className="work-info">
+				<h1 className="work-company-name">{company.companyName}</h1>
+				<p className="company-position">{company.companyPosition}</p>
+				<div className="company-start-end-date-container">
+					<p>
+						{company.startDate} -{" "}
+						<span className={company.endDate === "Now" ? "now-color" : ""}>
+							{company.endDate}
+						</span>
+					</p>
 				</div>
-				<div className="work-info">
-					<h1 className="work-company-name">{company.companyName}</h1>
-					<p className="company-position">{company.companyPosition}</p>
-					<div className="company-start-end-date-container">
-						<p>
-							{company.startDate} -{" "}
-							<span className={company.endDate === "Now" ? "now-color" : ""}>
-								{company.endDate}
-							</span>
-						</p>
-					</div>
-					<div className="job-description-gap">
-						<ul className="job-description">
-							{company.jobDescription.map((desc, i) => (
-								<p key={i}>{desc}</p>
-							))}
-						</ul>
-					</div>
+				<div className="job-description-gap">
+					<ul className="job-description">
+						{company.jobDescription.map((desc, i) => (
+							<p key={i}>{desc}</p>
+						))}
+					</ul>
 				</div>
 			</div>
-		);
-	});
+		</div>
+	));
 
 	return (
 		<section className="experience-display">
