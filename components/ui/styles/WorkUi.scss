@@ -35,6 +35,12 @@
 	border-radius: 5px;
 	z-index: 1;
 	background-color: white;
+	transition: 0.3s;
+}
+
+.company-logo:hover {
+	cursor: pointer;
+	transform: scale(1.1);
 }
 
 .work-info {

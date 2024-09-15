@@ -47,6 +47,7 @@ const WorkUi = () => {
 				"● Collaborated closely with a team of interns to develop and refine React application projects, enhancing project outcomes through effective teamwork.",
 				"● Gained foundational skills in robotics programming by engaging with Linux and Python, gaining practical experience in developing and testing automated solutions.",
 			],
+			link: "https://www.temple.edu/",
 		},
 		{
 			companyName: "Mindhome",
@@ -60,6 +61,7 @@ const WorkUi = () => {
 				"● Collaborated closely with a team of interns to develop and refine React application projects, enhancing project outcomes through effective teamwork.",
 				"● Gained foundational skills in robotics programming by engaging with Linux and Python, gaining practical experience in developing and testing automated solutions.",
 			],
+			link: "https://www.mindhome.co/",
 		},
 	];
 
@@ -67,11 +69,13 @@ const WorkUi = () => {
 		<div className="work-ui-container" key={index}>
 			<div className="company-logo-container">
 				<div className="vertical-line"></div>
-				<Image
-					className="company-logo"
-					src={company.companyLogo}
-					alt="company logo"
-				/>
+				<a href={company.link} target="_blank" rel="noopener noreferrer">
+					<Image
+						className="company-logo"
+						src={company.companyLogo}
+						alt="company logo"
+					/>
+				</a>
 			</div>
 			<div className="work-info">
 				<h1 className="work-company-name">{company.companyName}</h1>
