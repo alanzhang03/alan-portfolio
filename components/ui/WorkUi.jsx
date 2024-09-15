@@ -18,9 +18,9 @@ const WorkUi = () => {
 
 			gsap.fromTo(
 				workInfo,
-				{ opacity: 0.3 }, // Start opacity
+				{ opacity: 0.3 },
 				{
-					opacity: 1, // End opacity when scrolling into view
+					opacity: 1,
 					scrollTrigger: {
 						trigger: container,
 						start: "top 75%",
@@ -42,10 +42,9 @@ const WorkUi = () => {
 			startDate: "August 2024",
 			endDate: "Now",
 			jobDescription: [
-				"● Worked on updates and enhancements to the company website, leveraging React for web application portions and React Native for mobile optimizations.",
-				"● Contributed personal insights and recommendations for leveraging React to enhance aesthetics and functionality of our web application.",
-				"● Collaborated closely with a team of interns to develop and refine React application projects, enhancing project outcomes through effective teamwork.",
-				"● Gained foundational skills in robotics programming by engaging with Linux and Python, gaining practical experience in developing and testing automated solutions.",
+				"● Currently conducting in-depth research on Software-Defined Networking (SDN) technologies, exploring their applications and impact on modern network infrastructures.",
+				"● Collaborating with Temple University Professor Liang Du to identify key areas of SDN for further exploration, including security, scalability, and performance.",
+				"● Writing a research paper detailing ongoing experiments, analysis, and findings related to SDN.",
 			],
 			link: "https://www.temple.edu/",
 		},
