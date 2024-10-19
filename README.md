@@ -13,7 +13,7 @@ Welcome to my Personal Portfolio!
 
 ## 🖥️ Featured Projects
 
-- **[TopFLight Tracker](https://github.com/alanzhang03/topflight-tracker)**: My previous web portfolio.
+- **[TopFlight Tracker](https://github.com/alanzhang03/topflight-tracker)**: My previous web portfolio.
   - **Tech Stack**: Nextjs, JavaScript, Sass, Redis, GSAP
   - [Check Live Site](https://topflight-tracker.vercel.app/)
 
