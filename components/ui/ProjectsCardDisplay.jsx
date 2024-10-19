@@ -71,9 +71,21 @@ const ProjectsCardDisplay = () => {
 			tech5: HtmlLogo,
 		},
 		{
-			Title: "Tic-Tac-Toe",
+			Title: "CV Builder",
 			Description:
-				"Tic Tac Toe game played against either an AI (using minimax algorithm) or another player (human).",
+				"A powerful CV builder designed specifically for software developers",
+			Link: "https://resume-cv-app.onrender.com/",
+			GitHubLink: "https://github.com/alanzhang03/Resume-CV-App",
+			Image: CvApp,
+			tech1: ReactLogo,
+			tech2: NodeLogo,
+			tech3: JsLogo,
+			tech4: CssLogo,
+			tech5: HtmlLogo,
+		},
+		{
+			Title: "Tic-Tac-Toe",
+			Description: "Tic Tac Toe game implemented using minimax algorithm",
 			Link: "https://alantictactoe.onrender.com/",
 			GitHubLink: "https://github.com/alanzhang03/tictactoe",
 			Image: TicTacToeImg,
@@ -94,19 +106,6 @@ const ProjectsCardDisplay = () => {
 			tech3: JsLogo,
 			tech4: TailLogo,
 			tech5: ThreeLogo,
-		},
-		{
-			Title: "CV Builder",
-			Description:
-				"A powerful CV builder designed specifically for software developers",
-			Link: "https://resume-cv-app.onrender.com/",
-			GitHubLink: "https://github.com/alanzhang03/Resume-CV-App",
-			Image: CvApp,
-			tech1: ReactLogo,
-			tech2: NodeLogo,
-			tech3: JsLogo,
-			tech4: CssLogo,
-			tech5: HtmlLogo,
 		},
 	];
 
