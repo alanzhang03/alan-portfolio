@@ -13,6 +13,10 @@ Welcome to my Personal Portfolio!
 
 ## 🖥️ Featured Projects
 
+- **[TopFLight Tracker](#)**: My previous web portfolio.
+  - **Tech Stack**: Nextjs, JavaScript, Sass, Redis, GSAP
+  - [Check Live Site](https://topflight-tracker.vercel.app/)
+
 - **[Previous Web Portfolio](#)**: My previous web portfolio.
   - **Tech Stack**: React, Node.js, JavaScript, CSS, HTML
   - [Check Live Site](https://alanzhang.onrender.com/)
