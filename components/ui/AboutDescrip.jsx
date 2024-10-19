@@ -87,7 +87,7 @@ const AboutDescrip = () => {
 				</div>
 			</div>
 			<div className="download-cv-container">
-				<a href="/AlanZhangResume.pdf" download>
+				<a href="/Alan_Zhang_Resume.pdf" download>
 					<button className="download-cv-button">
 						Download CV <MdOutlineFileDownload className="download-icon" />
 					</button>
