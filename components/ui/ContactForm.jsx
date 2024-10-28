@@ -17,18 +17,18 @@ const ContactForm = ({ onInputChange }) => {
 			duration: 1,
 			stagger: {
 				from: "start",
-				each: 0.25,
+				each: 0.15,
 			},
 		});
 
 		gsap.to(".contact-form-container input,textarea", {
 			scrollTrigger: ".contact-form-container",
 			opacity: 1,
-			delay: 1.5,
+			delay: 1,
 			duration: 1,
 			stagger: {
 				from: "start",
-				each: 0.25,
+				each: 0.15,
 			},
 		});
 	}, []);
