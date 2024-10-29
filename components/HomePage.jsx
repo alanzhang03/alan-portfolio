@@ -51,7 +51,7 @@ const HomePage = () => {
 
 		gsap.from("#gsap-arrow-down", {
 			opacity: 0,
-			delay: 3,
+			delay: 2,
 			duration: 2,
 		});
 	}, []);
@@ -61,7 +61,7 @@ const HomePage = () => {
 			Index: "1",
 			Title: "Twitter",
 			Icon: <CiTwitter />,
-			Link: "https://twitter.com/cloudeelol",
+			Link: "https://twitter.com/alanzhang003",
 		},
 		{
 			Index: "2",
