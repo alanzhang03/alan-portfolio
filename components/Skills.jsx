@@ -131,7 +131,12 @@ const technologies = [
   {
     name: "MongoDB",
     icon: "/Assets/mongoDB.svg",
-    link: "https://git-scm.com/",
+    link: "https://www.mongodb.com/",
+  },
+  {
+    name: "Redis",
+    icon: "/Assets/redis.svg",
+    link: "https://redis.io/",
   },
 ];
 
