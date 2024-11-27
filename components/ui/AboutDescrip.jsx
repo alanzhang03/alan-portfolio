@@ -83,7 +83,7 @@ const AboutDescrip = () => {
 					<span className="number">20</span> + Technologies learned
 				</div>
 				<div className="section-2-divider">
-					<span className="number">800</span>+ Code <br></br>Commits
+					<span className="number">1000</span>+ Code <br></br>Commits
 				</div>
 			</div>
 			<div className="download-cv-container">
