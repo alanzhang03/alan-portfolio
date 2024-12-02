@@ -16,7 +16,7 @@ const Contact = () => {
     gsap.to(".submit-contact-form-button", {
       scrollTrigger: ".submit-contact-form-button",
       opacity: 1,
-      delay: 1.6,
+      delay: 1.55,
     });
   }, []);
 
