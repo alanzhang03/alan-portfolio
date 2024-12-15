@@ -17,6 +17,7 @@ import PreviousPort from "../../public/Assets/previousPort.png";
 import CvApp from "../../public/Assets/CvApp.png";
 import AppleClone from "../../public/Assets/AppleClone.png";
 import TopFlightTracker from "../../public/Assets/TopFlightTracker.png";
+import WeatherApp from "../../public/Assets/weatherApp.png";
 
 // Tech Stack Logos
 import ReactLogo from "../../public/Assets/reactLogo.svg";
@@ -30,6 +31,7 @@ import CssLogo from "../../public/Assets/CssLogo.svg";
 import HtmlLogo from "../../public/Assets/HtmlLogo.svg";
 import TailLogo from "../../public/Assets/tailLogo.svg";
 import RedisLogo from "../../public/Assets/redis.svg";
+import MongoDbLogo from "../../public/Assets/mongoDB.svg";
 
 const ProjectsCardDisplay = () => {
 	useGSAP(() => {
@@ -84,6 +86,19 @@ const ProjectsCardDisplay = () => {
 			tech5: HtmlLogo,
 		},
 		{
+			Title: "Weather Application",
+			Description: "A Weather Application utilizing MongoDB to store results",
+			Link: "https://resume-cv-app.onrender.com/",
+			GitHubLink: "https://github.com/alanzhang03/Resume-CV-App",
+			Image: ReactLogo,
+			tech1: NodeLogo,
+			tech2: JsLogo,
+			tech3: CssLogo,
+			tech4: HtmlLogo,
+			tech5: MongoDbLogo,
+		},
+
+		{
 			Title: "Tic-Tac-Toe",
 			Description: "Tic Tac Toe game implemented using minimax algorithm",
 			Link: "https://alantictactoe.onrender.com/",
@@ -98,8 +113,8 @@ const ProjectsCardDisplay = () => {
 		{
 			Title: "Apple website clone",
 			Description: "Apple iPhone webpage clone",
-			Link: "https://apple-website-clone-46re.onrender.com/",
-			GitHubLink: "https://github.com/alanzhang03/apple_website",
+			Link: "https://weatherapp-7fu2.onrender.com/",
+			GitHubLink: "https://github.com/alanzhang03/weather-app",
 			Image: AppleClone,
 			tech1: NextLogo,
 			tech2: GsapLogo,
