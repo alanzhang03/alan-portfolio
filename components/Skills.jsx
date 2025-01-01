@@ -141,17 +141,17 @@ const technologies = [
   {
     name: "ExpressJs",
     icon: "/Assets/express.svg",
-    link: "https://redis.io/",
+    link: "https://expressjs.com/",
   },
   {
     name: "Neon",
     icon: "/Assets/Neon.svg",
-    link: "https://redis.io/",
+    link: "https://console.neon.tech/",
   },
   {
     name: "Flask",
     icon: "/Assets/flask.svg",
-    link: "https://redis.io/",
+    link: "https://flask.palletsprojects.com/en/stable/",
   },
 ];
 
