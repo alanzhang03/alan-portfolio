@@ -143,6 +143,16 @@ const technologies = [
     icon: "/Assets/express.svg",
     link: "https://redis.io/",
   },
+  {
+    name: "Neon",
+    icon: "/Assets/Neon.svg",
+    link: "https://redis.io/",
+  },
+  {
+    name: "Flask",
+    icon: "/Assets/flask.svg",
+    link: "https://redis.io/",
+  },
 ];
 
 const Skills = () => {
