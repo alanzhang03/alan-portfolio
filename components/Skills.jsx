@@ -124,6 +124,12 @@ const technologies = [
     link: "https://github.com/",
   },
   {
+    name: "GitLab",
+    icon: "/Assets/gitlab.svg",
+    link: "https://about.gitlab.com/",
+    
+  },
+  {
     name: "git",
     icon: "/Assets/git.svg",
     link: "https://git-scm.com/",
