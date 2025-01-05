@@ -43,7 +43,7 @@ const ProjectsCardDisplay = () => {
     gsap.to(".project-grid", {
       scrollTrigger: ".project-grid",
       duration: 2,
-      delay: 0.5,
+      delay: 0.4,
       opacity: 1,
       stagger: {
         each: 0.25,
