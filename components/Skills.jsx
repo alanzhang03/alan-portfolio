@@ -124,6 +124,12 @@ const technologies = [
     link: "https://github.com/",
   },
   {
+    name: "GitLab",
+    icon: "/Assets/gitlab.svg",
+    link: "https://about.gitlab.com/",
+    
+  },
+  {
     name: "git",
     icon: "/Assets/git.svg",
     link: "https://git-scm.com/",
@@ -137,6 +143,21 @@ const technologies = [
     name: "Redis",
     icon: "/Assets/redis.svg",
     link: "https://redis.io/",
+  },
+  {
+    name: "ExpressJs",
+    icon: "/Assets/express.svg",
+    link: "https://expressjs.com/",
+  },
+  {
+    name: "Neon",
+    icon: "/Assets/Neon.svg",
+    link: "https://console.neon.tech/",
+  },
+  {
+    name: "Flask",
+    icon: "/Assets/flask.svg",
+    link: "https://flask.palletsprojects.com/en/stable/",
   },
 ];
 
