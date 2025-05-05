@@ -36,11 +36,20 @@ const WorkUi = () => {
 
   const workExperience = [
     {
+      companyName: "Toll Brothers",
+      companyLogo: TempleLogo,
+      companyPosition: "Web Development Intern",
+      startDate: "May 2025",
+      endDate: "Now",
+      jobDescription: [],
+      link: "https://www.tollbrothers.com/",
+    },
+    {
       companyName: "Temple University",
       companyLogo: TempleLogo,
       companyPosition: "Research Assistant Intern",
       startDate: "August 2024",
-      endDate: "Now",
+      endDate: "December 2024",
       jobDescription: [
         "● Currently conducting in-depth research on Software-Defined Networking (SDN) technologies, exploring their applications and impact on modern network infrastructures.",
         "● Collaborating with Temple University Professor Liang Du to identify key areas of SDN for further exploration, including security, scalability, and performance.",
