@@ -7,12 +7,13 @@ import { FaFacebook } from "react-icons/fa6";
 import { SiInstagram } from "react-icons/si";
 
 const Footer = () => {
+  let currYear = new Date().getFullYear();
   return (
     <footer className="footer-container">
       <div className="footer-content-container">
         <div className="copyright-section">
           <p>
-            &copy; 2024 <span>azhang03</span>.
+            &copy;{currYear} <span>azhang03</span>.
           </p>
         </div>
         <div className="social-icons-container">
