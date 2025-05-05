@@ -14,8 +14,8 @@ const AboutDescrip = () => {
 	useGSAP(() => {
 		gsap.to("#gsap-about-me-description span", {
 			scrollTrigger: ".about-me-description",
-			duration: 3,
-			delay: 0.5,
+			duration: 1.5,
+			delay: 0.25,
 			opacity: 1,
 			stagger: {
 				each: 0.2,
@@ -26,7 +26,7 @@ const AboutDescrip = () => {
 		gsap.to(".section-2-divider span", {
 			scrollTrigger: ".section-2-divider",
 			duration: 1.5,
-			delay: 2.5,
+			delay: 2,
 			opacity: 1,
 			stagger: {
 				each: 0.275,

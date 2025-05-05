@@ -16,6 +16,16 @@ const skills = [
     link: "https://www.javascript.com/",
   },
   {
+    name: "Java",
+    icon: "/Assets/java.svg",
+    link: "https://www.java.com/en/",
+  },
+  {
+    name: "Python",
+    icon: "/Assets/python.svg",
+    link: "https://www.python.org/",
+  },
+  {
     name: "Html",
     icon: "/Assets/html.svg",
     link: "https://www.w3schools.com/html/html_intro.asp",
@@ -36,11 +46,6 @@ const skills = [
     link: "https://www.w3schools.com/css/",
   },
   {
-    name: "Python",
-    icon: "/Assets/python.svg",
-    link: "https://www.python.org/",
-  },
-  {
     name: "C#",
     icon: "/Assets/csharp.svg",
     link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
@@ -55,11 +60,7 @@ const skills = [
     icon: "/Assets/ocaml.svg",
     link: "https://ocaml.org/",
   },
-  {
-    name: "Java",
-    icon: "/Assets/java.svg",
-    link: "https://www.java.com/en/",
-  },
+
   {
     name: "R",
     icon: "/Assets/r.svg",
@@ -127,7 +128,6 @@ const technologies = [
     name: "GitLab",
     icon: "/Assets/gitlab.svg",
     link: "https://about.gitlab.com/",
-    
   },
   {
     name: "git",
