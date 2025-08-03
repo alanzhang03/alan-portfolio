@@ -39,7 +39,7 @@ const WorkUi = () => {
     {
       companyName: "Toll Brothers",
       companyLogo: TollBrothersLogo,
-      companyPosition: "Web Developer",
+      companyPosition: "Software Engineer - Full Stack",
       startDate: "May 2025",
       endDate: "Now",
       jobDescription: [],
