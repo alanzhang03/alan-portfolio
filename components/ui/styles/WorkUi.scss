@@ -36,6 +36,8 @@
   z-index: 1;
   background-color: white;
   transition: 0.3s;
+  object-fit: contain;
+  object-position: center;
 }
 
 .company-logo:hover {
@@ -55,7 +57,6 @@
   font-size: 2rem;
   color: #927bea;
   font-weight: bolder;
-
 }
 
 .company-position {
@@ -101,7 +102,174 @@
 }
 
 @media (max-width: 1799px) and (min-width: 900px) {
+  .work-ui-box {
+    width: 70vw;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .work-ui-container {
+    padding-top: 8vh;
+  }
+
+  .company-logo {
+    width: 75px;
+    height: 65px;
+  }
+
+  .work-company-name {
+    font-size: 1.8rem;
+  }
+
+  .company-position {
+    font-size: 1.3rem;
+  }
+
+  .company-start-end-date-container {
+    font-size: 1.1rem;
+  }
+
   .job-description {
     font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 899px) and (min-width: 600px) {
+  .work-ui-box {
+    width: 85vw;
+    padding: 2rem 1.2rem;
+  }
+
+  .work-ui-container {
+    padding-top: 6vh;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .company-logo-container {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .company-logo {
+    width: 65px;
+    height: 55px;
+  }
+
+  .work-info {
+    padding-left: 0.5rem;
+    width: 100%;
+  }
+
+  .work-company-name {
+    font-size: 1.5rem;
+  }
+
+  .company-position {
+    font-size: 1.1rem;
+  }
+
+  .company-start-end-date-container {
+    font-size: 0.95rem;
+  }
+
+  .job-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .work-divider {
+    margin-top: 5vh;
+  }
+}
+
+@media (max-width: 599px) {
+  .work-ui-box {
+    width: 90vw;
+    padding: 2rem 1rem;
+  }
+
+  .work-ui-container {
+    padding-top: 6vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .company-logo-container {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .company-logo {
+    width: 70px;
+    height: 60px;
+  }
+
+  .work-info {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .work-company-name {
+    font-size: 1.6rem;
+  }
+
+  .company-position {
+    font-size: 1.2rem;
+  }
+
+  .company-start-end-date-container {
+    font-size: 1rem;
+  }
+
+  .job-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .work-divider {
+    margin-top: 5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-ui-box {
+    width: 95vw;
+    padding: 1.5rem 0.8rem;
+  }
+
+  .work-ui-container {
+    padding-top: 4vh;
+  }
+
+  .company-logo-container {
+    margin-bottom: 1rem;
+  }
+
+  .company-logo {
+    width: 60px;
+    height: 50px;
+  }
+
+  .work-company-name {
+    font-size: 1.4rem;
+  }
+
+  .company-position {
+    font-size: 1.1rem;
+  }
+
+  .company-start-end-date-container {
+    font-size: 0.9rem;
+  }
+
+  .job-description {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .work-divider {
+    margin-top: 4vh;
   }
 }
