@@ -42,7 +42,12 @@ const WorkUi = () => {
       companyPosition: "Software Engineer (Web)",
       startDate: "May 2025",
       endDate: "Now",
-      jobDescription: [],
+      jobDescription: [
+        "● Architected and developed new user-facing features for Americas luxury homebuilder, using a modern stack including Next.js, SCSS, and a headless CMS to enhance the digital home-buying experience.",
+        "● Reduced bundle size by 15% and boosted developer velocity by migrating static data to AWS S3 and refactoring the codebase to eliminate over 100 redundant files with reusable templates.",
+        "● Accelerate feature delivery in an Agile environment by managing an average of 10 pull requests per month from conception to deployment. Improve code quality and prevente critical bugs by conducting rigorous peer reviews in Jira, directly contributing to the stability of high-traffic marketing sites.",
+        "● Enhanced the home-buying journey by designing and launching a site-wide Print View feature (with sorting) for thousands of property listings, consolidating disparate data points into a clean, printer-friendly summary.",
+      ],
       link: "https://www.tollbrothers.com/",
     },
     {
@@ -52,9 +57,8 @@ const WorkUi = () => {
       startDate: "August 2024",
       endDate: "December 2024",
       jobDescription: [
-        "● Currently conducting in-depth research on Software-Defined Networking (SDN) technologies, exploring their applications and impact on modern network infrastructures.",
-        "● Collaborating with Temple University Professor Liang Du to identify key areas of SDN for further exploration, including security, scalability, and performance.",
-        "● Writing a research paper detailing ongoing experiments, analysis, and findings related to SDN.",
+        "● Developed a technical report on Software-Defined Networking (SDN) that evaluated the trade-offs between network programmability and control-plane centralization, identifying key areas for performance optimation.",
+        "● Reviewed recent advancements and challenges in SDN technologies such as programmability, flexibility, and control-plane centralization, highlighting areas for further research and practical implementations.",
       ],
       link: "https://www.temple.edu/",
     },
@@ -65,10 +69,8 @@ const WorkUi = () => {
       startDate: "April 2024",
       endDate: "August 2024",
       jobDescription: [
-        "● Worked on updates and enhancements to the company website, leveraging React for web application portions and React Native for mobile optimizations.",
-        "● Contributed personal insights and recommendations for leveraging React to enhance aesthetics and functionality of our web application.",
-        "● Collaborated closely with a team of interns to develop and refine React application projects, enhancing project outcomes through effective teamwork.",
-        "● Gained foundational skills in robotics programming by engaging with Linux and Python, gaining practical experience in developing and testing automated solutions.",
+        "● Improved user experience and application performance by leading the implementation of high-performance UI updates using React and React Native. Proactively identified and resolved key performance bottlenecks, resulting in a more responsive and efficient user interface.",
+        "● Developed and optimized key components of React applications, proactively identifying and resolving performance bottlenecks to elevate user experience and efficiency.",
       ],
       link: "https://www.mindhome.co/",
     },
