@@ -132,4 +132,93 @@
 }
 
 @media (max-width: 899px) {
+  .main-homepage {
+    padding-top: 15vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .mini-header {
+    font-size: 0.6rem;
+    margin-bottom: 2vh;
+  }
+
+  .home-page-header {
+    font-size: 2.5rem;
+    margin-bottom: 2vh;
+  }
+
+  .home-page-header-2 {
+    font-size: 2.5rem;
+    margin-bottom: 4vh;
+  }
+
+  .home-page-name {
+    font-size: 3rem;
+  }
+
+  .socials-container {
+    flex-direction: column;
+    gap: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  .social-box {
+    width: 80vw;
+    height: 3rem;
+    justify-content: center;
+  }
+
+  .home-page-icon {
+    font-size: 1.5rem;
+    margin: 0 1vw;
+  }
+
+  .socials-text {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .arrow-down {
+    font-size: 2rem;
+    margin-top: 4vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-homepage {
+    padding-top: 10vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .mini-header {
+    font-size: 0.5rem;
+  }
+
+  .home-page-header {
+    font-size: 2rem;
+  }
+
+  .home-page-header-2 {
+    font-size: 2rem;
+  }
+
+  .home-page-name {
+    font-size: 2.5rem;
+  }
+
+  .social-box {
+    width: 90vw;
+    height: 2.5rem;
+  }
+
+  .home-page-icon {
+    font-size: 1.2rem;
+  }
+
+  .socials-text {
+    font-size: 0.8rem;
+  }
 }

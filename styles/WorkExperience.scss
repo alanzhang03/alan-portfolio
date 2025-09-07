@@ -1,5 +1,17 @@
 .work-experience-heading {
-	font-size: 5rem;
-	color: white;
-	text-align: center;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 899px) {
+  .work-experience-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-experience-heading {
+    font-size: 2.5rem;
+  }
 }
