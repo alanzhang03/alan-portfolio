@@ -21,8 +21,8 @@
     .skills-grid,
     .technologies-grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 5%;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
       padding: 2%;
       max-width: 1200px;
       justify-content: center;
@@ -42,6 +42,9 @@
         border: 2px solid #927bea;
         opacity: 0;
         transition: 0.3s;
+        width: 200px;
+        height: 180px;
+        margin: 0 auto;
 
         &:hover {
           box-shadow: 0 13px 16px #cd54eb;
@@ -87,7 +90,7 @@
   }
 }
 
-@media (max-width: 899px) {
+@media (max-width: 1169px) and (min-width: 600px) {
   .main-skills {
     margin-bottom: 10vh;
 
@@ -99,14 +102,54 @@
 
       .skills-grid,
       .technologies-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3%;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 15px;
         padding: 3%;
         max-width: 95%;
 
         .skill-item,
         .technology-item {
           padding: 20px;
+          width: 160px;
+          height: 150px;
+
+          img {
+            width: 55px;
+            height: 40px;
+          }
+
+          .skill-name,
+          .tech-name {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .main-skills {
+    margin-bottom: 10vh;
+
+    .Skills {
+      h1 {
+        font-size: 3rem;
+        margin-top: 10vh;
+      }
+
+      .skills-grid,
+      .technologies-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        padding: 3%;
+        max-width: 95%;
+
+        .skill-item,
+        .technology-item {
+          padding: 20px;
+          width: 150px;
+          height: 140px;
 
           img {
             width: 50px;
@@ -135,14 +178,16 @@
 
       .skills-grid,
       .technologies-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2%;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
         padding: 2%;
         max-width: 98%;
 
         .skill-item,
         .technology-item {
           padding: 15px;
+          width: 120px;
+          height: 120px;
 
           img {
             width: 40px;
