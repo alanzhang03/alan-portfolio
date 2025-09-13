@@ -30,8 +30,8 @@
 }
 
 .company-logo {
-  width: 85px;
-  height: 75px;
+  width: 15vw;
+  height: 9vh;
   border-radius: 5px;
   z-index: 1;
   background-color: white;
@@ -112,8 +112,8 @@
   }
 
   .company-logo {
-    width: 75px;
-    height: 65px;
+    width: 10vw;
+    height: 7.5vh;
   }
 
   .work-company-name {
@@ -133,7 +133,7 @@
   }
 }
 
-@media (max-width: 899px) and (min-width: 600px) {
+@media (max-width: 1430px) and (min-width: 600px) {
   .work-ui-box {
     width: 85vw;
     padding: 2rem 1.2rem;
@@ -152,8 +152,8 @@
   }
 
   .company-logo {
-    width: 65px;
-    height: 55px;
+    width: 7.5vw;
+    height: 5vh;
   }
 
   .work-info {

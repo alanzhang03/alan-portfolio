@@ -16,6 +16,11 @@ const skills = [
     link: "https://www.javascript.com/",
   },
   {
+    name: "TypeScript",
+    icon: "/Assets/typescript.svg",
+    link: "https://www.typescriptlang.org/",
+  },
+  {
     name: "Java",
     icon: "/Assets/java.svg",
     link: "https://www.java.com/en/",
@@ -80,14 +85,24 @@ const technologies = [
     link: "https://react.dev/",
   },
   {
-    name: "GSAP",
-    icon: "/Assets/gsap.svg",
-    link: "https://gsap.com/",
-  },
-  {
     name: "Next JS",
     icon: "/Assets/nextjs.svg",
     link: "https://nextjs.org/",
+  },
+  {
+    name: "AWS",
+    icon: "/Assets/aws-2.svg",
+    link: "https://aws.amazon.com/",
+  },
+  {
+    name: "Jira",
+    icon: "/Assets/jira.svg",
+    link: "https://www.atlassian.com/software/jira",
+  },
+  {
+    name: "Bitbucket",
+    icon: "/Assets/bitbucket.svg",
+    link: "https://bitbucket.org/product/",
   },
   {
     name: "PostgreSQL",
@@ -150,14 +165,9 @@ const technologies = [
     link: "https://expressjs.com/",
   },
   {
-    name: "Neon",
-    icon: "/Assets/Neon.svg",
-    link: "https://console.neon.tech/",
-  },
-  {
-    name: "Flask",
-    icon: "/Assets/flask.svg",
-    link: "https://flask.palletsprojects.com/en/stable/",
+    name: "GSAP",
+    icon: "/Assets/gsap.svg",
+    link: "https://gsap.com/",
   },
 ];
 
