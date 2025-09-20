@@ -82,7 +82,7 @@ const ProjectsCardDisplay = () => {
       Title: "Previous Web Portfolio",
       Description: "My previous web portfolio",
       Link: "https://alanzhang.onrender.com",
-      GitHubLink: "https://github.com/alanzhang03/apple_website",
+      GitHubLink: "https://github.com/alanzhang03/personal-portfolio",
       Image: PreviousPort,
       tech1: ReactLogo,
       tech2: NodeLogo,
@@ -127,18 +127,6 @@ const ProjectsCardDisplay = () => {
       tech3: HtmlLogo,
       tech4: CssLogo,
       tech5: "",
-    },
-    {
-      Title: "Apple website clone",
-      Description: "Apple iPhone webpage clone",
-      Link: "https://azhang03-apple-website-clone.vercel.app/",
-      GitHubLink: "https://github.com/alanzhang03/apple_website",
-      Image: AppleClone,
-      tech1: NextLogo,
-      tech2: GsapLogo,
-      tech3: JsLogo,
-      tech4: TailLogo,
-      tech5: ThreeLogo,
     },
   ];
 

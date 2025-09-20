@@ -44,7 +44,7 @@ const AboutDescrip = () => {
   return (
     <>
       <p id="gsap-about-me-description" className="about-me-description">
-        <span>Current undergrad student majoring in</span>
+        <span>Graduate with a Bachelor's degree in</span>
         <span className="purple-text">
           {" "}
           <a target="_blank" href="https://www.cs.umd.edu/">
@@ -60,7 +60,13 @@ const AboutDescrip = () => {
             University of Maryland, College Park{" "}
           </a>{" "}
         </span>{" "}
-        <span>(Expected grad in May 2025). </span>
+        <span>and current Software Engineer at </span>
+        <span className="purple-text">
+          <a target="_blank" href="https://www.tollbrothers.com/">
+            {" "}
+            Toll Brothers{" "}
+          </a>{" "}
+        </span>{" "}
         <span>I have developed a wide range of</span>
         <span className="purple-text">
           <Link href="#projects"> interactive web applications </Link>
