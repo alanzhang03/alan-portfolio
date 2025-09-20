@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import "../styles/Navbar.scss";
 import { IoHomeOutline } from "react-icons/io5";
@@ -19,7 +19,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("homePage");
 
-  const controlNavbar = () => {
+  const controlNavbar = useCallback(() => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
         setShow(false);
@@ -28,9 +28,9 @@ const Navbar = () => {
       }
       setLastScrollY(window.scrollY);
     }
-  };
+  }, [lastScrollY]);
 
-  const updateActiveSection = () => {
+  const updateActiveSection = useCallback(() => {
     const sections = ["homePage", "work", "skills", "projects", "contact"];
     const scrollPosition = window.scrollY + 100;
 
@@ -47,7 +47,7 @@ const Navbar = () => {
         }
       }
     }
-  };
+  }, []);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -63,7 +63,7 @@ const Navbar = () => {
         window.removeEventListener("scroll", handleScroll);
       };
     }
-  }, [lastScrollY]);
+  }, [controlNavbar, updateActiveSection]);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
