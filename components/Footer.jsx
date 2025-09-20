@@ -21,6 +21,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/alan-zhang-a254b8233/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Alan's LinkedIn profile"
           >
             <TiSocialLinkedinCircular className="linkedin-icon" />
           </a>
@@ -29,6 +30,7 @@ const Footer = () => {
             href="https://github.com/alanzhang03"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Alan's GitHub profile"
           >
             <IoLogoGithub className="github-icon" />
           </a>
@@ -37,6 +39,7 @@ const Footer = () => {
             href="https://twitter.com/alanzhang003"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Alan's Twitter profile"
           >
             <AiFillTwitterCircle className="twitter-icon" />
           </a>
@@ -45,6 +48,7 @@ const Footer = () => {
             href="https://www.facebook.com/profile.php?id=100009265073408"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Alan's Facebook profile"
           >
             <FaFacebook className="facebook-icon" />
           </a>
@@ -53,6 +57,7 @@ const Footer = () => {
             href="https://www.instagram.com/_alanzhang_3/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Alan's Instagram profile"
           >
             <SiInstagram className="insta-icon" />
           </a>
