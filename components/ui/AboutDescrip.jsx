@@ -60,7 +60,15 @@ const AboutDescrip = () => {
             University of Maryland, College Park{" "}
           </a>{" "}
         </span>{" "}
-        <span>and current Software Engineer at </span>
+        <span>
+          and current{" "}
+          <span className="purple-text">
+            <a target="_blank" href="https://www.tollbrothers.com/">
+              Software Engineer
+            </a>
+          </span>{" "}
+          at{" "}
+        </span>
         <span className="purple-text">
           <a target="_blank" href="https://www.tollbrothers.com/">
             {" "}
