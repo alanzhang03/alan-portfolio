@@ -52,7 +52,7 @@ const AboutDescrip = () => {
             Computer Science{" "}
           </a>{" "}
         </span>{" "}
-        <span>at the</span>
+        <span>from the</span>
         <span className="purple-text">
           {" "}
           <a target="_blank" href="https://www.cs.umd.edu/">
@@ -75,7 +75,7 @@ const AboutDescrip = () => {
             Toll Brothers{" "}
           </a>{" "}
         </span>{" "}
-        <span>I have developed a wide range of</span>
+        <span>. I have developed a wide range of</span>
         <span className="purple-text">
           <Link href="#projects"> interactive web applications </Link>
         </span>
