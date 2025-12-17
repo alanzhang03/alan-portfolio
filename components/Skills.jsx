@@ -1,213 +1,214 @@
-"use client";
+'use client';
 
-import React from "react";
-import "../styles/Skills.scss";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import Image from "next/image";
+import React from 'react';
+import '../styles/Skills.scss';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const skills = [
   {
-    name: "JavaScript",
-    icon: "/Assets/js.svg",
-    link: "https://www.javascript.com/",
+    name: 'JavaScript',
+    icon: '/Assets/js.svg',
+    link: 'https://www.javascript.com/',
   },
   {
-    name: "TypeScript",
-    icon: "/Assets/typescript.svg",
-    link: "https://www.typescriptlang.org/",
+    name: 'TypeScript',
+    icon: '/Assets/typescript.svg',
+    link: 'https://www.typescriptlang.org/',
   },
   {
-    name: "Java",
-    icon: "/Assets/java.svg",
-    link: "https://www.java.com/en/",
+    name: 'Java',
+    icon: '/Assets/java.svg',
+    link: 'https://www.java.com/en/',
   },
   {
-    name: "Python",
-    icon: "/Assets/python.svg",
-    link: "https://www.python.org/",
+    name: 'Python',
+    icon: '/Assets/python.svg',
+    link: 'https://www.python.org/',
   },
   {
-    name: "Html",
-    icon: "/Assets/html.svg",
-    link: "https://www.w3schools.com/html/html_intro.asp",
+    name: 'Html',
+    icon: '/Assets/html.svg',
+    link: 'https://www.w3schools.com/html/html_intro.asp',
   },
   {
-    name: "Sass",
-    icon: "/Assets/sass.svg",
-    link: "https://sass-lang.com/",
+    name: 'Sass',
+    icon: '/Assets/sass.svg',
+    link: 'https://sass-lang.com/',
   },
   {
-    name: "Tailwind",
-    icon: "/Assets/tailwind.svg",
-    link: "https://tailwindcss.com/",
+    name: 'Tailwind',
+    icon: '/Assets/tailwind.svg',
+    link: 'https://tailwindcss.com/',
   },
   {
-    name: "Css",
-    icon: "/Assets/css.svg",
-    link: "https://www.w3schools.com/css/",
+    name: 'Css',
+    icon: '/Assets/css.svg',
+    link: 'https://www.w3schools.com/css/',
   },
   {
-    name: "C#",
-    icon: "/Assets/csharp.svg",
-    link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    name: 'C#',
+    icon: '/Assets/csharp.svg',
+    link: 'https://learn.microsoft.com/en-us/dotnet/csharp/',
   },
   {
-    name: "C",
-    icon: "/Assets/c.svg",
-    link: "https://www.learn-c.org/",
+    name: 'C',
+    icon: '/Assets/c.svg',
+    link: 'https://www.learn-c.org/',
   },
   {
-    name: "Ocaml",
-    icon: "/Assets/ocaml.svg",
-    link: "https://ocaml.org/",
+    name: 'Ocaml',
+    icon: '/Assets/ocaml.svg',
+    link: 'https://ocaml.org/',
   },
 
   {
-    name: "R",
-    icon: "/Assets/r.svg",
-    link: "https://www.r-project.org/",
+    name: 'R',
+    icon: '/Assets/r.svg',
+    link: 'https://www.r-project.org/',
   },
   {
-    name: "Matlab",
-    icon: "/Assets/matlab.svg",
-    link: "https://www.mathworks.com/?s_tid=gn_logo",
+    name: 'Matlab',
+    icon: '/Assets/matlab.svg',
+    link: 'https://www.mathworks.com/?s_tid=gn_logo',
   },
 ];
 
 const technologies = [
   {
-    name: "React",
-    icon: "/Assets/react.svg",
-    link: "https://react.dev/",
+    name: 'React',
+    icon: '/Assets/react.svg',
+    link: 'https://react.dev/',
   },
   {
-    name: "Next JS",
-    icon: "/Assets/nextjs.svg",
-    link: "https://nextjs.org/",
+    name: 'Next JS',
+    icon: '/Assets/nextjs.svg',
+    link: 'https://nextjs.org/',
   },
   {
-    name: "AWS",
-    icon: "/Assets/aws-2.svg",
-    link: "https://aws.amazon.com/",
+    name: 'ExpressJs',
+    icon: '/Assets/express.svg',
+    link: 'https://expressjs.com/',
   },
   {
-    name: "Jira",
-    icon: "/Assets/jira.svg",
-    link: "https://www.atlassian.com/software/jira",
+    name: 'AWS',
+    icon: '/Assets/aws-2.svg',
+    link: 'https://aws.amazon.com/',
   },
   {
-    name: "Bitbucket",
-    icon: "/Assets/bitbucket.svg",
-    link: "https://bitbucket.org/product/",
+    name: 'PostgreSQL',
+    icon: '/Assets/postgresql.svg',
+    link: 'https://nextjs.org/',
   },
   {
-    name: "PostgreSQL",
-    icon: "/Assets/postgresql.svg",
-    link: "https://nextjs.org/",
+    name: 'Github',
+    icon: '/Assets/github.svg',
+    link: 'https://github.com/',
   },
   {
-    name: "Three JS",
-    icon: "/Assets/threejs.svg",
-    link: "https://threejs.org/",
+    name: 'Jira',
+    icon: '/Assets/jira.svg',
+    link: 'https://www.atlassian.com/software/jira',
   },
   {
-    name: "Webpack",
-    icon: "/Assets/webpack.svg",
-    link: "https://webpack.js.org/",
+    name: 'Bitbucket',
+    icon: '/Assets/bitbucket.svg',
+    link: 'https://bitbucket.org/product/',
   },
   {
-    name: "Node",
-    icon: "/Assets/nodejs.svg",
-    link: "https://nodejs.org/en",
+    name: 'Redis',
+    icon: '/Assets/redis.svg',
+    link: 'https://redis.io/',
   },
   {
-    name: "Vite",
-    icon: "/Assets/vitejs.svg",
-    link: "https://vitejs.dev/",
+    name: 'Prisma',
+    icon: '/Assets/prisma.svg',
+    link: 'https://www.prisma.io/',
   },
   {
-    name: "Vue",
-    icon: "/Assets/vue.svg",
-    link: "https://vuejs.org/",
+    name: 'Supabase',
+    icon: '/Assets/supabase.svg',
+    link: 'https://supabase.com/',
   },
   {
-    name: "Github",
-    icon: "/Assets/github.svg",
-    link: "https://github.com/",
+    name: 'GSAP',
+    icon: '/Assets/gsap.svg',
+    link: 'https://gsap.com/',
   },
   {
-    name: "GitLab",
-    icon: "/Assets/gitlab.svg",
-    link: "https://about.gitlab.com/",
+    name: 'Node',
+    icon: '/Assets/nodejs.svg',
+    link: 'https://nodejs.org/en',
   },
   {
-    name: "git",
-    icon: "/Assets/git.svg",
-    link: "https://git-scm.com/",
+    name: 'Vite',
+    icon: '/Assets/vitejs.svg',
+    link: 'https://vitejs.dev/',
   },
   {
-    name: "MongoDB",
-    icon: "/Assets/mongoDB.svg",
-    link: "https://www.mongodb.com/",
+    name: 'Vue',
+    icon: '/Assets/vue.svg',
+    link: 'https://vuejs.org/',
+  },
+
+  {
+    name: 'GitLab',
+    icon: '/Assets/gitlab.svg',
+    link: 'https://about.gitlab.com/',
   },
   {
-    name: "Redis",
-    icon: "/Assets/redis.svg",
-    link: "https://redis.io/",
+    name: 'git',
+    icon: '/Assets/git.svg',
+    link: 'https://git-scm.com/',
   },
   {
-    name: "ExpressJs",
-    icon: "/Assets/express.svg",
-    link: "https://expressjs.com/",
-  },
-  {
-    name: "GSAP",
-    icon: "/Assets/gsap.svg",
-    link: "https://gsap.com/",
+    name: 'MongoDB',
+    icon: '/Assets/mongoDB.svg',
+    link: 'https://www.mongodb.com/',
   },
 ];
 
 const Skills = () => {
   useGSAP(() => {
-    gsap.to("#gsap-skill-item", {
-      scrollTrigger: ".skill-item",
+    gsap.to('#gsap-skill-item', {
+      scrollTrigger: '.skill-item',
       delay: 0.5,
       opacity: 1,
       scale: 1,
       stagger: {
         each: 0.25,
-        grid: "auto",
-        from: "end",
+        grid: 'auto',
+        from: 'end',
       },
     });
 
-    gsap.to("#gsap-technology-item", {
-      scrollTrigger: ".technology-item",
+    gsap.to('#gsap-technology-item', {
+      scrollTrigger: '.technology-item',
       delay: 0.5,
       opacity: 1,
       scale: 1,
       stagger: {
         each: 0.25,
-        grid: "auto",
-        from: "end",
+        grid: 'auto',
+        from: 'end',
       },
     });
   }, []);
 
   return (
-    <section id="skills" className="main-skills">
-      <div className="Skills">
+    <section id='skills' className='main-skills'>
+      <div className='Skills'>
         <h1>
-          Programming <span style={{ color: "#a371f7" }}>Languages</span>
+          Programming <span style={{ color: '#a371f7' }}>Languages</span>
         </h1>
-        <div className="skills-grid">
+        <div className='skills-grid'>
           {skills.map((skill) => (
-            <div id="gsap-skill-item" className="skill-item" key={skill.name}>
-              <a target="_blank" href={skill.link}>
+            <div id='gsap-skill-item' className='skill-item' key={skill.name}>
+              <a target='_blank' href={skill.link}>
                 <Image
                   src={skill.icon}
                   width={100}
@@ -215,19 +216,19 @@ const Skills = () => {
                   alt={skill.name}
                 />
               </a>
-              <p className="skill-name">{skill.name}</p>
+              <p className='skill-name'>{skill.name}</p>
             </div>
           ))}
         </div>
         <h1>Technologies</h1>
-        <div className="technologies-grid">
+        <div className='technologies-grid'>
           {technologies.map((tech) => (
             <div
-              id="gsap-technology-item"
-              className="technology-item"
+              id='gsap-technology-item'
+              className='technology-item'
               key={tech.name}
             >
-              <a target="_blank" href={tech.link}>
+              <a target='_blank' href={tech.link}>
                 <Image
                   src={tech.icon}
                   width={100}
@@ -235,7 +236,7 @@ const Skills = () => {
                   alt={tech.name}
                 />
               </a>
-              <p className="tech-name">{tech.name}</p>
+              <p className='tech-name'>{tech.name}</p>
             </div>
           ))}
         </div>

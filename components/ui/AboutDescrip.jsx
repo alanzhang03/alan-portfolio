@@ -1,40 +1,40 @@
-"use client";
+'use client';
 
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import React from "react";
-import "./styles/AboutDescrip.scss";
-import Link from "next/link";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import { MdOutlineFileDownload } from "react-icons/md";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import React from 'react';
+import './styles/AboutDescrip.scss';
+import Link from 'next/link';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { MdOutlineFileDownload } from 'react-icons/md';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutDescrip = () => {
   useGSAP(() => {
-    gsap.to("#gsap-about-me-description span", {
-      scrollTrigger: ".about-me-description",
+    gsap.to('#gsap-about-me-description span', {
+      scrollTrigger: '.about-me-description',
       duration: 1.5,
       delay: 0.25,
       opacity: 1,
       stagger: {
         each: 0.2,
-        from: "start",
+        from: 'start',
       },
     });
 
-    gsap.to(".section-2-divider span", {
-      scrollTrigger: ".section-2-divider",
+    gsap.to('.section-2-divider span', {
+      scrollTrigger: '.section-2-divider',
       duration: 1.5,
       delay: 2,
       opacity: 1,
       stagger: {
         each: 0.275,
-        from: "start",
+        from: 'start',
       },
     });
-    gsap.to(".download-cv-button", {
-      scrollTrigger: ".download-cv-button",
+    gsap.to('.download-cv-button', {
+      scrollTrigger: '.download-cv-button',
       duration: 1.5,
       delay: 2.75,
       opacity: 1,
@@ -43,67 +43,67 @@ const AboutDescrip = () => {
 
   return (
     <>
-      <p id="gsap-about-me-description" className="about-me-description">
+      <p id='gsap-about-me-description' className='about-me-description'>
         <span>Graduate with a Bachelor&apos;s degree in</span>
-        <span className="purple-text">
-          {" "}
-          <a target="_blank" href="https://www.cs.umd.edu/">
-            {" "}
-            Computer Science{" "}
-          </a>{" "}
-        </span>{" "}
+        <span className='purple-text'>
+          {' '}
+          <a target='_blank' href='https://www.cs.umd.edu/'>
+            {' '}
+            Computer Science{' '}
+          </a>{' '}
+        </span>{' '}
         <span>from the</span>
-        <span className="purple-text">
-          {" "}
-          <a target="_blank" href="https://www.cs.umd.edu/">
-            {" "}
-            University of Maryland, College Park{" "}
-          </a>{" "}
-        </span>{" "}
+        <span className='purple-text'>
+          {' '}
+          <a target='_blank' href='https://www.cs.umd.edu/'>
+            {' '}
+            University of Maryland, College Park{' '}
+          </a>{' '}
+        </span>{' '}
         <span>
-          and current{" "}
-          <span className="purple-text">
-            <a target="_blank" href="https://www.tollbrothers.com/">
+          and current{' '}
+          <span className='purple-text'>
+            <a target='_blank' href='https://www.tollbrothers.com/'>
               Software Engineer
             </a>
-          </span>{" "}
-          at{" "}
+          </span>{' '}
+          at{' '}
         </span>
-        <span className="purple-text">
-          <a target="_blank" href="https://www.tollbrothers.com/">
-            {" "}
-            Toll Brothers{" "}
-          </a>{" "}
-        </span>{" "}
+        <span className='purple-text'>
+          <a target='_blank' href='https://www.tollbrothers.com/'>
+            {' '}
+            Toll Brothers{' '}
+          </a>{' '}
+        </span>{' '}
         <span>. I have developed a wide range of</span>
-        <span className="purple-text">
-          <Link href="#projects"> interactive web applications </Link>
+        <span className='purple-text'>
+          <Link href='#projects'> interactive web applications </Link>
         </span>
         <span>which you can view in the</span>
-        <span className="purple-text">
-          <Link href="#projects"> projects section </Link>
+        <span className='purple-text'>
+          <Link href='#projects'> projects section </Link>
         </span>
         <span>of this portfolio!</span>
       </p>
 
-      <div className="about-section-2">
-        <div className="section-2-divider">
-          <span className="number">3</span>+ Years Of Experience
+      <div className='about-section-2'>
+        <div className='section-2-divider'>
+          <span className='number'>1</span>+ Years Of Experience
         </div>
-        <div className="section-2-divider">
-          <span className="number">15</span>+ Completed Projects
+        <div className='section-2-divider'>
+          <span className='number'>15</span>+ Completed Projects
         </div>
-        <div className="section-2-divider">
-          <span className="number">20</span> + Technologies learned
+        <div className='section-2-divider'>
+          <span className='number'>20</span> + Technologies learned
         </div>
-        <div className="section-2-divider">
-          <span className="number">1000</span>+ Code <br></br>Commits
+        <div className='section-2-divider'>
+          <span className='number'>1000</span>+ Code <br></br>Commits
         </div>
       </div>
-      <div className="download-cv-container">
-        <a href="/Alan_Zhang_Main_Resume.pdf" download>
-          <button className="download-cv-button">
-            Download CV <MdOutlineFileDownload className="download-icon" />
+      <div className='download-cv-container'>
+        <a href='/Alan_Zhang_Main_Resume.pdf' download>
+          <button className='download-cv-button'>
+            Download CV <MdOutlineFileDownload className='download-icon' />
           </button>
         </a>
       </div>
