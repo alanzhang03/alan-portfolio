@@ -88,18 +88,19 @@ const AboutDescrip = () => {
 
       <div className='about-section-2'>
         <div className='section-2-divider'>
-          <span className='number'>1</span>+ Years Of Experience
+          <span className='number'>2</span> Years Production Experience
         </div>
         <div className='section-2-divider'>
-          <span className='number'>15</span>+ Completed Projects
+          <span className='number'>4</span> End-to-End Projects Delivered
         </div>
         <div className='section-2-divider'>
-          <span className='number'>20</span> + Technologies learned
+          <span className='number'>100k+</span> Page Views Served
         </div>
         <div className='section-2-divider'>
-          <span className='number'>1000</span>+ Code <br></br>Commits
+          <span className='number'>1k+</span> Users Impacted
         </div>
       </div>
+
       <div className='download-cv-container'>
         <a href='/Alan_Zhang_Main_Resume.pdf' download>
           <button className='download-cv-button'>
