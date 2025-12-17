@@ -19,7 +19,7 @@ import AppleClone from '../../public/Assets/AppleClone.png';
 import TopFlightTracker from '../../public/Assets/TopFlightTracker.png';
 import WeatherApp from '../../public/Assets/weatherApp.png';
 import TFTApp from '../../public/Assets/TFTApp.png';
-import YSC from '../../public/Assets/YscLunchSoccer.png';
+import YSC from '../../public/Assets/yscLunchSoccer.png';
 
 // Tech Stack Logos
 import ReactLogo from '../../public/Assets/reactLogo.svg';
