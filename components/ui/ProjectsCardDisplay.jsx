@@ -60,7 +60,7 @@ const ProjectsCardDisplay = () => {
     {
       Title: 'YSC Lunch Soccer',
       Description:
-        'A web application for managing lunchtime soccer sessions, RSVPs, team randomization, and communication for YSC sports lunch soccer members.',
+        'Website for attendance tracking, team randomization, session scheduling, and more for YSC Sports Lunch Soccer',
       Link: 'https://ysclunchsoccer.com/',
       GitHubLink: 'https://github.com/alanzhang03/YSCLunchSoccer',
       Image: YSC,
