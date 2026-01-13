@@ -2,16 +2,16 @@
 
 Welcome to my Personal Portfolio!
 
-### 🌐 [Visit My Portfolio](https://azhang03.vercel.app/)
+###  [Visit My Portfolio](https://azhang03.vercel.app/)
 
 
-## 🛠️ Technologies & Tools
+##  Technologies & Tools
 - **Front-End**: Next.js, React, Sass, GSAP
 - **Back-End**: Resend, APIs
 - **Languages**: JavaScript, HTML, CSS
 - **Version Control**: Git, GitHub
 
-## 🖥️ Featured Projects
+##  Featured Projects
 
 - **[Streamer Tracker TFT](https://github.com/alanzhang03/streamer-tracker-tft)**: Streamer Tracker for TFT that tracks top TFT Streamers.
   - **Tech Stack**: Nextjs, JavaScript, Sass, Flask, GSAP, Python, PostgreSQL
@@ -38,7 +38,7 @@ Welcome to my Personal Portfolio!
   - [Check Live Site](https://resume-cv-app.onrender.com/)
 
 
-## 📫 Contact Me
+## Contact Me
 Feel free to reach out!
 
 - **Email**: [alan.s.zhang04@gmail.com]
