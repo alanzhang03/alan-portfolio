@@ -60,7 +60,7 @@ const ProjectsCardDisplay = () => {
     {
       Title: 'YSC Lunch Soccer',
       Description:
-        'Website for attendance tracking, team randomization, session scheduling, and more for YSC Sports Lunch Soccer',
+        'Website for attendance tracking, team randomization, session scheduling, payments (using Stripe), and more for YSC Sports Lunch Soccer',
       Link: 'https://ysclunchsoccer.com/',
       GitHubLink: 'https://github.com/alanzhang03/YSCLunchSoccer',
       Image: YSC,
