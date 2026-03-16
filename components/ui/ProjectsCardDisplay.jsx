@@ -14,7 +14,6 @@ gsap.registerPlugin(ScrollTrigger);
 import TicTacToeImg from '../../public/Assets/TicTacToe.png';
 import PreviousPort from '../../public/Assets/previousPort.png';
 import CvApp from '../../public/Assets/CvApp.png';
-import AppleClone from '../../public/Assets/AppleClone.png';
 import TopFlightTracker from '../../public/Assets/TopFlightTracker.png';
 import WeatherApp from '../../public/Assets/weatherApp.png';
 import TFTApp from '../../public/Assets/TFTApp.png';
@@ -23,17 +22,14 @@ import YSC from '../../public/Assets/yscLunchSoccer.png';
 // Tech Stack Logos
 import ReactLogo from '../../public/Assets/reactLogo.svg';
 import JsLogo from '../../public/Assets/jsLogo.svg';
-import ThreeLogo from '../../public/Assets/threeLogo.svg';
 import GsapLogo from '../../public/Assets/gsapLogo.svg';
 import NextLogo from '../../public/Assets/nextLogo.svg';
 import SassLogo from '../../public/Assets/sassLogo.svg';
 import NodeLogo from '../../public/Assets/nodejsLogo.svg';
 import CssLogo from '../../public/Assets/CssLogo.svg';
 import HtmlLogo from '../../public/Assets/HtmlLogo.svg';
-import TailLogo from '../../public/Assets/tailLogo.svg';
 import RedisLogo from '../../public/Assets/redis.svg';
 import MongoDbLogo from '../../public/Assets/mongoDB.svg';
-import NeonLogo from '../../public/Assets/Neon.svg';
 import PostgreLogo from '../../public/Assets/postgresql.svg';
 import PythonLogo from '../../public/Assets/python.svg';
 import FlaskLogo from '../../public/Assets/flask.svg';
@@ -152,76 +148,76 @@ const ProjectsCardDisplay = () => {
 
   const projectDivs = projects.map((project, index) => {
     return (
-        <div key={index} className='project-grid'>
-          <div className='project-image-container'>
-            <Image
-              className='projects-images'
-              src={project.Image}
-              alt={`${project.Title} image`}
-            />
+      <div key={index} className='project-grid'>
+        <div className='project-image-container'>
+          <Image
+            className='projects-images'
+            src={project.Image}
+            alt={`${project.Title} image`}
+          />
+        </div>
+        <div className='project-text-container'>
+          <h3 className='project-title'>{project.Title}</h3>
+          <p className='project-description'>{project.Description}</p>
+        </div>
+        <div className='project-tech-link-container'>
+          <div className='tech-container'>
+            {project.tech1 && (
+              <Image
+                className='image-icon'
+                src={project.tech1}
+                alt='Tech logo 1'
+              />
+            )}
+            {project.tech2 && (
+              <Image
+                className='image-icon'
+                src={project.tech2}
+                alt='Tech logo 2'
+              />
+            )}
+            {project.tech3 && (
+              <Image
+                className='image-icon'
+                src={project.tech3}
+                alt='Tech logo 3'
+              />
+            )}
+            {project.tech4 && (
+              <Image
+                className='image-icon'
+                src={project.tech4}
+                alt='Tech logo 4'
+              />
+            )}
+            {project.tech5 && (
+              <Image
+                className='image-icon'
+                src={project.tech5}
+                alt='Tech logo 5'
+              />
+            )}
           </div>
-          <div className='project-text-container'>
-            <h1 className='project-title'>{project.Title}</h1>
-            <p className='project-description'>{project.Description}</p>
-          </div>
-          <div className='project-tech-link-container'>
-            <div className='tech-container'>
-              {project.tech1 && (
-                <Image
-                  className='image-icon'
-                  src={project.tech1}
-                  alt='Tech logo 1'
-                />
-              )}
-              {project.tech2 && (
-                <Image
-                  className='image-icon'
-                  src={project.tech2}
-                  alt='Tech logo 2'
-                />
-              )}
-              {project.tech3 && (
-                <Image
-                  className='image-icon'
-                  src={project.tech3}
-                  alt='Tech logo 3'
-                />
-              )}
-              {project.tech4 && (
-                <Image
-                  className='image-icon'
-                  src={project.tech4}
-                  alt='Tech logo 4'
-                />
-              )}
-              {project.tech5 && (
-                <Image
-                  className='image-icon'
-                  src={project.tech5}
-                  alt='Tech logo 5'
-                />
-              )}
-            </div>
-            <div className='project-links'>
-              <a
-                href={project.GitHubLink}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='project-nav'
-              >
-                <FaGithub className='location-arrow' /> GitHub
-              </a>
-              <a
-                href={project.Link}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='project-nav'
-              >
-                Live Site <FaLocationArrow className='location-arrow' />
-              </a>
-            </div>
+          <div className='project-links'>
+            <a
+              href={project.GitHubLink}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='project-nav'
+            >
+              <FaGithub className='location-arrow' /> GitHub
+            </a>
+            <a
+              href={project.Link}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='project-nav'
+            >
+              Live Site <FaLocationArrow className='location-arrow' />
+            </a>
           </div>
         </div>
+      </div>
     );
   });
 

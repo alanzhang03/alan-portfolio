@@ -80,6 +80,11 @@ const technologies = [
     link: 'https://react.dev/',
   },
   {
+    name: 'React-Native',
+    icon: '/Assets/react-native.svg',
+    link: 'https://reactnative.dev/',
+  },
+  {
     name: 'Next JS',
     icon: '/Assets/nextjs.svg',
     link: 'https://nextjs.org/',
@@ -164,6 +169,16 @@ const technologies = [
     name: 'MongoDB',
     icon: '/Assets/mongoDB.svg',
     link: 'https://www.mongodb.com/',
+  },
+  {
+    name: 'Twilio',
+    icon: '/Assets/twilio.svg',
+    link: 'https://www.twilio.com/en-us',
+  },
+  {
+    name: 'Stripe',
+    icon: '/Assets/stripe.svg',
+    link: 'https://stripe.com/',
   },
 ];
 

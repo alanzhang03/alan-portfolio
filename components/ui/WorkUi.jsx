@@ -101,7 +101,7 @@ const WorkUi = () => {
           </a>
         </div>
         <div className="work-info">
-          <h1 className="work-company-name">{company.companyName}</h1>
+          <h3 className="work-company-name">{company.companyName}</h3>
           <p className="company-position">{company.companyPosition}</p>
           <div className="company-start-end-date-container">
             <p>

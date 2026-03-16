@@ -1,8 +1,6 @@
 import React from "react";
 import "../styles/About.scss";
 import AboutDescrip from "./ui/AboutDescrip";
-import AboutGrid from "./ui/AboutGrid";
-import ContributionsHeatmap from "./ui/ContributionsHeatmap";
 
 const About = () => {
   return (
