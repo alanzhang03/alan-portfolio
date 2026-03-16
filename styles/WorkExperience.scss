@@ -1,3 +1,15 @@
+.work-experience-section {
+  padding-top: 10vh;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  width: 100%;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .work-experience-heading {
   font-size: 5rem;
   color: white;

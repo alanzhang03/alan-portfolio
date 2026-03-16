@@ -60,11 +60,6 @@ const skills = [
     icon: '/Assets/c.svg',
     link: 'https://www.learn-c.org/',
   },
-  {
-    name: 'Ocaml',
-    icon: '/Assets/ocaml.svg',
-    link: 'https://ocaml.org/',
-  },
 
   {
     name: 'R',
@@ -174,71 +169,83 @@ const technologies = [
 
 const Skills = () => {
   useGSAP(() => {
-    gsap.to('#gsap-skill-item', {
-      scrollTrigger: '.skill-item',
-      delay: 0.5,
-      opacity: 1,
-      scale: 1,
-      stagger: {
-        each: 0.25,
-        grid: 'auto',
-        from: 'end',
+    gsap.fromTo(
+      '.hex-item',
+      { opacity: 0, scale: 0.7 },
+      {
+        scrollTrigger: {
+          trigger: '.hex-grid',
+          start: 'top 80%',
+        },
+        opacity: 1,
+        scale: 1,
+        duration: 0.4,
+        ease: 'back.out(1.4)',
+        stagger: { each: 0.05, from: 'start' },
       },
-    });
+    );
 
-    gsap.to('#gsap-technology-item', {
-      scrollTrigger: '.technology-item',
-      delay: 0.5,
-      opacity: 1,
-      scale: 1,
-      stagger: {
-        each: 0.25,
-        grid: 'auto',
-        from: 'end',
+    gsap.fromTo(
+      '.tech-hex-item',
+      { opacity: 0, scale: 0.7 },
+      {
+        scrollTrigger: {
+          trigger: '.tech-hex-grid',
+          start: 'top 80%',
+        },
+        opacity: 1,
+        scale: 1,
+        duration: 0.4,
+        ease: 'back.out(1.4)',
+        stagger: { each: 0.05, from: 'start' },
       },
-    });
+    );
   }, []);
 
   return (
     <section id='skills' className='main-skills'>
       <div className='Skills'>
+        <span className='section-label'>Tech Stack</span>
         <h1>
-          Programming <span style={{ color: '#a371f7' }}>Languages</span>
+          Programming <span className='gradient-green'>Languages</span>
         </h1>
-        <div className='skills-grid'>
-          {skills.map((skill) => (
-            <div id='gsap-skill-item' className='skill-item' key={skill.name}>
-              <a target='_blank' href={skill.link}>
+        <div className='skills-group'>
+          <div className='hex-grid'>
+            {skills.map((skill) => (
+              <a
+                key={skill.name}
+                className='hex-item'
+                target='_blank'
+                href={skill.link}
+              >
                 <Image
                   src={skill.icon}
-                  width={100}
-                  height={100}
+                  width={48}
+                  height={48}
                   alt={skill.name}
                 />
+                <p className='hex-label'>{skill.name}</p>
               </a>
-              <p className='skill-name'>{skill.name}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-        <h1>Technologies</h1>
-        <div className='technologies-grid'>
-          {technologies.map((tech) => (
-            <div
-              id='gsap-technology-item'
-              className='technology-item'
-              key={tech.name}
-            >
-              <a target='_blank' href={tech.link}>
-                <Image
-                  src={tech.icon}
-                  width={100}
-                  height={100}
-                  alt={tech.name}
-                />
+        <h1>
+          Frameworks & <span className='gradient-green'>Tools</span>
+        </h1>
+        <div className='skills-group'>
+          <div className='tech-hex-grid'>
+            {technologies.map((tech) => (
+              <a
+                key={tech.name}
+                className='tech-hex-item'
+                target='_blank'
+                href={tech.link}
+              >
+                <Image src={tech.icon} width={48} height={48} alt={tech.name} />
+                <p className='hex-label'>{tech.name}</p>
               </a>
-              <p className='tech-name'>{tech.name}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

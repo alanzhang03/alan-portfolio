@@ -15,21 +15,18 @@ const WorkUi = () => {
     const workContainers = document.querySelectorAll(".work-ui-container");
 
     workContainers.forEach((container) => {
-      const workInfo = container.querySelector(".work-info");
-
       gsap.fromTo(
-        workInfo,
-        { opacity: 0.3 },
+        container,
+        { opacity: 0, y: 30 },
         {
           opacity: 1,
+          y: 0,
           scrollTrigger: {
             trigger: container,
-            start: "top 75%",
-            end: "top 10%",
-            toggleActions: "play reverse play reverse",
+            start: "top 85%",
           },
-          duration: 0.3,
-          ease: "power2.inOut",
+          duration: 0.7,
+          ease: "power2.out",
         }
       );
     });

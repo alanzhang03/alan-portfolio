@@ -4,7 +4,6 @@ import React from 'react';
 import './styles/ProjectsCardDisplay.scss';
 import Image from 'next/image';
 import { FaLocationArrow } from 'react-icons/fa6';
-import PinContainer from './PinContainer';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -44,16 +43,21 @@ import PrismaLogo from '../../public/Assets/prisma.svg';
 
 const ProjectsCardDisplay = () => {
   useGSAP(() => {
-    gsap.to('.project-grid', {
-      scrollTrigger: '.project-grid',
-      duration: 2,
-      delay: 0.4,
-      opacity: 1,
-      stagger: {
-        each: 0.25,
-        from: 'start',
-      },
-    });
+    gsap.fromTo(
+      '.project-grid',
+      { opacity: 0, y: 40 },
+      {
+        scrollTrigger: {
+          trigger: '.projects-display-container',
+          start: 'top 80%',
+        },
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: 'power2.out',
+        stagger: { each: 0.15, from: 'start' },
+      }
+    );
   }, []);
 
   const projects = [
@@ -149,65 +153,63 @@ const ProjectsCardDisplay = () => {
 
   const projectDivs = projects.map((project, index) => {
     return (
-      <PinContainer key={index} title={project.Title} href={project.Link}>
-        <a href={project.Link} target='_blank' rel='noopener noreferrer'>
-          <div className='project-grid'>
-            <div className='project-image-container'>
-              <Image
-                className='projects-images'
-                src={project.Image}
-                alt={`${project.Title} image`}
-              />
-            </div>
-            <div className='project-text-container'>
-              <h1 className='project-title'>{project.Title}</h1>
-              <p className='project-description'>{project.Description}</p>
-            </div>
-            <div className='project-tech-link-container'>
-              <div className='tech-container'>
-                {project.tech1 && (
-                  <Image
-                    className='image-icon'
-                    src={project.tech1}
-                    alt='Tech logo 1'
-                  />
-                )}
-                {project.tech2 && (
-                  <Image
-                    className='image-icon'
-                    src={project.tech2}
-                    alt='Tech logo 2'
-                  />
-                )}
-                {project.tech3 && (
-                  <Image
-                    className='image-icon'
-                    src={project.tech3}
-                    alt='Tech logo 3'
-                  />
-                )}
-                {project.tech4 && (
-                  <Image
-                    className='image-icon'
-                    src={project.tech4}
-                    alt='Tech logo 4'
-                  />
-                )}
-                {project.tech5 && (
-                  <Image
-                    className='image-icon'
-                    src={project.tech5}
-                    alt='Tech logo 5'
-                  />
-                )}
-              </div>
-              <p className='project-nav'>
-                Check Live Site <FaLocationArrow className='location-arrow' />
-              </p>
-            </div>
+      <a key={index} href={project.Link} target='_blank' rel='noopener noreferrer'>
+        <div className='project-grid'>
+          <div className='project-image-container'>
+            <Image
+              className='projects-images'
+              src={project.Image}
+              alt={`${project.Title} image`}
+            />
           </div>
-        </a>
-      </PinContainer>
+          <div className='project-text-container'>
+            <h1 className='project-title'>{project.Title}</h1>
+            <p className='project-description'>{project.Description}</p>
+          </div>
+          <div className='project-tech-link-container'>
+            <div className='tech-container'>
+              {project.tech1 && (
+                <Image
+                  className='image-icon'
+                  src={project.tech1}
+                  alt='Tech logo 1'
+                />
+              )}
+              {project.tech2 && (
+                <Image
+                  className='image-icon'
+                  src={project.tech2}
+                  alt='Tech logo 2'
+                />
+              )}
+              {project.tech3 && (
+                <Image
+                  className='image-icon'
+                  src={project.tech3}
+                  alt='Tech logo 3'
+                />
+              )}
+              {project.tech4 && (
+                <Image
+                  className='image-icon'
+                  src={project.tech4}
+                  alt='Tech logo 4'
+                />
+              )}
+              {project.tech5 && (
+                <Image
+                  className='image-icon'
+                  src={project.tech5}
+                  alt='Tech logo 5'
+                />
+              )}
+            </div>
+            <p className='project-nav'>
+              Check Live Site <FaLocationArrow className='location-arrow' />
+            </p>
+          </div>
+        </div>
+      </a>
     );
   });
 

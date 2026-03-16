@@ -15,10 +15,17 @@
 .project-grid {
   height: 60vh;
   width: 30vw;
-  border: #a893f5 solid 2px;
-  border-radius: 10px;
-  background-color: #020419;
+  border: 1px solid rgba(168, 147, 245, 0.25);
+  border-radius: 12px;
+  background-color: #020d1f;
   opacity: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 35px 80px -10px #0d0820, 0 16px 40px rgba(168, 147, 245, 0.2);
+    border-color: rgba(168, 147, 245, 0.5);
+  }
 }
 
 .project-image-container {
@@ -62,15 +69,16 @@
 }
 
 .image-icon {
-  border: 2px solid #a893f5;
+  border: 1px solid rgba(168, 147, 245, 0.4);
   border-radius: 50%;
   padding: 0.4rem;
   width: 3.25rem;
   height: 3.25rem;
   z-index: 1;
-  transition: 0.3s;
+  transition: transform 0.25s ease, border-color 0.25s ease;
   &:hover {
-    transform: scale(1.2);
+    transform: translateY(-2px);
+    border-color: #a893f5;
   }
 }
 
@@ -80,12 +88,10 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
-  gap: none;
-  transition: 0.3s;
+  transition: color 0.25s ease;
   &:hover {
-    color: white;
+    color: #c4b5fd;
     cursor: pointer;
-    transform: scale(1.1);
   }
 }
 

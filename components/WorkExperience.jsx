@@ -4,10 +4,11 @@ import "../styles/WorkExperience.scss";
 
 const WorkExperience = () => {
   return (
-    <div>
+    <div className="work-experience-section">
       <section id="work">
+        <span className="section-label">Career</span>
         <h1 className="work-experience-heading">
-          Work <span style={{ color: "#a371f7" }}>Experience</span>
+          Work <span className="gradient-orange">Experience</span>
         </h1>
         <WorkUi className="work-experience-test" />
       </section>
