@@ -3,7 +3,7 @@
 import React from 'react';
 import './styles/ProjectsCardDisplay.scss';
 import Image from 'next/image';
-import { FaLocationArrow } from 'react-icons/fa6';
+import { FaLocationArrow, FaGithub } from 'react-icons/fa6';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -56,15 +56,14 @@ const ProjectsCardDisplay = () => {
         duration: 0.6,
         ease: 'power2.out',
         stagger: { each: 0.15, from: 'start' },
-      }
+      },
     );
   }, []);
 
   const projects = [
     {
       Title: 'YSC Lunch Soccer',
-      Description:
-        'Website for attendance tracking, team randomization, session scheduling, payments (using Stripe), and more for YSC Sports Lunch Soccer',
+      Description: 'Lunch Soccer attendance tracking app for YSC Sports',
       Link: 'https://ysclunchsoccer.com/',
       GitHubLink: 'https://github.com/alanzhang03/YSCLunchSoccer',
       Image: YSC,
@@ -153,8 +152,7 @@ const ProjectsCardDisplay = () => {
 
   const projectDivs = projects.map((project, index) => {
     return (
-      <a key={index} href={project.Link} target='_blank' rel='noopener noreferrer'>
-        <div className='project-grid'>
+        <div key={index} className='project-grid'>
           <div className='project-image-container'>
             <Image
               className='projects-images'
@@ -204,12 +202,26 @@ const ProjectsCardDisplay = () => {
                 />
               )}
             </div>
-            <p className='project-nav'>
-              Check Live Site <FaLocationArrow className='location-arrow' />
-            </p>
+            <div className='project-links'>
+              <a
+                href={project.GitHubLink}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='project-nav'
+              >
+                <FaGithub className='location-arrow' /> GitHub
+              </a>
+              <a
+                href={project.Link}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='project-nav'
+              >
+                Live Site <FaLocationArrow className='location-arrow' />
+              </a>
+            </div>
           </div>
         </div>
-      </a>
     );
   });
 
