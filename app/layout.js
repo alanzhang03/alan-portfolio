@@ -1,10 +1,10 @@
-import { Open_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const openSans = Open_Sans({
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-open-sans",
+  variable: "--font-poppins",
 });
 
 export const metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={openSans.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }

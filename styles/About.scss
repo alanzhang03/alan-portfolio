@@ -5,24 +5,24 @@
   color: white;
   min-height: 100vh;
   z-index: 1;
+  padding-top: 8vh;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .about-me-header {
   font-size: 5rem;
   color: white;
-  margin-top: 5vh;
+  margin-top: 1.5rem;
 }
 
 @media (max-width: 899px) {
   .about-me-header {
     font-size: 3rem;
-    margin-top: 2.9vh;
   }
 }
 
 @media (max-width: 480px) {
   .about-me-header {
     font-size: 2.5rem;
-    margin-top: 2vh;
   }
 }
