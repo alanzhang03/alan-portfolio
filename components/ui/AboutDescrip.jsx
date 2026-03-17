@@ -121,7 +121,7 @@ const AboutDescrip = () => {
         <div className='stat-card'>
           <FaCode className='stat-icon' />
           <span className='number'>30+</span>
-          <p className='stat-label'>Technologies Mastered</p>
+          <p className='stat-label'>Tools & Technologies</p>
         </div>
         <div className='stat-card'>
           <FaUsers className='stat-icon' />

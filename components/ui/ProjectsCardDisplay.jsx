@@ -10,7 +10,6 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Project Pictures
 import TicTacToeImg from '../../public/Assets/TicTacToe.png';
 import PreviousPort from '../../public/Assets/previousPort.png';
 import CvApp from '../../public/Assets/CvApp.png';
@@ -19,7 +18,6 @@ import WeatherApp from '../../public/Assets/weatherApp.png';
 import TFTApp from '../../public/Assets/TFTApp.png';
 import YSC from '../../public/Assets/yscLunchSoccer.png';
 
-// Tech Stack Logos
 import ReactLogo from '../../public/Assets/reactLogo.svg';
 import JsLogo from '../../public/Assets/jsLogo.svg';
 import GsapLogo from '../../public/Assets/gsapLogo.svg';

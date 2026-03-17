@@ -175,7 +175,6 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
-/* Responsive improvements */
 @media (max-width: 768px) {
   * {
     -webkit-tap-highlight-color: transparent;
@@ -187,13 +186,11 @@ html::-webkit-scrollbar-thumb {
   }
 }
 
-/* Ensure images are responsive */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Improve touch targets on mobile */
 @media (max-width: 768px) {
   button,
   a,

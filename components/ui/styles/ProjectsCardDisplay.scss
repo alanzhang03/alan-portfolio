@@ -121,7 +121,6 @@
   font-size: 0.7rem;
 }
 
-// Laptop (medium screens)
 @media (max-width: 1299px) and (min-width: 900px) {
   .projects-display-container {
     max-width: 94%;
@@ -142,7 +141,6 @@
   }
 }
 
-// Tablet / large mobile — single column
 @media (max-width: 899px) {
   .projects-display-container {
     grid-template-columns: 1fr;
@@ -175,7 +173,6 @@
   }
 }
 
-// Mobile
 @media (max-width: 480px) {
   .projects-display-container {
     max-width: 94%;
