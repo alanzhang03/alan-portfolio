@@ -5,8 +5,9 @@ import TextSlider from "./ui/TextSlider";
 const Projects = () => {
   return (
     <section id="projects" className="main-projects">
+      <span className="section-label">Work</span>
       <h1 className="projects-heading">
-        Personal <span style={{ color: "#a371f7" }}>Projects</span>
+        Personal <span className="gradient-blue">Projects</span>
       </h1>
       <ProjectsCardDisplay />
     </section>

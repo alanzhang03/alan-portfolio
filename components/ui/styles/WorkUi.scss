@@ -7,7 +7,6 @@
 .work-ui-box {
   height: auto;
   width: 60vw;
-  background-color: #020419;
   z-index: 2;
   opacity: 1;
   padding: 3rem 2rem;
@@ -19,16 +18,29 @@
   color: white;
   padding-top: 10vh;
   position: relative;
-  transition: all 0.3s ease;
   border-radius: 12px;
   padding: 2rem;
   margin: 1rem 0;
+  opacity: 0;
+  transition: background 0.3s ease, border 0.3s ease;
 }
 
 .work-ui-container:hover {
   background: rgba(168, 147, 245, 0.05);
   transform: translateY(-2px);
   border: solid 1px #a893f5;
+}
+
+.vertical-line {
+  width: 2px;
+  min-height: 36px;
+  background: linear-gradient(to bottom, transparent, rgba(168, 147, 245, 0.45));
+  border-radius: 2px;
+  margin-bottom: 0.75rem;
+}
+
+.work-ui-container:first-child .vertical-line {
+  display: none;
 }
 
 .company-logo-container {
@@ -52,15 +64,13 @@
 
 .company-logo:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: translateY(-3px);
 }
 
 .work-info {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
-  opacity: 0.3;
-  transition: opacity 0.3s ease;
 }
 
 .work-company-name {
@@ -143,9 +153,6 @@
   height: 1px;
   background: rgba(255, 255, 255, 0.2);
   margin-top: 7.5vh;
-}
-
-@media (min-width: 1800px) {
 }
 
 @media (max-width: 1799px) and (min-width: 900px) {

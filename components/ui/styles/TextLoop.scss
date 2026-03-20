@@ -1,16 +1,36 @@
 .container {
-	height: 12vw;
-	overflow: hidden;
-	text-align: center;
+  height: 3.5rem;
+  overflow: hidden;
+  text-align: left;
 }
+
 ul.v-slides {
-	list-style-type: none;
-	padding: 2vh;
-	margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+
 .v-slide {
-	font-size: 6vw;
-	line-height: 6.75vw;
-	color: #a29bfe;
-	font-weight: 200;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: #c4b5fd;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 899px) {
+  .container {
+    text-align: center;
+    height: 3rem;
+  }
+
+  .v-slide {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container { height: 2.5rem; }
+  .v-slide { font-size: 1.6rem; line-height: 2.25rem; }
 }

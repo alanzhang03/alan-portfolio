@@ -79,7 +79,8 @@ const Contact = () => {
 
   return (
     <section id="contact" className="main-contact">
-      <h1 className="contact-heading">Contact Me</h1>
+      <span className="section-label">Get in Touch</span>
+      <h1 className="contact-heading">Contact <span className="gradient-pink">Me</span></h1>
       <ContactForm onInputChange={handleInputChange} />
       <button className="submit-contact-form-button" onClick={handleSubmit}>
         Submit
