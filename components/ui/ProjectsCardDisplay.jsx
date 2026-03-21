@@ -70,7 +70,7 @@ const ProjectsCardDisplay = () => {
     {
       Title: 'TopFlight Tracker',
       Description: 'Football statistic web application built using Next.js ',
-      Link: 'https://topflight-tracker.vercel.app/',
+      Link: 'https://topflighttracker.com/',
       GitHubLink: 'https://github.com/alanzhang03/topflight-tracker',
       Image: TopFlightTracker,
       tech1: NextLogo,
