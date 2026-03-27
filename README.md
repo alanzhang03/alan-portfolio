@@ -2,7 +2,7 @@
 
 Welcome to my Personal Portfolio!
 
-###  [Visit My Portfolio](https://azhang03.vercel.app/)
+###  [Visit My Portfolio](https://alanszhang.dev/)
 
 
 ##  Technologies & Tools
@@ -15,11 +15,11 @@ Welcome to my Personal Portfolio!
 
 - **[Streamer Tracker TFT](https://github.com/alanzhang03/streamer-tracker-tft)**: Streamer Tracker for TFT that tracks top TFT Streamers.
   - **Tech Stack**: Nextjs, JavaScript, Sass, Flask, GSAP, Python, PostgreSQL
-  - [Check Live Site](https://streamer-tracker-tft.vercel.app/)
+  - [Check Live Site](https://streamertft.com/)
     
 - **[TopFlight Tracker](https://github.com/alanzhang03/topflight-tracker)**: My previous web portfolio.
   - **Tech Stack**: Nextjs, JavaScript, Sass, Redis, GSAP
-  - [Check Live Site](https://topflight-tracker.vercel.app/)
+  - [Check Live Site](https://topflighttracker.com/)
 
 - **[Previous Web Portfolio](https://github.com/alanzhang03/personal-portfolio)**: My previous web portfolio.
   - **Tech Stack**: React, Node.js, JavaScript, CSS, HTML
