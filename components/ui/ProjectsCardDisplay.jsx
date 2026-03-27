@@ -83,7 +83,7 @@ const ProjectsCardDisplay = () => {
       Title: 'StreamerTracker TFT',
       Description:
         'Tracking App tracks the statistics of the top TFT streamers',
-      Link: 'https://streamer-tracker-tft.vercel.app/',
+      Link: 'https://streamertft.com/',
       GitHubLink: 'https://github.com/alanzhang03/streamer-tracker-tft',
       Image: TFTApp,
       tech1: NextLogo,
