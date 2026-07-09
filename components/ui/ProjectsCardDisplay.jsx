@@ -17,6 +17,7 @@ import TopFlightTracker from '../../public/Assets/TopFlightTracker.png';
 import WeatherApp from '../../public/Assets/weatherApp.png';
 import TFTApp from '../../public/Assets/TFTApp.png';
 import YSC from '../../public/Assets/yscLunchSoccer.png';
+import ApplyLog from '../../public/Assets/applylog.png';
 
 import ReactLogo from '../../public/Assets/reactLogo.svg';
 import JsLogo from '../../public/Assets/jsLogo.svg';
@@ -34,6 +35,8 @@ import FlaskLogo from '../../public/Assets/flask.svg';
 import ExpressLogo from '../../public/Assets/express.svg';
 import SupabaseLogo from '../../public/Assets/supabase.svg';
 import PrismaLogo from '../../public/Assets/prisma.svg';
+import OpenAiLogo from '../../public/Assets/openai.svg';
+import TypeScript from '../../public/Assets/typescript.svg';
 
 const ProjectsCardDisplay = () => {
   useGSAP(() => {
@@ -55,6 +58,18 @@ const ProjectsCardDisplay = () => {
   }, []);
 
   const projects = [
+    {
+      Title: 'Applylog',
+      Description: 'Tool to help automatically track job apps!',
+      Link: 'https://applylog.dev/',
+      GitHubLink: 'https://github.com/alanzhang03/applylog',
+      Image: ApplyLog,
+      tech1: NextLogo,
+      tech2: OpenAiLogo,
+      tech3: TypeScript,
+      tech4: SupabaseLogo,
+      tech5: PostgreLogo,
+    },
     {
       Title: 'YSC Lunch Soccer',
       Description: 'Lunch Soccer attendance tracking app for YSC Sports',
