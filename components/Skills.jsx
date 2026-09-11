@@ -11,6 +11,11 @@ const dailyStack = [
     link: 'https://www.typescriptlang.org/',
   },
   {
+    name: 'Python',
+    icon: '/Assets/python.svg',
+    link: 'https://www.python.org/',
+  },
+  {
     name: 'JavaScript',
     icon: '/Assets/js.svg',
     link: 'https://www.javascript.com/',
@@ -29,11 +34,6 @@ const dailyStack = [
     name: 'Node.js',
     icon: '/Assets/nodejs.svg',
     link: 'https://nodejs.org/',
-  },
-  {
-    name: 'Sass',
-    icon: '/Assets/sass.svg',
-    link: 'https://sass-lang.com/',
   },
   {
     name: 'PostgreSQL',
