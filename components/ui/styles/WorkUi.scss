@@ -15,26 +15,27 @@
 .work-ui-container {
   display: flex;
   align-items: flex-start;
-  color: white;
+  color: var(--ink);
   padding-top: 10vh;
   position: relative;
   border-radius: 12px;
   padding: 2rem;
   margin: 1rem 0;
   opacity: 0;
-  transition: background 0.3s ease, border 0.3s ease;
+  border: none;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .work-ui-container:hover {
-  background: rgba(168, 147, 245, 0.05);
+  background: rgba(255, 255, 255, 0.45);
   transform: translateY(-2px);
-  border: solid 1px #a893f5;
+  border: none;
 }
 
 .vertical-line {
   width: 2px;
   min-height: 36px;
-  background: linear-gradient(to bottom, transparent, rgba(168, 147, 245, 0.45));
+  background: linear-gradient(to bottom, transparent, rgba(180, 83, 9, 0.45));
   border-radius: 2px;
   margin-bottom: 0.75rem;
 }
@@ -60,6 +61,7 @@
   transition: 0.3s;
   object-fit: contain;
   object-position: center;
+  border: none;
 }
 
 .company-logo:hover {
@@ -75,25 +77,26 @@
 
 .work-company-name {
   font-size: 2rem;
-  color: #927bea;
+  color: var(--work);
   font-weight: bolder;
 }
 
 .company-position {
   font-size: 1.5rem;
-  color: white;
+  color: var(--ink);
   font-weight: bolder;
   margin-top: 0.5rem;
 }
 
 .company-start-end-date-container {
   font-size: 1.25rem;
-  color: white;
+  color: var(--ink-muted);
   margin-top: 0.5rem;
 }
 
 .now-color {
-  color: #927bea;
+  color: var(--work);
+  font-weight: 600;
 }
 
 .tech-stack-container {
@@ -105,20 +108,19 @@
 }
 
 .tech-tag {
-  background: linear-gradient(135deg, #927bea, #a893f5);
-  color: white;
+  background: rgba(180, 83, 9, 0.1);
+  color: #92400e;
   padding: 0.3rem 0.8rem;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 0.85rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  border: 1px solid rgba(168, 147, 245, 0.3);
+  border: none;
 }
 
 .tech-tag:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(168, 147, 245, 0.3);
-  background: linear-gradient(135deg, #a893f5, #c4b5fd);
+  background: rgba(180, 83, 9, 0.16);
 }
 
 .job-description-gap {
@@ -130,7 +132,7 @@
   flex-direction: column;
   gap: 0.8rem;
   font-size: 1.1rem;
-  color: #e2e8f0;
+  color: var(--ink-soft);
   transition: color 0.3s ease;
   font-weight: 400;
   line-height: 1.7;
@@ -139,19 +141,19 @@
 .job-description p {
   margin: 0;
   padding-left: 0.5rem;
-  border-left: 2px solid rgba(168, 147, 245, 0.3);
+  border-left: 2px solid rgba(180, 83, 9, 0.25);
   transition: all 0.3s ease;
 }
 
 .job-description p:hover {
-  border-left-color: #a893f5;
+  border-left-color: var(--work);
   padding-left: 1rem;
 }
 
 .work-divider {
   border: 0;
   height: 1px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(26, 36, 33, 0.06);
   margin-top: 7.5vh;
 }
 

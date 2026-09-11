@@ -5,7 +5,8 @@
   max-width: 75vw;
   font-weight: 400;
   line-height: 1.8;
-  border-left: 3px solid rgba(168, 147, 245, 0.4);
+  color: var(--ink-soft);
+  border-left: 3px solid rgba(15, 118, 110, 0.35);
   padding-left: 1.5rem;
   scroll-behavior: smooth;
 
@@ -14,11 +15,11 @@
   }
 
   .purple-text {
-    color: #927bea;
+    color: var(--accent);
     position: relative;
     &:hover {
       cursor: pointer;
-      color: #a893f5;
+      color: #0d9488;
     }
     &::after {
       content: "";
@@ -27,7 +28,7 @@
       left: 0;
       right: 0;
       bottom: -2px;
-      background: #a893f5;
+      background: var(--accent);
       transition: transform 0.4s;
       transform: scaleX(0);
       transform-origin: bottom left;
@@ -60,28 +61,27 @@
   flex: 1;
   min-width: 140px;
   padding: 1.75rem 1.25rem;
-  border: 1px solid rgba(168, 147, 245, 0.25);
+  border: none;
   border-radius: 12px;
-  background: rgba(168, 147, 245, 0.05);
-  transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.55);
+  transition: background 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    border-color: rgba(168, 147, 245, 0.5);
-    background: rgba(168, 147, 245, 0.1);
+    background: #fff;
     transform: translateY(-4px);
   }
 
   .stat-icon {
     font-size: 1.4rem;
-    color: #a893f5;
+    color: var(--accent);
     margin-bottom: 0.75rem;
-    opacity: 0.85;
+    opacity: 0.9;
   }
 
   .number {
     font-size: 3rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #a893f5 0%, #c4b5fd 60%, #e9d5ff 100%);
+    background: linear-gradient(135deg, #0f766e 0%, #134e4a 55%, #1a2421 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -91,10 +91,19 @@
 
   .stat-label {
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--ink-muted);
     font-weight: 400;
     line-height: 1.4;
   }
+}
+
+.download-cv-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1vh;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 1799px) and (min-width: 900px) {
@@ -149,9 +158,9 @@
 }
 
 .download-cv-button {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--ink);
   font-weight: 600;
-  color: white;
+  color: #f7faf8;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -162,11 +171,11 @@
   height: 6vh;
   width: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: #927bea solid 1px;
+  box-shadow: 0 4px 16px rgba(26, 36, 33, 0.15);
+  border: 1px solid var(--ink);
   z-index: 2;
   overflow: hidden;
-  transition: transform 0.3s;
+  transition: transform 0.3s, background 0.3s;
   opacity: 0;
 }
 
@@ -175,8 +184,10 @@
 }
 
 .download-cv-button:hover {
-  color: #c4b5fd;
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
   cursor: pointer;
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(168, 147, 245, 0.25);
+  box-shadow: 0 8px 24px rgba(15, 118, 110, 0.25);
 }

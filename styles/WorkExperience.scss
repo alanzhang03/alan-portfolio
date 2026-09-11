@@ -1,7 +1,8 @@
 .work-experience-section {
   padding-top: 10vh;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: none;
   width: 100%;
+  background: transparent;
 
   section {
     display: flex;
@@ -12,7 +13,7 @@
 
 .work-experience-heading {
   font-size: 5rem;
-  color: white;
+  color: var(--ink);
   text-align: center;
 }
 

@@ -6,20 +6,7 @@
   justify-content: center;
   min-height: 100vh;
   position: relative;
-  background-image: radial-gradient(rgba(168, 147, 245, 0.22) 1px, transparent 1px);
-  background-size: 30px 30px;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(ellipse at 50% 40%, rgba(2, 4, 25, 0) 30%, rgba(2, 4, 25, 0.88) 80%);
-    pointer-events: none;
-    z-index: 0;
-  }
+  background: transparent;
 
   & > * {
     position: relative;
@@ -46,7 +33,7 @@
 }
 
 .hero-greeting {
-  color: #c4b5fd;
+  color: var(--accent);
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -56,7 +43,7 @@
 .hero-name {
   font-size: 5.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #a893f5 0%, #c4b5fd 50%, #e9d5ff 100%);
+  background: linear-gradient(135deg, #0f766e 0%, #134e4a 45%, #1a2421 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -81,8 +68,8 @@
 
 .profile-photo {
   border-radius: 50%;
-  border: 3px solid rgba(168, 147, 245, 0.5);
-  box-shadow: 0 0 30px rgba(168, 147, 245, 0.2), 0 0 60px rgba(168, 147, 245, 0.1);
+  border: 3px solid rgba(15, 118, 110, 0.35);
+  box-shadow: 0 16px 40px rgba(26, 36, 33, 0.12);
   transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
   object-fit: cover;
   cursor: pointer;
@@ -91,8 +78,8 @@
 
 .profile-photo:hover {
   transform: translateY(-4px);
-  box-shadow: 0 0 40px rgba(168, 147, 245, 0.4), 0 0 80px rgba(168, 147, 245, 0.18);
-  border-color: #c4b5fd;
+  box-shadow: 0 20px 48px rgba(26, 36, 33, 0.16);
+  border-color: var(--accent-bright);
 }
 
 .socials-container {
@@ -110,34 +97,36 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(168, 147, 245, 0.35);
+  border: none;
+  background: rgba(255, 255, 255, 0.55);
   border-radius: 8px;
   height: 2.75rem;
   padding: 0 1rem;
   gap: 0.5rem;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .social-box:hover {
   cursor: pointer;
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(168, 147, 245, 0.22);
-  border-color: #c4b5fd;
+  box-shadow: var(--shadow);
+  border-color: transparent;
+  background: #fff;
 
   .home-page-icon,
   .socials-text {
-    color: #c4b5fd;
+    color: var(--accent);
   }
 }
 
 .home-page-icon {
   display: flex;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--ink-soft);
   font-size: 1.25rem;
 }
 
 .socials-text {
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--ink-soft);
   font-size: 0.9rem;
   font-weight: 500;
   margin: 0;
@@ -145,7 +134,7 @@
 
 .arrow-down {
   animation: bobbing 1.2s ease-in-out infinite;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(26, 36, 33, 0.28);
   font-size: 1.4rem;
   margin-top: 5vh;
 }
