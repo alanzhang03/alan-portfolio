@@ -61,53 +61,68 @@ const WorkUi = () => {
     },
   ];
 
-  const workDiv = workExperience.map((company, index) => (
-    <React.Fragment key={index}>
-      <div className="work-ui-container">
-        <div className="company-logo-container">
-          <div className="vertical-line"></div>
-          <a href={company.link} target="_blank" rel="noopener noreferrer">
-            <Image
-              className="company-logo"
-              src={company.companyLogo}
-              alt="company logo"
-            />
-          </a>
-        </div>
-        <div className="work-info">
-          <h3 className="work-company-name">{company.companyName}</h3>
-          <p className="company-position">{company.companyPosition}</p>
-          <div className="company-start-end-date-container">
-            <p>
-              {company.startDate} -{" "}
-              <span className={company.endDate === "Now" ? "now-color" : ""}>
-                {company.endDate}
-              </span>
-            </p>
-          </div>
-          <div className="tech-stack-container">
-            {company.techStack.map((tech, i) => (
-              <span key={i} className="tech-tag">
-                {tech}
-              </span>
-            ))}
-          </div>
-          <div className="job-description-gap">
-            <ul className="job-description">
-              {company.jobDescription.map((desc, i) => (
-                <p key={i}>{desc}</p>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-      {index < workExperience.length - 1 && <hr className="work-divider" />}
-    </React.Fragment>
-  ));
-
   return (
     <section className="experience-display">
-      <div className="work-ui-box">{workDiv}</div>
+      <div className="timeline">
+        {workExperience.map((company, index) => (
+          <article
+            key={company.companyName}
+            className={`timeline-item${
+              company.endDate === "Now" ? " is-current" : ""
+            }`}
+          >
+            <div className="timeline-rail" aria-hidden="true">
+              <span className="timeline-dot" />
+            </div>
+
+            <div className="timeline-card">
+              <div className="timeline-meta">
+                <a
+                  href={company.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="timeline-logo-link"
+                >
+                  <Image
+                    className="company-logo"
+                    src={company.companyLogo}
+                    alt={`${company.companyName} logo`}
+                  />
+                </a>
+                <p className="timeline-dates">
+                  {company.startDate} —{" "}
+                  <span
+                    className={company.endDate === "Now" ? "now-color" : ""}
+                  >
+                    {company.endDate}
+                  </span>
+                </p>
+              </div>
+
+              <div className="work-info">
+                <h3 className="work-company-name">{company.companyName}</h3>
+                <p className="company-position">{company.companyPosition}</p>
+
+                <div className="tech-stack-container">
+                  {company.techStack.map((tech) => (
+                    <span key={tech} className="tech-tag">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="job-description-gap">
+                  <ul className="job-description">
+                    {company.jobDescription.map((desc) => (
+                      <li key={desc.slice(0, 40)}>{desc}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
     </section>
   );
 };
