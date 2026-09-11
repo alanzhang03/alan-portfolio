@@ -3,162 +3,103 @@
   flex-direction: column;
   align-items: center;
   color: var(--ink);
-  min-height: 100vh;
-  padding-bottom: 8vh;
+  padding: 10vh 1.5rem 8vh;
   border-top: none;
   background: transparent;
+  width: 100%;
 
   .Skills {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     color: var(--ink);
     width: 100%;
-    padding-top: 8vh;
+    max-width: 720px;
 
     h1 {
-      font-size: 5rem;
-      margin-top: 0;
-      margin-bottom: 1rem;
+      font-size: 2.75rem;
+      margin: 0 0 0.75rem;
       color: var(--ink);
-    }
-
-    .skills-group + h1 {
-      margin-top: 5vh;
+      font-weight: 700;
     }
   }
 }
 
-.hex-grid,
-.tech-hex-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
-  justify-items: center;
-  gap: 0.85rem;
-  max-width: 920px;
-  width: 100%;
-  margin: 1.5rem auto 0;
-  padding: 0 1.25rem;
-  background: none;
-  border: none;
-  box-shadow: none;
+.skills-intro {
+  color: var(--ink-muted);
+  font-size: 1.05rem;
+  margin-bottom: 1.75rem;
 }
 
-.hex-item,
-.tech-hex-item {
-  width: 104px;
-  height: 112px;
-  clip-path: none;
-  border-radius: 16px;
-  background: transparent;
-  border: none;
-  box-shadow: none;
+.skills-list {
+  list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.skill-item {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  opacity: 0;
-  cursor: pointer;
+  gap: 0.55rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  font-weight: 500;
   text-decoration: none;
-  color: var(--ink);
-  transition:
-    background 0.25s ease,
-    transform 0.25s ease;
+  padding: 0.55rem 0.9rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(26, 36, 33, 0.08);
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease,
+    transform 0.2s ease, box-shadow 0.2s ease;
 
   img {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
-    margin-bottom: 0.45rem;
-    border-radius: 8px;
-  }
-
-  .hex-label {
-    font-size: 0.68rem;
-    font-weight: 600;
-    color: var(--skills);
-    text-align: center;
-    max-width: 90px;
-    line-height: 1.2;
-    margin: 0;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
   }
 
   &:hover {
-    background: rgba(4, 120, 87, 0.08);
-    border-color: transparent;
-    transform: translateY(-3px);
-    box-shadow: none;
-    filter: none;
-  }
-}
-
-@media (max-width: 1169px) and (min-width: 600px) {
-  .main-skills .Skills h1 {
-    font-size: 3rem;
-  }
-
-  .hex-grid,
-  .tech-hex-grid {
-    grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
-    max-width: 720px;
-  }
-
-  .hex-item,
-  .tech-hex-item {
-    width: 92px;
-    height: 100px;
+    color: var(--accent);
+    background: #fff;
+    border-color: var(--accent-border);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(26, 36, 33, 0.06);
 
     img {
-      width: 34px;
-      height: 34px;
+      transform: scale(1.08);
     }
   }
 }
 
-@media (max-width: 599px) {
+@media (prefers-reduced-motion: reduce) {
+  .skill-item:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 899px) {
+  .main-skills .Skills {
+    align-items: center;
+    text-align: center;
+  }
+
   .main-skills .Skills h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
   }
 
-  .hex-grid,
-  .tech-hex-grid {
-    grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
-    gap: 0.65rem;
-  }
-
-  .hex-item,
-  .tech-hex-item {
-    width: 84px;
-    height: 92px;
-
-    img {
-      width: 30px;
-      height: 30px;
-    }
-
-    .hex-label {
-      font-size: 0.58rem;
-    }
+  .skills-list {
+    justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
   .main-skills .Skills h1 {
-    font-size: 2.5rem;
-  }
-
-  .hex-item,
-  .tech-hex-item {
-    width: 78px;
-    height: 88px;
-
-    img {
-      width: 28px;
-      height: 28px;
-    }
-
-    .hex-label {
-      font-size: 0.55rem;
-    }
+    font-size: 2rem;
   }
 }

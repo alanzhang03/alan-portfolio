@@ -4,22 +4,7 @@ import React, { useState } from "react";
 import "../styles/Contact.scss";
 import ContactForm from "./ui/ContactForm";
 
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
 const Contact = () => {
-  useGSAP(() => {
-    gsap.to(".submit-contact-form-button", {
-      scrollTrigger: ".submit-contact-form-button",
-      opacity: 1,
-      delay: 1.55,
-    });
-  }, []);
-
   const [formData, setFormData] = useState({
     email: "",
     name: "",
@@ -79,8 +64,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="main-contact">
-      <span className="section-label">Get in Touch</span>
-      <h1 className="contact-heading">Contact <span className="gradient-pink">Me</span></h1>
+      <h1 className="contact-heading">Contact</h1>
       <ContactForm onInputChange={handleInputChange} />
       <button className="submit-contact-form-button" onClick={handleSubmit}>
         Submit

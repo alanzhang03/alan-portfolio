@@ -50,52 +50,20 @@ h3 {
   color: var(--ink);
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, #0f766e 0%, #134e4a 55%, #1a2421 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.gradient-orange {
-  background: linear-gradient(135deg, #d97706, #b45309);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.gradient-green {
-  background: linear-gradient(135deg, #059669, #047857);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.gradient-blue {
-  background: linear-gradient(135deg, #0284c7, #0369a1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
+.gradient-text,
+.gradient-orange,
+.gradient-green,
+.gradient-blue,
 .gradient-pink {
-  background: linear-gradient(135deg, #ea580c, #c2410c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--ink);
+  background: none;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  -webkit-background-clip: unset;
 }
 
 .section-label {
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-  border-bottom: 2px solid var(--accent-border);
-  border-radius: 0;
-  padding: 0.15rem 0 0.35rem;
-  margin-bottom: 1.25rem;
+  display: none;
 }
 
 a {

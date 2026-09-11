@@ -1,37 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../ui/styles/WorkUi.scss";
 import Image from "next/image";
 import MindHome from "../../public/Assets/mindHome.png";
 import TempleLogo from "../../public/Assets/temple.svg";
 import TollBrothersLogo from "../../public/Assets/tollBrothers.svg";
 
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
 const WorkUi = () => {
-  useEffect(() => {
-    const workContainers = document.querySelectorAll(".work-ui-container");
-
-    workContainers.forEach((container) => {
-      gsap.fromTo(
-        container,
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          scrollTrigger: {
-            trigger: container,
-            start: "top 85%",
-          },
-          duration: 0.7,
-          ease: "power2.out",
-        }
-      );
-    });
-  }, []);
-
   const workExperience = [
     {
       companyName: "Toll Brothers",

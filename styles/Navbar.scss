@@ -8,8 +8,8 @@
   font-size: 0.9rem;
   height: 7vh;
   color: var(--ink);
-  border-radius: 16px;
-  box-shadow: 0 8px 28px rgba(26, 36, 33, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(26, 36, 33, 0.06);
   border: none;
   z-index: 100;
   overflow: hidden;
@@ -55,7 +55,7 @@
 .nav-hover:hover:not(.active) {
   color: var(--ink);
   background: var(--accent-soft);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .nav-hover:hover:not(.active)::after,

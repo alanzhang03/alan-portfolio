@@ -6,10 +6,7 @@ const About = () => {
   return (
     <>
       <section id="about" className="main-about">
-        <span className="section-label">About Me</span>
-        <h1 className="about-me-header">
-          Who Am <span className="gradient-text">I?</span>
-        </h1>
+        <h1 className="about-me-header">About</h1>
         <AboutDescrip />
       </section>
     </>

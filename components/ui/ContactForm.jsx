@@ -2,37 +2,8 @@
 
 import React from "react";
 import "./styles/ContactForm.scss";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const ContactForm = ({ onInputChange }) => {
-  useGSAP(() => {
-    gsap.to(".contact-form-container span", {
-      scrollTrigger: ".contact-form-container",
-      opacity: 1,
-      delay: 0.5,
-      duration: 1,
-      stagger: {
-        from: "start",
-        each: 0.15,
-      },
-    });
-
-    gsap.to(".contact-form-container input,textarea", {
-      scrollTrigger: ".contact-form-container",
-      opacity: 1,
-      delay: 1,
-      duration: 1,
-      stagger: {
-        from: "start",
-        each: 0.15,
-      },
-    });
-  }, []);
-
   return (
     <form className="contact-form-container">
       <span>Name</span>

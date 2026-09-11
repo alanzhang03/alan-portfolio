@@ -3,31 +3,34 @@
   flex-direction: column;
   align-items: center;
   color: var(--ink);
-  min-height: 100vh;
   z-index: 1;
   position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  padding-top: 8vh;
-  padding-bottom: 6vh;
+  padding: 10vh 1.5rem 6vh;
   background: transparent;
   border-top: none;
+  width: 100%;
 }
 
 .about-me-header {
-  font-size: 5rem;
+  font-size: 2.75rem;
   color: var(--ink);
-  margin-top: 1.5rem;
+  margin: 0 0 0.5rem;
+  width: 100%;
+  max-width: 42rem;
+  text-align: left;
+  font-weight: 700;
 }
 
 @media (max-width: 899px) {
   .about-me-header {
-    font-size: 3rem;
+    font-size: 2.25rem;
+    text-align: center;
+    max-width: 92vw;
   }
 }
 
 @media (max-width: 480px) {
   .about-me-header {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }

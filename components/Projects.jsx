@@ -1,14 +1,11 @@
 import React from "react";
 import "../styles/Projects.scss";
 import ProjectsCardDisplay from "./ui/ProjectsCardDisplay";
-import TextSlider from "./ui/TextSlider";
+
 const Projects = () => {
   return (
     <section id="projects" className="main-projects">
-      <span className="section-label">Work</span>
-      <h1 className="projects-heading">
-        Personal <span className="gradient-blue">Projects</span>
-      </h1>
+      <h1 className="projects-heading">Projects</h1>
       <ProjectsCardDisplay />
     </section>
   );

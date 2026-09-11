@@ -4,11 +4,6 @@ import React from 'react';
 import './styles/ProjectsCardDisplay.scss';
 import Image from 'next/image';
 import { FaLocationArrow, FaGithub } from 'react-icons/fa6';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
 
 import TicTacToeImg from '../../public/Assets/TicTacToe.png';
 import PreviousPort from '../../public/Assets/previousPort.png';
@@ -39,24 +34,6 @@ import OpenAiLogo from '../../public/Assets/openai.svg';
 import TypeScript from '../../public/Assets/typescript.svg';
 
 const ProjectsCardDisplay = () => {
-  useGSAP(() => {
-    gsap.fromTo(
-      '.project-grid',
-      { opacity: 0, y: 40 },
-      {
-        scrollTrigger: {
-          trigger: '.projects-display-container',
-          start: 'top 80%',
-        },
-        opacity: 1,
-        y: 0,
-        duration: 0.6,
-        ease: 'power2.out',
-        stagger: { each: 0.15, from: 'start' },
-      },
-    );
-  }, []);
-
   const projects = [
     {
       Title: 'Applylog',

@@ -1,32 +1,37 @@
 .contact-form-container {
   span {
-    opacity: 0;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
+    opacity: 1;
+    padding-top: 1.5vh;
+    padding-bottom: 0.6vh;
     color: var(--ink-soft);
-    font-size: 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 500;
   }
 
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+
   input,
   textarea {
-    opacity: 0;
-    height: 5vh;
+    opacity: 1;
+    height: 2.75rem;
     background: #fff;
     color: var(--ink);
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 1px 2px rgba(26, 36, 33, 0.04);
+    border-radius: 6px;
+    border: 1px solid rgba(26, 36, 33, 0.14);
+    box-shadow: none;
     padding: 0.5rem 0.85rem;
-    width: 25vw;
-    transition: box-shadow 0.25s ease;
+    width: 100%;
+    font: inherit;
+    transition: border-color 0.2s ease;
 
     &:focus {
       background: #fff;
       outline: none;
-      border-color: transparent;
-      box-shadow: 0 0 0 2px rgba(194, 65, 12, 0.28);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
     }
 
     &::placeholder {
@@ -35,68 +40,17 @@
   }
 
   textarea {
-    height: 17.5vh;
+    height: 9rem;
     resize: vertical;
-  }
-}
-
-@media (max-width: 1799px) and (min-width: 900px) {
-  .contact-form-container {
-    span {
-      opacity: 0;
-      padding-top: 2vh;
-      padding-bottom: 1vh;
-      color: var(--ink-soft);
-      font-size: 1.25rem;
-    }
-
-    display: flex;
-    flex-direction: column;
-    input,
-    textarea {
-      width: 35vw;
-    }
-
-    textarea {
-      height: 17.5vh;
-      resize: vertical;
-    }
-  }
-}
-
-@media (max-width: 899px) {
-  .contact-form-container {
-    span {
-      font-size: 1rem;
-    }
-
-    input,
-    textarea {
-      width: 80vw;
-      height: 6vh;
-    }
-
-    textarea {
-      height: 20vh;
-    }
   }
 }
 
 @media (max-width: 480px) {
   .contact-form-container {
+    max-width: 92vw;
+
     span {
       font-size: 0.9rem;
-    }
-
-    input,
-    textarea {
-      width: 90vw;
-      height: 5vh;
-      font-size: 0.9rem;
-    }
-
-    textarea {
-      height: 15vh;
     }
   }
 }
